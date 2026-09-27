@@ -1,0 +1,11 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "north": "intecrate:block/beetroot/beetroot_crate",
+    "south": "intecrate:block/beetroot/beetroot_crate",
+    "east": "intecrate:block/beetroot/beetroot_crate_side",
+    "west": "intecrate:block/beetroot/beetroot_crate_side",
+    "up": "intecrate:block/beetroot/beetroot_crate_top",
+    "down": "intecrate:block/beetroot/beetroot_crate_bottom"
+  }
+}

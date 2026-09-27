@@ -1,0 +1,8 @@
+{
+  "itemGroup.examplemod": "Example Mod Tab",
+  "block.intecrate.apple_crate": "Apple Crate",
+  "block.intecrate.carrot_crate": "Carrot Crate",
+  "block.intecrate.beetroot_crate": "Beetroot Crate",
+
+  "item.examplemod.example_item": "Example Item"
+}

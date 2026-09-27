@@ -1,0 +1,11 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "north": "intecrate:block/carrot/carrot_crate",
+    "south": "intecrate:block/carrot/carrot_crate",
+    "east": "intecrate:block/carrot/carrot_crate_side",
+    "west": "intecrate:block/carrot/carrot_crate_side",
+    "up": "intecrate:block/carrot/carrot_crate_top",
+    "down": "intecrate:block/carrot/carrot_crate_bottom"
+  }
+}
