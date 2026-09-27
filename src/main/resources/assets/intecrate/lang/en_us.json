@@ -3,6 +3,10 @@
   "block.intecrate.apple_crate": "Apple Crate",
   "block.intecrate.carrot_crate": "Carrot Crate",
   "block.intecrate.beetroot_crate": "Beetroot Crate",
+  "block.intecrate.potato_crate": "Potato Crate",
+  "block.intecrate.poisonous_potato_crate": "Poisonous Potato Crate",
+  "block.intecrate.red_mushroom_crate": "Red Mushroom Crate",
+  "block.intecrate.brown_mushroom_crate": "Brown Mushroom Crate",
 
   "item.examplemod.example_item": "Example Item"
 }

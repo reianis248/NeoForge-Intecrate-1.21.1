@@ -1,0 +1,11 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "north": "intecrate:block/poisonous_potato/poisonous_potato_crate",
+    "south": "intecrate:block/poisonous_potato/poisonous_potato_crate",
+    "east": "intecrate:block/poisonous_potato/poisonous_potato_crate_side",
+    "west": "intecrate:block/poisonous_potato/poisonous_potato_crate_side",
+    "up": "intecrate:block/poisonous_potato/poisonous_potato_crate_top",
+    "down": "intecrate:block/poisonous_potato/poisonous_potato_crate_bottom"
+  }
+}

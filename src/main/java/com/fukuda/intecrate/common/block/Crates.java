@@ -41,6 +41,38 @@ public class Crates {
                     .strength(2.5F)
                     .ignitedByLava()
             ));
+    public static final DeferredBlock<Block> POTATO_CRATE = registerBlock("potato_crate",
+            () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()
+                    .sound(SoundType.WOOD)
+                    .mapColor(MapColor.WOOD)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(2.5F)
+                    .ignitedByLava()
+            ));
+    public static final DeferredBlock<Block> POISONOUS_POTATO_CRATE = registerBlock("poisonous_potato_crate",
+            () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()
+                    .sound(SoundType.WOOD)
+                    .mapColor(MapColor.WOOD)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(2.5F)
+                    .ignitedByLava()
+            ));
+    public static final DeferredBlock<Block> RED_MUSHROOM_CRATE = registerBlock("red_mushroom_crate",
+            () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()
+                    .sound(SoundType.WOOD)
+                    .mapColor(MapColor.WOOD)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(2.5F)
+                    .ignitedByLava()
+            ));
+    public static final DeferredBlock<Block> BROWN_MUSHROOM_CRATE = registerBlock("brown_mushroom_crate",
+            () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()
+                    .sound(SoundType.WOOD)
+                    .mapColor(MapColor.WOOD)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(2.5F)
+                    .ignitedByLava()
+            ));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

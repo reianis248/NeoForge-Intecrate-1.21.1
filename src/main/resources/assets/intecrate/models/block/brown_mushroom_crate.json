@@ -1,0 +1,11 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "north": "intecrate:block/brown_mushroom/brown_mushroom_crate",
+    "south": "intecrate:block/brown_mushroom/brown_mushroom_crate",
+    "east": "intecrate:block/brown_mushroom/brown_mushroom_crate_side",
+    "west": "intecrate:block/brown_mushroom/brown_mushroom_crate_side",
+    "up": "intecrate:block/brown_mushroom/brown_mushroom_crate_top",
+    "down": "intecrate:block/brown_mushroom/brown_mushroom_crate_bottom"
+  }
+}

@@ -56,6 +56,10 @@ public class Intecrate {
             event.accept(Crates.APPLE_CRATE);
             event.accept(Crates.CARROT_CRATE);
             event.accept(Crates.BEETROOT_CRATE);
+            event.accept(Crates.POTATO_CRATE);
+            event.accept(Crates.POISONOUS_POTATO_CRATE);
+            event.accept(Crates.RED_MUSHROOM_CRATE);
+            event.accept(Crates.BROWN_MUSHROOM_CRATE);
         }
     }
 

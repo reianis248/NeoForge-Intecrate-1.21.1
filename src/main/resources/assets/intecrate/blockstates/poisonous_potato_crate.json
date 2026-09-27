@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "intecrate:block/poisonous_potato_crate"
+    },
+    "axis=z": {
+      "model": "intecrate:block/poisonous_potato_crate",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "intecrate:block/poisonous_potato_crate",
+      "x": 90,
+      "y": 90
+    }
+  }
+}
