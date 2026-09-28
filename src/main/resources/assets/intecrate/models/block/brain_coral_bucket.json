@@ -1,0 +1,11 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "north": "intecrate:block/bucket/brain_coral/brain_coral_bucket",
+    "south": "intecrate:block/bucket/brain_coral/brain_coral_bucket",
+    "east": "intecrate:block/bucket/brain_coral/brain_coral_bucket_side",
+    "west": "intecrate:block/bucket/brain_coral/brain_coral_bucket_side",
+    "up": "intecrate:block/bucket/brain_coral/brain_coral_bucket_top",
+    "down": "intecrate:block/bucket/brain_coral/brain_coral_bucket_bottom"
+  }
+}

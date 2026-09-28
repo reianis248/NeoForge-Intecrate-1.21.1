@@ -1,7 +1,9 @@
 package com.fukuda.intecrate;
 
-import com.fukuda.intecrate.common.block.Crates;
+import com.fukuda.intecrate.common.block.StorageBuckets;
+import com.fukuda.intecrate.common.block.StorageCrates;
 import com.fukuda.intecrate.common.item.IntecrateItems;
+import com.fukuda.intecrate.common.util.IntecrateCreativeModeTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -33,7 +35,9 @@ public class Intecrate {
         // Register the Deferred Register to the mod event bus so blocks get registered
 
         IntecrateItems.register(modEventBus);
-        Crates.register(modEventBus);
+        StorageCrates.register(modEventBus);
+        StorageBuckets.register(modEventBus);
+        IntecrateCreativeModeTabs.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
@@ -53,13 +57,6 @@ public class Intecrate {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            event.accept(Crates.APPLE_CRATE);
-            event.accept(Crates.CARROT_CRATE);
-            event.accept(Crates.BEETROOT_CRATE);
-            event.accept(Crates.POTATO_CRATE);
-            event.accept(Crates.POISONOUS_POTATO_CRATE);
-            event.accept(Crates.RED_MUSHROOM_CRATE);
-            event.accept(Crates.BROWN_MUSHROOM_CRATE);
         }
     }
 

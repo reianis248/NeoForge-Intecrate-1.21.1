@@ -1,5 +1,6 @@
 {
-  "itemGroup.examplemod": "Example Mod Tab",
+  "itemGroup.intecrate.intecrate": "Intecrate",
+
   "block.intecrate.apple_crate": "Apple Crate",
   "block.intecrate.carrot_crate": "Carrot Crate",
   "block.intecrate.beetroot_crate": "Beetroot Crate",
@@ -7,6 +8,9 @@
   "block.intecrate.poisonous_potato_crate": "Poisonous Potato Crate",
   "block.intecrate.red_mushroom_crate": "Red Mushroom Crate",
   "block.intecrate.brown_mushroom_crate": "Brown Mushroom Crate",
+
+  "block.intecrate.brain_coral_bucket": "Brain Coral Bucket",
+
 
   "item.examplemod.example_item": "Example Item"
 }

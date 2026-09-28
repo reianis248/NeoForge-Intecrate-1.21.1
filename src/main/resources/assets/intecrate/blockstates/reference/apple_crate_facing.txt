@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "intecrate:block/apple_crate"
+    },
+    "facing=south": {
+      "model": "intecrate:block/apple_crate",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "intecrate:block/apple_crate",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "intecrate:block/apple_crate",
+      "y": 90
+    }
+  }
+}
