@@ -1,0 +1,15 @@
+{
+  "priority": 1,
+  "title": {
+    "text": {
+      "translate": "section.intecrate.crates"
+    },
+    "color": "#f1b685",
+    "background": "#736050",
+    "orientation": "center"
+  },
+  "banner": {
+    "animation_mode": "play_on_hover",
+    "color": "#f1b685"
+  }
+}

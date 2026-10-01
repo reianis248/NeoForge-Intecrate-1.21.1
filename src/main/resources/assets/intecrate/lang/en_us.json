@@ -1,5 +1,8 @@
 {
-  "itemGroup.intecrate.intecrate": "Intecrate",
+  "itemGroup.intecrate": "Intecrate",
+  "section.intecrate.crates": "Crates",
+  "section.intecrate.baskets": "Baskets",
+  "section.intecrate.buckets": "Buckets",
 
   "block.intecrate.apple_crate": "Apple Crate",
   "block.intecrate.carrot_crate": "Carrot Crate",
@@ -9,7 +12,17 @@
   "block.intecrate.red_mushroom_crate": "Red Mushroom Crate",
   "block.intecrate.brown_mushroom_crate": "Brown Mushroom Crate",
 
+  "block.intecrate.allium_basket": "Allium Basket",
+  "block.intecrate.cornflower_basket": "Cornflower Basket",
+  "block.intecrate.dandelion_basket": "Dandelion Basket",
+  "block.intecrate.poppy_basket": "Poppy Basket",
+  "block.intecrate.sweet_berry_basket": "Sweet Berry Basket",
+
   "block.intecrate.brain_coral_bucket": "Brain Coral Bucket",
+  "block.intecrate.bubble_coral_bucket": "Bubble Coral Bucket",
+  "block.intecrate.fire_coral_bucket": "Fire Coral Bucket",
+  "block.intecrate.horn_coral_bucket": "Horn Coral Bucket",
+  "block.intecrate.tube_coral_bucket": "Tube Coral Bucket",
 
 
   "item.examplemod.example_item": "Example Item"

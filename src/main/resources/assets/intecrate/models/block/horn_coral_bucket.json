@@ -5,7 +5,7 @@
     "south": "intecrate:block/bucket/bucket",
     "east": "intecrate:block/bucket/bucket_side",
     "west": "intecrate:block/bucket/bucket_side",
-    "up": "intecrate:block/bucket/brain_coral_bucket_top",
+    "up": "intecrate:block/bucket/horn_coral_bucket_top",
     "down": "intecrate:block/bucket/bucket_bottom"
   }
 }

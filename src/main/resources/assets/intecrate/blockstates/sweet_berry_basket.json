@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "intecrate:block/sweet_berry_basket"
+    },
+    "axis=z": {
+      "model": "intecrate:block/sweet_berry_basket",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "intecrate:block/sweet_berry_basket",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "intecrate:block/cornflower_basket"
+    },
+    "axis=z": {
+      "model": "intecrate:block/cornflower_basket",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "intecrate:block/cornflower_basket",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

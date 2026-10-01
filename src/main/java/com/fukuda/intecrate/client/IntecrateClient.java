@@ -1,5 +1,8 @@
-package com.fukuda.intecrate;
+package com.fukuda.intecrate.client;
 
+import com.fukuda.intecrate.Intecrate;
+import com.fukuda.intecrate.common.util.IntecrateCreativeModeTabs;
+import de.Roboter007.moderntabs.ModernTabs;
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -27,5 +30,11 @@ public class IntecrateClient {
         // Some client setup code
         Intecrate.LOGGER.info("HELLO FROM CLIENT SETUP");
         Intecrate.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+        event.enqueueWork(() -> {
+            ModernTabs.TabDesign tabDesign = new ModernTabs.TabDesign()
+                    .sectionsEnabled(true); // Enables custom sections from assets
+
+            ModernTabs.configureTab(IntecrateCreativeModeTabs.INTECRATE.get(), tabDesign);
+        });
     }
 }

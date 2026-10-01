@@ -28,6 +28,10 @@ sourceSets.main.resources {
 
 repositories {
     // Add here additional repositories if required by some of the dependencies below.
+    maven {
+        name = "Jitpack"
+        url 'https://jitpack.io'
+    }
 }
 
 base {
@@ -137,6 +141,10 @@ dependencies {
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
+
+    // Required on NeoForge
+    // contains the NeoForge specific module including the common module
+    implementation "com.github.Roboter007.ModernTabs:ModernTabs-neoforge:${rootProject.moderntabs_version}"
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

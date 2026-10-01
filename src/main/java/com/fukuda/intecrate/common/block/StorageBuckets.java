@@ -2,13 +2,10 @@ package com.fukuda.intecrate.common.block;
 
 import com.fukuda.intecrate.Intecrate;
 import com.fukuda.intecrate.common.block.noted.INTFacingBlock;
-import com.fukuda.intecrate.common.block.noted.INTFlammableRotatableFacingBlock;
-import com.fukuda.intecrate.common.block.noted.INTRotatableFacingBlock;
 import com.fukuda.intecrate.common.item.IntecrateItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
@@ -23,6 +20,34 @@ public class StorageBuckets {
 
     public static final DeferredBlock<Block> BRAIN_CORAL_BUCKET = registerStorageBlock(
             "brain_coral_bucket",
+            () -> new INTFacingBlock(BlockBehaviour.Properties.of()
+                    .sound(SoundType.METAL)
+                    .mapColor(MapColor.METAL)
+                    .strength(3.48f, 1.48f
+                    )));
+    public static final DeferredBlock<Block> BUBBLE_CORAL_BUCKET = registerStorageBlock(
+            "bubble_coral_bucket",
+            () -> new INTFacingBlock(BlockBehaviour.Properties.of()
+                    .sound(SoundType.METAL)
+                    .mapColor(MapColor.METAL)
+                    .strength(3.48f, 1.48f
+                    )));
+    public static final DeferredBlock<Block> FIRE_CORAL_BUCKET = registerStorageBlock(
+            "fire_coral_bucket",
+            () -> new INTFacingBlock(BlockBehaviour.Properties.of()
+                    .sound(SoundType.METAL)
+                    .mapColor(MapColor.METAL)
+                    .strength(3.48f, 1.48f
+                    )));
+    public static final DeferredBlock<Block> HORN_CORAL_BUCKET = registerStorageBlock(
+            "horn_coral_bucket",
+            () -> new INTFacingBlock(BlockBehaviour.Properties.of()
+                    .sound(SoundType.METAL)
+                    .mapColor(MapColor.METAL)
+                    .strength(3.48f, 1.48f
+                    )));
+    public static final DeferredBlock<Block> TUBE_CORAL_BUCKET = registerStorageBlock(
+            "tube_coral_bucket",
             () -> new INTFacingBlock(BlockBehaviour.Properties.of()
                     .sound(SoundType.METAL)
                     .mapColor(MapColor.METAL)

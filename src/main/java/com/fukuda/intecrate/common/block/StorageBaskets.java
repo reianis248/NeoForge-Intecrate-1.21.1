@@ -1,6 +1,7 @@
 package com.fukuda.intecrate.common.block;
 
 import com.fukuda.intecrate.Intecrate;
+import com.fukuda.intecrate.common.block.noted.INTFacingBlock;
 import com.fukuda.intecrate.common.block.noted.INTFlammableRotatedPillarBlock;
 import com.fukuda.intecrate.common.item.IntecrateItems;
 import net.minecraft.world.item.BlockItem;
@@ -16,74 +17,58 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
-public class StorageCrates {
-    public static final DeferredRegister.Blocks STORECRATE = DeferredRegister.createBlocks(Intecrate.MOD_ID);
+public class StorageBaskets {
+    public static final DeferredRegister.Blocks STOREBASKET = DeferredRegister.createBlocks(Intecrate.MOD_ID);
 
-    public static final DeferredBlock<Block> APPLE_CRATE = registerStorageBlock(
-            "apple_crate",
+    public static final DeferredBlock<Block> ALLIUM_BASKET = registerStorageBlock(
+            "allium_basket",
             () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()
-                    .sound(SoundType.WOOD)
+                    .sound(SoundType.SCAFFOLDING)
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
-                    .strength(2.5f)
-            ));
-    public static final DeferredBlock<Block> CARROT_CRATE = registerStorageBlock(
-            "carrot_crate",
-            () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()
-                    .sound(SoundType.WOOD)
-                    .mapColor(MapColor.WOOD)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .strength(2.5f)
-            ));
-    public static final DeferredBlock<Block> BEETROOT_CRATE = registerStorageBlock(
-            "beetroot_crate",
-            () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()
-                    .sound(SoundType.WOOD)
-                    .mapColor(MapColor.WOOD)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .strength(2.5f)
+                    .strength(1.98f)
                     .ignitedByLava()
             ));
-    public static final DeferredBlock<Block> POTATO_CRATE = registerStorageBlock(
-            "potato_crate",
+    public static final DeferredBlock<Block> CORNFLOWER_BASKET = registerStorageBlock(
+            "cornflower_basket",
             () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()
-                    .sound(SoundType.WOOD)
+                    .sound(SoundType.SCAFFOLDING)
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
-                    .strength(2.5f)
+                    .strength(1.98f)
                     .ignitedByLava()
             ));
-    public static final DeferredBlock<Block> POISONOUS_POTATO_CRATE = registerStorageBlock(
-            "poisonous_potato_crate",
+    public static final DeferredBlock<Block> DANDELION_BASKET = registerStorageBlock(
+            "dandelion_basket",
             () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()
-                    .sound(SoundType.WOOD)
+                    .sound(SoundType.SCAFFOLDING)
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
-                    .strength(2.5f)
+                    .strength(1.98f)
                     .ignitedByLava()
             ));
-    public static final DeferredBlock<Block> RED_MUSHROOM_CRATE = registerStorageBlock(
-            "red_mushroom_crate",
+    public static final DeferredBlock<Block> POPPY_BASKET = registerStorageBlock(
+            "poppy_basket",
             () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()
-                    .sound(SoundType.WOOD)
+                    .sound(SoundType.SCAFFOLDING)
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
-                    .strength(2.5f)
+                    .strength(1.98f)
                     .ignitedByLava()
             ));
-    public static final DeferredBlock<Block> BROWN_MUSHROOM_CRATE = registerStorageBlock(
-            "brown_mushroom_crate",
+    public static final DeferredBlock<Block> SWEET_BERRY_BASKET = registerStorageBlock(
+            "sweet_berry_basket",
             () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()
-                    .sound(SoundType.WOOD)
+                    .sound(SoundType.SCAFFOLDING)
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
-                    .strength(2.5f)
+                    .strength(1.98f)
                     .ignitedByLava()
             ));
 
 
     private static <T extends Block> DeferredBlock<T> registerStorageBlock(String name, Supplier<T> block) {
-        DeferredBlock<T> toReturn = STORECRATE.register(name, block);
+        DeferredBlock<T> toReturn = STOREBASKET.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;
     }
@@ -93,6 +78,6 @@ public class StorageCrates {
     }
 
     public static void register(IEventBus eventBus) {
-        STORECRATE.register(eventBus);
+        STOREBASKET.register(eventBus);
     }
 }

@@ -1,0 +1,14 @@
+{
+  "priority": 1,
+  "title": {
+    "text": {
+      "translate": "section.intecrate.baskets"
+    },
+    "color": "#FFFFFF",
+    "background": "#AA000000",
+    "orientation": "center"
+  },
+  "banner": {
+    "color": "#5A8B42"
+  }
+}
