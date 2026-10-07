@@ -1,0 +1,11 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "north": "intecrate:block/barrel/salmon/salmon_barrel",
+    "south": "intecrate:block/barrel/fish_barrel_back",
+    "east": "intecrate:block/barrel/fish_barrel_side",
+    "west": "intecrate:block/barrel/fish_barrel_side",
+    "up": "intecrate:block/barrel/salmon/salmon_barrel_top",
+    "down": "intecrate:block/barrel/fish_barrel_bottom"
+  }
+}

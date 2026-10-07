@@ -1,9 +1,7 @@
 package com.fukuda.intecrate.common.util;
 
 import com.fukuda.intecrate.Intecrate;
-import com.fukuda.intecrate.common.block.StorageBaskets;
-import com.fukuda.intecrate.common.block.StorageBuckets;
-import com.fukuda.intecrate.common.block.StorageCrates;
+import com.fukuda.intecrate.common.block.*;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -11,9 +9,6 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
-import java.util.List;
-import java.util.function.Supplier;
 
 public class IntecrateCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -25,6 +20,7 @@ public class IntecrateCreativeModeTabs {
                     .title(Component.translatable("itemGroup.intecrate"))
                     .icon(() -> new ItemStack(StorageCrates.APPLE_CRATE.get()))
                     .displayItems((parameters, output) -> {
+                        output.accept(StorageCrates.CRATE.get());
                         output.accept(StorageCrates.APPLE_CRATE.get());
                         output.accept(StorageCrates.CARROT_CRATE.get());
                         output.accept(StorageCrates.BEETROOT_CRATE.get());
@@ -33,6 +29,7 @@ public class IntecrateCreativeModeTabs {
                         output.accept(StorageCrates.RED_MUSHROOM_CRATE.get());
                         output.accept(StorageCrates.BROWN_MUSHROOM_CRATE.get());
 
+                        output.accept(StorageBaskets.BASKET.get());
                         output.accept(StorageBaskets.ALLIUM_BASKET.get());
                         output.accept(StorageBaskets.CORNFLOWER_BASKET.get());
                         output.accept(StorageBaskets.DANDELION_BASKET.get());
@@ -44,6 +41,17 @@ public class IntecrateCreativeModeTabs {
                         output.accept(StorageBuckets.FIRE_CORAL_BUCKET.get());
                         output.accept(StorageBuckets.HORN_CORAL_BUCKET.get());
                         output.accept(StorageBuckets.TUBE_CORAL_BUCKET.get());
+
+                        output.accept(StorageBarrels.FISH_BARREL.get());
+                        output.accept(StorageBarrels.COD_BARREL.get());
+                        output.accept(StorageBarrels.PUFFERFISH_BARREL.get());
+                        output.accept(StorageBarrels.SALMON_BARREL.get());
+                        output.accept(StorageBarrels.TROPICAL_FISH_BARREL.get());
+
+                        output.accept(StorageBags.WHEAT_SEED_BAG.get());
+                        output.accept(StorageBags.PUMPKIN_SEED_BAG.get());
+                        output.accept(StorageBags.MELON_SEED_BAG.get());
+                        output.accept(StorageBags.BEETROOT_SEED_BAG.get());
                     })
                     .build());
 

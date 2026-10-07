@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "intecrate:block/fish_barrel"
+    },
+    "axis=z": {
+      "model": "intecrate:block/fish_barrel",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "intecrate:block/fish_barrel",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

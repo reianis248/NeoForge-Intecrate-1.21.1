@@ -1,0 +1,11 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "north": "intecrate:block/bag/melon_seed/melon_seed_bag_front",
+    "south": "intecrate:block/bag/bag_back",
+    "east": "intecrate:block/bag/bag_side",
+    "west": "intecrate:block/bag/bag_side",
+    "up": "intecrate:block/bag/melon_seed/melon_seed_bag_top",
+    "down": "intecrate:block/bag/bag_bottom"
+  }
+}

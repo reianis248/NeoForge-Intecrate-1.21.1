@@ -19,6 +19,15 @@ import java.util.function.Supplier;
 public class StorageCrates {
     public static final DeferredRegister.Blocks STORECRATE = DeferredRegister.createBlocks(Intecrate.MOD_ID);
 
+    public static final DeferredBlock<Block> CRATE = registerStorageBlock(
+            "crate",
+            () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()
+                    .sound(SoundType.WOOD)
+                    .mapColor(MapColor.WOOD)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(2.5f)
+                    .noOcclusion()
+            ));
     public static final DeferredBlock<Block> APPLE_CRATE = registerStorageBlock(
             "apple_crate",
             () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()

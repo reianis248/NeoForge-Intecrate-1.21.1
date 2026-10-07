@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "intecrate:block/basket"
+    },
+    "axis=z": {
+      "model": "intecrate:block/basket",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "intecrate:block/basket",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

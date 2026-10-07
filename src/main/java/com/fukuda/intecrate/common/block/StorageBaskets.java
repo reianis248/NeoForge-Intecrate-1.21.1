@@ -20,6 +20,15 @@ import java.util.function.Supplier;
 public class StorageBaskets {
     public static final DeferredRegister.Blocks STOREBASKET = DeferredRegister.createBlocks(Intecrate.MOD_ID);
 
+    public static final DeferredBlock<Block> BASKET = registerStorageBlock(
+            "basket",
+            () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()
+                    .sound(SoundType.SCAFFOLDING)
+                    .mapColor(MapColor.WOOD)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(1.98f)
+                    .ignitedByLava()
+            ));
     public static final DeferredBlock<Block> ALLIUM_BASKET = registerStorageBlock(
             "allium_basket",
             () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()

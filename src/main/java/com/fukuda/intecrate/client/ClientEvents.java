@@ -1,9 +1,7 @@
 package com.fukuda.intecrate.client;
 
 import com.fukuda.intecrate.Intecrate;
-import com.fukuda.intecrate.common.block.StorageBaskets;
-import com.fukuda.intecrate.common.block.StorageBuckets;
-import com.fukuda.intecrate.common.block.StorageCrates;
+import com.fukuda.intecrate.common.block.*;
 import com.fukuda.intecrate.common.util.IntecrateCreativeModeTabs;
 
 import de.Roboter007.moderntabs.ModernTabs;
@@ -30,8 +28,11 @@ public class ClientEvents {
             ResourceLocation cratesSection = ResourceLocation.fromNamespaceAndPath(Intecrate.MOD_ID, "crates");
             ResourceLocation bucketsSection = ResourceLocation.fromNamespaceAndPath(Intecrate.MOD_ID, "buckets");
             ResourceLocation basketsSection = ResourceLocation.fromNamespaceAndPath(Intecrate.MOD_ID, "baskets");
+            ResourceLocation barrelsSection = ResourceLocation.fromNamespaceAndPath(Intecrate.MOD_ID, "barrels");
+            ResourceLocation bagsSection = ResourceLocation.fromNamespaceAndPath(Intecrate.MOD_ID, "bags");
 
             // Crates
+            SectionedItems.addItem(cratesSection, StorageCrates.CRATE.get());
             SectionedItems.addItem(cratesSection, StorageCrates.APPLE_CRATE.get());
             SectionedItems.addItem(cratesSection, StorageCrates.CARROT_CRATE.get());
             SectionedItems.addItem(cratesSection, StorageCrates.BEETROOT_CRATE.get());
@@ -41,6 +42,7 @@ public class ClientEvents {
             SectionedItems.addItem(cratesSection, StorageCrates.BROWN_MUSHROOM_CRATE.get());
 
             // Baskets
+            SectionedItems.addItem(basketsSection, StorageBaskets.BASKET.get());
             SectionedItems.addItem(basketsSection, StorageBaskets.ALLIUM_BASKET.get());
             SectionedItems.addItem(basketsSection, StorageBaskets.CORNFLOWER_BASKET.get());
             SectionedItems.addItem(basketsSection, StorageBaskets.DANDELION_BASKET.get());
@@ -53,6 +55,19 @@ public class ClientEvents {
             SectionedItems.addItem(bucketsSection, StorageBuckets.FIRE_CORAL_BUCKET.get());
             SectionedItems.addItem(bucketsSection, StorageBuckets.HORN_CORAL_BUCKET.get());
             SectionedItems.addItem(bucketsSection, StorageBuckets.TUBE_CORAL_BUCKET.get());
+
+            // Barrels
+            SectionedItems.addItem(barrelsSection, StorageBarrels.FISH_BARREL.get());
+            SectionedItems.addItem(barrelsSection, StorageBarrels.COD_BARREL.get());
+            SectionedItems.addItem(barrelsSection, StorageBarrels.PUFFERFISH_BARREL.get());
+            SectionedItems.addItem(barrelsSection, StorageBarrels.SALMON_BARREL.get());
+            SectionedItems.addItem(barrelsSection, StorageBarrels.TROPICAL_FISH_BARREL.get());
+
+            // Bags
+            SectionedItems.addItem(bagsSection, StorageBags.WHEAT_SEED_BAG.get());
+            SectionedItems.addItem(bagsSection, StorageBags.PUMPKIN_SEED_BAG.get());
+            SectionedItems.addItem(bagsSection, StorageBags.MELON_SEED_BAG.get());
+            SectionedItems.addItem(bagsSection, StorageBags.BEETROOT_SEED_BAG.get());
         });
     }
 }

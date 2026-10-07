@@ -1,9 +1,13 @@
 package com.fukuda.intecrate.client;
 
 import com.fukuda.intecrate.Intecrate;
+import com.fukuda.intecrate.common.block.StorageBarrels;
+import com.fukuda.intecrate.common.block.StorageCrates;
 import com.fukuda.intecrate.common.util.IntecrateCreativeModeTabs;
 import de.Roboter007.moderntabs.ModernTabs;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -32,9 +36,12 @@ public class IntecrateClient {
         Intecrate.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
         event.enqueueWork(() -> {
             ModernTabs.TabDesign tabDesign = new ModernTabs.TabDesign()
-                    .sectionsEnabled(true); // Enables custom sections from assets
+                    .sectionsEnabled(true);
 
             ModernTabs.configureTab(IntecrateCreativeModeTabs.INTECRATE.get(), tabDesign);
+
+            ItemBlockRenderTypes.setRenderLayer(StorageCrates.CRATE.get(), RenderType.cutoutMipped());
+            ItemBlockRenderTypes.setRenderLayer(StorageBarrels.FISH_BARREL.get(), RenderType.cutoutMipped());
         });
     }
 }

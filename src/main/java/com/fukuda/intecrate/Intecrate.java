@@ -1,8 +1,6 @@
 package com.fukuda.intecrate;
 
-import com.fukuda.intecrate.common.block.StorageBaskets;
-import com.fukuda.intecrate.common.block.StorageBuckets;
-import com.fukuda.intecrate.common.block.StorageCrates;
+import com.fukuda.intecrate.common.block.*;
 import com.fukuda.intecrate.common.item.IntecrateItems;
 import com.fukuda.intecrate.common.util.IntecrateCreativeModeTabs;
 import org.slf4j.Logger;
@@ -39,6 +37,8 @@ public class Intecrate {
         StorageCrates.register(modEventBus);
         StorageBuckets.register(modEventBus);
         StorageBaskets.register(modEventBus);
+        StorageBarrels.register(modEventBus);
+        StorageBags.register(modEventBus);
         IntecrateCreativeModeTabs.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
