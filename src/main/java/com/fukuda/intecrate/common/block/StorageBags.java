@@ -22,21 +22,21 @@ public class StorageBags {
             "wheat_seed_bag",
             () -> new INTFacingBlock(BlockBehaviour.Properties.of()
                     .strength(1.8f)
-                    .sound(SoundType.SNOW)
+                    .sound(SoundType.WOOL)
                     .mapColor(MapColor.COLOR_BROWN)
             ));
     public static final DeferredBlock<Block> PUMPKIN_SEED_BAG = registerStorageBlock(
             "pumpkin_seed_bag",
             () -> new INTFacingBlock(BlockBehaviour.Properties.of()
                     .strength(1.8f)
-                    .sound(SoundType.SNOW)
+                    .sound(SoundType.WOOL)
                     .mapColor(MapColor.COLOR_BROWN)
             ));
     public static final DeferredBlock<Block> MELON_SEED_BAG = registerStorageBlock(
             "melon_seed_bag",
             () -> new INTFacingBlock(BlockBehaviour.Properties.of()
                     .strength(1.8f)
-                    .sound(SoundType.SNOW)
+                    .sound(SoundType.WOOL)
                     .mapColor(MapColor.COLOR_BROWN)
             ));
 
@@ -44,7 +44,7 @@ public class StorageBags {
             "beetroot_seed_bag",
             () -> new INTFacingBlock(BlockBehaviour.Properties.of()
                     .strength(1.8f)
-                    .sound(SoundType.SNOW)
+                    .sound(SoundType.WOOL)
                     .mapColor(MapColor.COLOR_BROWN)
             ));
 
