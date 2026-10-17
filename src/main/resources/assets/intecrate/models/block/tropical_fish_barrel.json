@@ -6,6 +6,7 @@
     "east": "intecrate:block/barrel/fish_barrel_side",
     "west": "intecrate:block/barrel/fish_barrel_side",
     "up": "intecrate:block/barrel/tropical_fish/tropical_fish_barrel_top",
-    "down": "intecrate:block/barrel/fish_barrel_bottom"
+    "down": "intecrate:block/barrel/fish_barrel_bottom",
+    "particle": "intecrate:block/barrel/fish_barrel_side"
   }
 }

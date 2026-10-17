@@ -1,7 +1,7 @@
 package com.fukuda.intecrate.common.block;
 
 import com.fukuda.intecrate.Intecrate;
-import com.fukuda.intecrate.common.block.noted.INTFacingBlock;
+import com.fukuda.intecrate.common.block.noted.extended.IntecrateFlammableFacingBlock;
 import com.fukuda.intecrate.common.item.IntecrateItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -20,21 +20,21 @@ public class StorageBags {
 
     public static final DeferredBlock<Block> WHEAT_SEED_BAG = registerStorageBlock(
             "wheat_seed_bag",
-            () -> new INTFacingBlock(BlockBehaviour.Properties.of()
+            () -> new IntecrateFlammableFacingBlock(BlockBehaviour.Properties.of()
                     .strength(1.8f)
                     .sound(SoundType.WOOL)
                     .mapColor(MapColor.COLOR_BROWN)
             ));
     public static final DeferredBlock<Block> PUMPKIN_SEED_BAG = registerStorageBlock(
             "pumpkin_seed_bag",
-            () -> new INTFacingBlock(BlockBehaviour.Properties.of()
+            () -> new IntecrateFlammableFacingBlock(BlockBehaviour.Properties.of()
                     .strength(1.8f)
                     .sound(SoundType.WOOL)
                     .mapColor(MapColor.COLOR_BROWN)
             ));
     public static final DeferredBlock<Block> MELON_SEED_BAG = registerStorageBlock(
             "melon_seed_bag",
-            () -> new INTFacingBlock(BlockBehaviour.Properties.of()
+            () -> new IntecrateFlammableFacingBlock(BlockBehaviour.Properties.of()
                     .strength(1.8f)
                     .sound(SoundType.WOOL)
                     .mapColor(MapColor.COLOR_BROWN)
@@ -42,7 +42,7 @@ public class StorageBags {
 
     public static final DeferredBlock<Block> BEETROOT_SEED_BAG = registerStorageBlock(
             "beetroot_seed_bag",
-            () -> new INTFacingBlock(BlockBehaviour.Properties.of()
+            () -> new IntecrateFlammableFacingBlock(BlockBehaviour.Properties.of()
                     .strength(1.8f)
                     .sound(SoundType.WOOL)
                     .mapColor(MapColor.COLOR_BROWN)

@@ -1,7 +1,8 @@
 package com.fukuda.intecrate.common.block;
 
 import com.fukuda.intecrate.Intecrate;
-import com.fukuda.intecrate.common.block.noted.INTFlammableRotatedPillarBlock;
+import com.fukuda.intecrate.common.block.noted.extended.IntecrateSpecialFlammableMultiFaceBlock;
+import com.fukuda.intecrate.common.block.noted.extended.IntecrateSpecialMultiFaceBlock;
 import com.fukuda.intecrate.common.item.IntecrateItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -21,7 +22,7 @@ public class StorageCrates {
 
     public static final DeferredBlock<Block> CRATE = registerStorageBlock(
             "crate",
-            () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(BlockBehaviour.Properties.of()
                     .sound(SoundType.WOOD)
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -30,7 +31,7 @@ public class StorageCrates {
             ));
     public static final DeferredBlock<Block> APPLE_CRATE = registerStorageBlock(
             "apple_crate",
-            () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(BlockBehaviour.Properties.of()
                     .sound(SoundType.WOOD)
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -38,7 +39,7 @@ public class StorageCrates {
             ));
     public static final DeferredBlock<Block> CARROT_CRATE = registerStorageBlock(
             "carrot_crate",
-            () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(BlockBehaviour.Properties.of()
                     .sound(SoundType.WOOD)
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -46,7 +47,7 @@ public class StorageCrates {
             ));
     public static final DeferredBlock<Block> BEETROOT_CRATE = registerStorageBlock(
             "beetroot_crate",
-            () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(BlockBehaviour.Properties.of()
                     .sound(SoundType.WOOD)
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -55,7 +56,7 @@ public class StorageCrates {
             ));
     public static final DeferredBlock<Block> POTATO_CRATE = registerStorageBlock(
             "potato_crate",
-            () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(BlockBehaviour.Properties.of()
                     .sound(SoundType.WOOD)
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -64,7 +65,7 @@ public class StorageCrates {
             ));
     public static final DeferredBlock<Block> POISONOUS_POTATO_CRATE = registerStorageBlock(
             "poisonous_potato_crate",
-            () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(BlockBehaviour.Properties.of()
                     .sound(SoundType.WOOD)
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -73,7 +74,7 @@ public class StorageCrates {
             ));
     public static final DeferredBlock<Block> RED_MUSHROOM_CRATE = registerStorageBlock(
             "red_mushroom_crate",
-            () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(BlockBehaviour.Properties.of()
                     .sound(SoundType.WOOD)
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -82,7 +83,7 @@ public class StorageCrates {
             ));
     public static final DeferredBlock<Block> BROWN_MUSHROOM_CRATE = registerStorageBlock(
             "brown_mushroom_crate",
-            () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(BlockBehaviour.Properties.of()
                     .sound(SoundType.WOOD)
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)

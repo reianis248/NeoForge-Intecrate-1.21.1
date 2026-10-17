@@ -6,6 +6,7 @@
     "east": "intecrate:block/beetroot/beetroot_crate_side",
     "west": "intecrate:block/beetroot/beetroot_crate_side",
     "up": "intecrate:block/beetroot/beetroot_crate_top",
-    "down": "intecrate:block/beetroot/beetroot_crate_bottom"
+    "down": "intecrate:block/beetroot/beetroot_crate_bottom",
+    "particle": "intecrate:block/beetroot/beetroot_crate_side"
   }
 }

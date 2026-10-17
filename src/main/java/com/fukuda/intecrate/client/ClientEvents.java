@@ -48,6 +48,8 @@ public class ClientEvents {
             SectionedItems.addItem(basketsSection, StorageBaskets.DANDELION_BASKET.get());
             SectionedItems.addItem(basketsSection, StorageBaskets.POPPY_BASKET.get());
             SectionedItems.addItem(basketsSection, StorageBaskets.SWEET_BERRY_BASKET.get());
+            SectionedItems.addItem(basketsSection, StorageBaskets.OXEYE_DAISY_BASKET.get());
+            SectionedItems.addItem(basketsSection, StorageBaskets.AZURE_BLUET_BASKET.get());
 
             // Buckets
             SectionedItems.addItem(bucketsSection, StorageBuckets.BRAIN_CORAL_BUCKET.get());

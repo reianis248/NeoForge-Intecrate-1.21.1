@@ -7,13 +7,13 @@
   "section.intecrate.bags": "Bags",
 
   "block.intecrate.crate": "Crate",
-  "block.intecrate.apple_crate": "Apple Crate",
-  "block.intecrate.carrot_crate": "Carrot Crate",
-  "block.intecrate.beetroot_crate": "Beetroot Crate",
-  "block.intecrate.potato_crate": "Potato Crate",
-  "block.intecrate.poisonous_potato_crate": "Poisonous Potato Crate",
+  "block.intecrate.apple_crate": "Crate of Apples",
+  "block.intecrate.carrot_crate": "Crate of Carrots",
+  "block.intecrate.beetroot_crate": "Crate of Beetroots",
+  "block.intecrate.potato_crate": "Crate of Potatoes",
+  "block.intecrate.poisonous_potato_crate": "Crate of Poisonous Potatoes",
   "block.intecrate.red_mushroom_crate": "Red Mushroom Crate",
-  "block.intecrate.brown_mushroom_crate": "Brown Mushroom Crate",
+  "block.intecrate.brown_mushroom_crate": "Crate of Brown Mushrooms",
 
   "block.intecrate.basket": "Basket",
   "block.intecrate.allium_basket": "Allium Basket",
@@ -21,6 +21,8 @@
   "block.intecrate.dandelion_basket": "Dandelion Basket",
   "block.intecrate.poppy_basket": "Poppy Basket",
   "block.intecrate.sweet_berry_basket": "Sweet Berry Basket",
+  "block.intecrate.oxeye_daisy_basket": "Oxeye Daisy Basket",
+  "block.intecrate.azure_bluet_basket": "Azure Bluet Basket",
 
   "block.intecrate.brain_coral_bucket": "Bucket of Brain Coral",
   "block.intecrate.bubble_coral_bucket": "Bucket of Bubble Coral",
@@ -34,10 +36,10 @@
   "block.intecrate.salmon_barrel": "Barrel of Salmon",
   "block.intecrate.tropical_fish_barrel": "Barrel of Tropical Fish",
 
-  "block.intecrate.wheat_seed_bag": "Barrel of Wheat Seeds",
-  "block.intecrate.pumpkin_seed_bag": "Barrel of Pumpkin Seeds",
-  "block.intecrate.melon_seed_bag": "Barrel of Melon Seeds",
-  "block.intecrate.beetroot_seed_bag": "Barrel of Beetroot Seeds",
+  "block.intecrate.wheat_seed_bag": "Bag of Wheat Seeds",
+  "block.intecrate.pumpkin_seed_bag": "Bag of Pumpkin Seeds",
+  "block.intecrate.melon_seed_bag": "Bag of Melon Seeds",
+  "block.intecrate.beetroot_seed_bag": "Bag of Beetroot Seeds",
 
 
   "item.examplemod.example_item": "Example Item"

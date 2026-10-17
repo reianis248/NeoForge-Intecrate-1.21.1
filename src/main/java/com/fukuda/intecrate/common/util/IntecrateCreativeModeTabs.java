@@ -35,6 +35,8 @@ public class IntecrateCreativeModeTabs {
                         output.accept(StorageBaskets.DANDELION_BASKET.get());
                         output.accept(StorageBaskets.POPPY_BASKET.get());
                         output.accept(StorageBaskets.SWEET_BERRY_BASKET.get());
+                        output.accept(StorageBaskets.OXEYE_DAISY_BASKET.get());
+                        output.accept(StorageBaskets.AZURE_BLUET_BASKET.get());
 
                         output.accept(StorageBuckets.BRAIN_CORAL_BUCKET.get());
                         output.accept(StorageBuckets.BUBBLE_CORAL_BUCKET.get());

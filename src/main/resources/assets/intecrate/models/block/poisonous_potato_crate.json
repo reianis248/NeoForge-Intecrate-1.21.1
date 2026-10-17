@@ -6,6 +6,7 @@
     "east": "intecrate:block/poisonous_potato/poisonous_potato_crate_side",
     "west": "intecrate:block/poisonous_potato/poisonous_potato_crate_side",
     "up": "intecrate:block/poisonous_potato/poisonous_potato_crate_top",
-    "down": "intecrate:block/poisonous_potato/poisonous_potato_crate_bottom"
+    "down": "intecrate:block/poisonous_potato/poisonous_potato_crate_bottom",
+    "particle": "intecrate:block/poisonous_potato/poisonous_potato_crate_side"
   }
 }

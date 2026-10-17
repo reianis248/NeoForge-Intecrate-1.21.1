@@ -6,6 +6,7 @@
     "east": "intecrate:block/bucket/bucket_side",
     "west": "intecrate:block/bucket/bucket_side",
     "up": "intecrate:block/bucket/horn_coral_bucket_top",
-    "down": "intecrate:block/bucket/bucket_bottom"
+    "down": "intecrate:block/bucket/bucket_bottom",
+    "particle:": "intecrate:block/bucket/bucket_side"
   }
 }

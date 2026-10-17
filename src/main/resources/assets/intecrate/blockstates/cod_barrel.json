@@ -1,15 +1,56 @@
 {
   "variants": {
-    "axis=y": {
+    "face=floor,facing=north": {
       "model": "intecrate:block/cod_barrel"
     },
-    "axis=z": {
+    "face=floor,facing=east": {
+      "model": "intecrate:block/cod_barrel",
+      "y": 90
+    },
+    "face=floor,facing=south": {
+      "model": "intecrate:block/cod_barrel",
+      "y": 180
+    },
+    "face=floor,facing=west": {
+      "model": "intecrate:block/cod_barrel",
+      "y": 270
+    },
+    "face=wall,facing=north": {
       "model": "intecrate:block/cod_barrel",
       "x": 90
     },
-    "axis=x": {
+    "face=wall,facing=east": {
       "model": "intecrate:block/cod_barrel",
       "x": 90,
+      "y": 90
+    },
+    "face=wall,facing=south": {
+      "model": "intecrate:block/cod_barrel",
+      "x": 90,
+      "y": 180
+    },
+    "face=wall,facing=west": {
+      "model": "intecrate:block/cod_barrel",
+      "x": 90,
+      "y": 270
+    },
+    "face=ceiling,facing=north": {
+      "model": "intecrate:block/cod_barrel",
+      "x": 180,
+      "y": 180
+    },
+    "face=ceiling,facing=east": {
+      "model": "intecrate:block/cod_barrel",
+      "x": 180,
+      "y": 270
+    },
+    "face=ceiling,facing=south": {
+      "model": "intecrate:block/cod_barrel",
+      "x": 180
+    },
+    "face=ceiling,facing=west": {
+      "model": "intecrate:block/cod_barrel",
+      "x": 180,
       "y": 90
     }
   }

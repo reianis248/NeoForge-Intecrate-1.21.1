@@ -6,6 +6,7 @@
     "east": "intecrate:block/red_mushroom/red_mushroom_crate_side",
     "west": "intecrate:block/red_mushroom/red_mushroom_crate_side",
     "up": "intecrate:block/red_mushroom/red_mushroom_crate_top",
-    "down": "intecrate:block/red_mushroom/red_mushroom_crate_bottom"
+    "down": "intecrate:block/red_mushroom/red_mushroom_crate_bottom",
+    "particle": "intecrate:block/red_mushroom/red_mushroom_crate_side"
   }
 }

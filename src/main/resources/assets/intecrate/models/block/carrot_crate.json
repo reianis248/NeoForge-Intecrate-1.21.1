@@ -6,6 +6,7 @@
     "east": "intecrate:block/carrot/carrot_crate_side",
     "west": "intecrate:block/carrot/carrot_crate_side",
     "up": "intecrate:block/carrot/carrot_crate_top",
-    "down": "intecrate:block/carrot/carrot_crate_bottom"
+    "down": "intecrate:block/carrot/carrot_crate_bottom",
+    "particle": "intecrate:block/carrot/carrot_crate_side"
   }
 }

@@ -2,6 +2,8 @@ package com.fukuda.intecrate.common.block;
 
 import com.fukuda.intecrate.Intecrate;
 import com.fukuda.intecrate.common.block.noted.INTFlammableRotatedPillarBlock;
+import com.fukuda.intecrate.common.block.noted.extended.IntecrateSpecialFlammableMultiFaceBlock;
+import com.fukuda.intecrate.common.block.noted.extended.IntecrateSpecialMultiFaceBlock;
 import com.fukuda.intecrate.common.item.IntecrateItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -21,7 +23,7 @@ public class StorageBarrels {
 
     public static final DeferredBlock<Block> FISH_BARREL = registerStorageBlock(
             "fish_barrel",
-            () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(BlockBehaviour.Properties.of()
                     .sound(SoundType.WOOD)
                     .strength(2.5f)
                     .instrument(NoteBlockInstrument.BASS)
@@ -30,7 +32,7 @@ public class StorageBarrels {
             ));
     public static final DeferredBlock<Block> COD_BARREL = registerStorageBlock(
             "cod_barrel",
-            () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(BlockBehaviour.Properties.of()
                     .sound(SoundType.WOOD)
                     .strength(2.5f)
                     .instrument(NoteBlockInstrument.BASS)
@@ -38,7 +40,7 @@ public class StorageBarrels {
             ));
     public static final DeferredBlock<Block> PUFFERFISH_BARREL = registerStorageBlock(
             "pufferfish_barrel",
-            () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(BlockBehaviour.Properties.of()
                     .sound(SoundType.WOOD)
                     .strength(2.5f)
                     .instrument(NoteBlockInstrument.BASS)
@@ -46,7 +48,7 @@ public class StorageBarrels {
             ));
     public static final DeferredBlock<Block> SALMON_BARREL = registerStorageBlock(
             "salmon_barrel",
-            () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(BlockBehaviour.Properties.of()
                     .sound(SoundType.WOOD)
                     .strength(2.5f)
                     .instrument(NoteBlockInstrument.BASS)
@@ -54,7 +56,7 @@ public class StorageBarrels {
             ));
     public static final DeferredBlock<Block> TROPICAL_FISH_BARREL = registerStorageBlock(
             "tropical_fish_barrel",
-            () -> new INTFlammableRotatedPillarBlock(BlockBehaviour.Properties.of()
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(BlockBehaviour.Properties.of()
                     .sound(SoundType.WOOD)
                     .strength(2.5f)
                     .instrument(NoteBlockInstrument.BASS)

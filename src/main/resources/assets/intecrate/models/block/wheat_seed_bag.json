@@ -6,6 +6,7 @@
     "east": "intecrate:block/bag/bag_side",
     "west": "intecrate:block/bag/bag_side",
     "up": "intecrate:block/bag/wheat_seed/wheat_seed_bag_top",
-    "down": "intecrate:block/bag/bag_bottom"
+    "down": "intecrate:block/bag/bag_bottom",
+    "particle": "intecrate:block/bag/bag_side"
   }
 }
