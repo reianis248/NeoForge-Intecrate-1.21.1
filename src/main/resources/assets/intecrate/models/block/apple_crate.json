@@ -7,6 +7,6 @@
     "west": "intecrate:block/apple/apple_crate_side",
     "up": "intecrate:block/apple/apple_crate_top",
     "down": "intecrate:block/apple/apple_crate_bottom",
-    "particle": "intecrate:block/apple_crate_side"
+    "particle": "intecrate:block/apple/apple_crate_side"
   }
 }

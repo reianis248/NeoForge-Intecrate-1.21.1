@@ -38,6 +38,7 @@ public class IntecrateCreativeModeTabs {
                         output.accept(StorageBaskets.OXEYE_DAISY_BASKET.get());
                         output.accept(StorageBaskets.AZURE_BLUET_BASKET.get());
 
+                        output.accept(StorageBuckets.STORAGE_BUCKET.get());
                         output.accept(StorageBuckets.BRAIN_CORAL_BUCKET.get());
                         output.accept(StorageBuckets.BUBBLE_CORAL_BUCKET.get());
                         output.accept(StorageBuckets.FIRE_CORAL_BUCKET.get());
@@ -50,6 +51,7 @@ public class IntecrateCreativeModeTabs {
                         output.accept(StorageBarrels.SALMON_BARREL.get());
                         output.accept(StorageBarrels.TROPICAL_FISH_BARREL.get());
 
+                        output.accept(StorageBags.SEED_BAG.get());
                         output.accept(StorageBags.WHEAT_SEED_BAG.get());
                         output.accept(StorageBags.PUMPKIN_SEED_BAG.get());
                         output.accept(StorageBags.MELON_SEED_BAG.get());

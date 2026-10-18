@@ -24,6 +24,7 @@
   "block.intecrate.oxeye_daisy_basket": "Oxeye Daisy Basket",
   "block.intecrate.azure_bluet_basket": "Azure Bluet Basket",
 
+  "block.intecrate.storage_bucket": "Storage Bucket",
   "block.intecrate.brain_coral_bucket": "Bucket of Brain Coral",
   "block.intecrate.bubble_coral_bucket": "Bucket of Bubble Coral",
   "block.intecrate.fire_coral_bucket": "Bucket of Fire Coral",
@@ -36,6 +37,7 @@
   "block.intecrate.salmon_barrel": "Barrel of Salmon",
   "block.intecrate.tropical_fish_barrel": "Barrel of Tropical Fish",
 
+  "block.intecrate.seed_bag": "Seed Bag",
   "block.intecrate.wheat_seed_bag": "Bag of Wheat Seeds",
   "block.intecrate.pumpkin_seed_bag": "Bag of Pumpkin Seeds",
   "block.intecrate.melon_seed_bag": "Bag of Melon Seeds",

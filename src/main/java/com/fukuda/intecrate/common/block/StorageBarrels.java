@@ -1,9 +1,7 @@
 package com.fukuda.intecrate.common.block;
 
 import com.fukuda.intecrate.Intecrate;
-import com.fukuda.intecrate.common.block.noted.INTFlammableRotatedPillarBlock;
 import com.fukuda.intecrate.common.block.noted.extended.IntecrateSpecialFlammableMultiFaceBlock;
-import com.fukuda.intecrate.common.block.noted.extended.IntecrateSpecialMultiFaceBlock;
 import com.fukuda.intecrate.common.item.IntecrateItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;

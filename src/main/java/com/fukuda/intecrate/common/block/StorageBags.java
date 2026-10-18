@@ -18,6 +18,13 @@ import java.util.function.Supplier;
 public class StorageBags {
     public static final DeferredRegister.Blocks STOREBAG = DeferredRegister.createBlocks(Intecrate.MOD_ID);
 
+    public static final DeferredBlock<Block> SEED_BAG = registerStorageBlock(
+            "seed_bag",
+            () -> new IntecrateFlammableFacingBlock(BlockBehaviour.Properties.of()
+                    .strength(1.8f)
+                    .sound(SoundType.WOOL)
+                    .mapColor(MapColor.COLOR_BROWN)
+            ));
     public static final DeferredBlock<Block> WHEAT_SEED_BAG = registerStorageBlock(
             "wheat_seed_bag",
             () -> new IntecrateFlammableFacingBlock(BlockBehaviour.Properties.of()

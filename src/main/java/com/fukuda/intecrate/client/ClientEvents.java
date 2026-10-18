@@ -52,6 +52,7 @@ public class ClientEvents {
             SectionedItems.addItem(basketsSection, StorageBaskets.AZURE_BLUET_BASKET.get());
 
             // Buckets
+            SectionedItems.addItem(bucketsSection, StorageBuckets.STORAGE_BUCKET.get());
             SectionedItems.addItem(bucketsSection, StorageBuckets.BRAIN_CORAL_BUCKET.get());
             SectionedItems.addItem(bucketsSection, StorageBuckets.BUBBLE_CORAL_BUCKET.get());
             SectionedItems.addItem(bucketsSection, StorageBuckets.FIRE_CORAL_BUCKET.get());
@@ -66,6 +67,7 @@ public class ClientEvents {
             SectionedItems.addItem(barrelsSection, StorageBarrels.TROPICAL_FISH_BARREL.get());
 
             // Bags
+            SectionedItems.addItem(bagsSection, StorageBags.SEED_BAG.get());
             SectionedItems.addItem(bagsSection, StorageBags.WHEAT_SEED_BAG.get());
             SectionedItems.addItem(bagsSection, StorageBags.PUMPKIN_SEED_BAG.get());
             SectionedItems.addItem(bagsSection, StorageBags.MELON_SEED_BAG.get());

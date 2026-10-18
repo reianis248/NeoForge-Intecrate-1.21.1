@@ -18,6 +18,13 @@ import java.util.function.Supplier;
 public class StorageBuckets {
     public static final DeferredRegister.Blocks STOREBUCKET = DeferredRegister.createBlocks(Intecrate.MOD_ID);
 
+    public static final DeferredBlock<Block> STORAGE_BUCKET = registerStorageBlock(
+            "storage_bucket",
+            () -> new INTFacingBlock(BlockBehaviour.Properties.of()
+                    .sound(SoundType.METAL)
+                    .mapColor(MapColor.METAL)
+                    .strength(3.48f, 1.48f
+                    )));
     public static final DeferredBlock<Block> BRAIN_CORAL_BUCKET = registerStorageBlock(
             "brain_coral_bucket",
             () -> new INTFacingBlock(BlockBehaviour.Properties.of()
