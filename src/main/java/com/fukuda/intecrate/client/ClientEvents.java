@@ -26,9 +26,9 @@ public class ClientEvents {
             ModernTabs.configureTab(IntecrateCreativeModeTabs.INTECRATE.get(), tabDesign);
 
             ResourceLocation cratesSection = ResourceLocation.fromNamespaceAndPath(Intecrate.MOD_ID, "crates");
-            ResourceLocation bucketsSection = ResourceLocation.fromNamespaceAndPath(Intecrate.MOD_ID, "buckets");
             ResourceLocation basketsSection = ResourceLocation.fromNamespaceAndPath(Intecrate.MOD_ID, "baskets");
             ResourceLocation barrelsSection = ResourceLocation.fromNamespaceAndPath(Intecrate.MOD_ID, "barrels");
+            ResourceLocation bucketsSection = ResourceLocation.fromNamespaceAndPath(Intecrate.MOD_ID, "buckets");
             ResourceLocation bagsSection = ResourceLocation.fromNamespaceAndPath(Intecrate.MOD_ID, "bags");
 
             // Crates
@@ -51,6 +51,13 @@ public class ClientEvents {
             SectionedItems.addItem(basketsSection, StorageBaskets.OXEYE_DAISY_BASKET.get());
             SectionedItems.addItem(basketsSection, StorageBaskets.AZURE_BLUET_BASKET.get());
 
+            // Barrels
+            SectionedItems.addItem(barrelsSection, StorageBarrels.FISH_BARREL.get());
+            SectionedItems.addItem(barrelsSection, StorageBarrels.COD_BARREL.get());
+            SectionedItems.addItem(barrelsSection, StorageBarrels.PUFFERFISH_BARREL.get());
+            SectionedItems.addItem(barrelsSection, StorageBarrels.SALMON_BARREL.get());
+            SectionedItems.addItem(barrelsSection, StorageBarrels.TROPICAL_FISH_BARREL.get());
+
             // Buckets
             SectionedItems.addItem(bucketsSection, StorageBuckets.STORAGE_BUCKET.get());
             SectionedItems.addItem(bucketsSection, StorageBuckets.BRAIN_CORAL_BUCKET.get());
@@ -58,13 +65,6 @@ public class ClientEvents {
             SectionedItems.addItem(bucketsSection, StorageBuckets.FIRE_CORAL_BUCKET.get());
             SectionedItems.addItem(bucketsSection, StorageBuckets.HORN_CORAL_BUCKET.get());
             SectionedItems.addItem(bucketsSection, StorageBuckets.TUBE_CORAL_BUCKET.get());
-
-            // Barrels
-            SectionedItems.addItem(barrelsSection, StorageBarrels.FISH_BARREL.get());
-            SectionedItems.addItem(barrelsSection, StorageBarrels.COD_BARREL.get());
-            SectionedItems.addItem(barrelsSection, StorageBarrels.PUFFERFISH_BARREL.get());
-            SectionedItems.addItem(barrelsSection, StorageBarrels.SALMON_BARREL.get());
-            SectionedItems.addItem(barrelsSection, StorageBarrels.TROPICAL_FISH_BARREL.get());
 
             // Bags
             SectionedItems.addItem(bagsSection, StorageBags.SEED_BAG.get());
