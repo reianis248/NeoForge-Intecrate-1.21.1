@@ -21,28 +21,28 @@ public class StorageBags {
     public static final DeferredBlock<Block> SEED_BAG = registerStorageBlock(
             "seed_bag",
             () -> new IntecrateFlammableFacingBlock(BlockBehaviour.Properties.of()
-                    .strength(1.8f)
+                    .strength(0.8f)
                     .sound(SoundType.WOOL)
                     .mapColor(MapColor.COLOR_BROWN)
             ));
     public static final DeferredBlock<Block> WHEAT_SEED_BAG = registerStorageBlock(
             "wheat_seed_bag",
             () -> new IntecrateFlammableFacingBlock(BlockBehaviour.Properties.of()
-                    .strength(1.8f)
+                    .strength(0.8f)
                     .sound(SoundType.WOOL)
                     .mapColor(MapColor.COLOR_BROWN)
             ));
     public static final DeferredBlock<Block> PUMPKIN_SEED_BAG = registerStorageBlock(
             "pumpkin_seed_bag",
             () -> new IntecrateFlammableFacingBlock(BlockBehaviour.Properties.of()
-                    .strength(1.8f)
+                    .strength(0.8f)
                     .sound(SoundType.WOOL)
                     .mapColor(MapColor.COLOR_BROWN)
             ));
     public static final DeferredBlock<Block> MELON_SEED_BAG = registerStorageBlock(
             "melon_seed_bag",
             () -> new IntecrateFlammableFacingBlock(BlockBehaviour.Properties.of()
-                    .strength(1.8f)
+                    .strength(0.8f)
                     .sound(SoundType.WOOL)
                     .mapColor(MapColor.COLOR_BROWN)
             ));
@@ -50,7 +50,7 @@ public class StorageBags {
     public static final DeferredBlock<Block> BEETROOT_SEED_BAG = registerStorageBlock(
             "beetroot_seed_bag",
             () -> new IntecrateFlammableFacingBlock(BlockBehaviour.Properties.of()
-                    .strength(1.8f)
+                    .strength(0.8f)
                     .sound(SoundType.WOOL)
                     .mapColor(MapColor.COLOR_BROWN)
             ));

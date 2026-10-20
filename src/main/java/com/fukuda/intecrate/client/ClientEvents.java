@@ -31,7 +31,7 @@ public class ClientEvents {
             ResourceLocation bucketsSection = ResourceLocation.fromNamespaceAndPath(Intecrate.MOD_ID, "buckets");
             ResourceLocation bagsSection = ResourceLocation.fromNamespaceAndPath(Intecrate.MOD_ID, "bags");
 
-            // Crates
+            /* Crates */
             SectionedItems.addItem(cratesSection, StorageCrates.CRATE.get());
             SectionedItems.addItem(cratesSection, StorageCrates.APPLE_CRATE.get());
             SectionedItems.addItem(cratesSection, StorageCrates.CARROT_CRATE.get());
@@ -41,7 +41,7 @@ public class ClientEvents {
             SectionedItems.addItem(cratesSection, StorageCrates.RED_MUSHROOM_CRATE.get());
             SectionedItems.addItem(cratesSection, StorageCrates.BROWN_MUSHROOM_CRATE.get());
 
-            // Baskets
+            /* Baskets */
             SectionedItems.addItem(basketsSection, StorageBaskets.BASKET.get());
             SectionedItems.addItem(basketsSection, StorageBaskets.ALLIUM_BASKET.get());
             SectionedItems.addItem(basketsSection, StorageBaskets.CORNFLOWER_BASKET.get());
@@ -51,14 +51,14 @@ public class ClientEvents {
             SectionedItems.addItem(basketsSection, StorageBaskets.OXEYE_DAISY_BASKET.get());
             SectionedItems.addItem(basketsSection, StorageBaskets.AZURE_BLUET_BASKET.get());
 
-            // Barrels
+            /* Barrels */
             SectionedItems.addItem(barrelsSection, StorageBarrels.FISH_BARREL.get());
             SectionedItems.addItem(barrelsSection, StorageBarrels.COD_BARREL.get());
             SectionedItems.addItem(barrelsSection, StorageBarrels.PUFFERFISH_BARREL.get());
             SectionedItems.addItem(barrelsSection, StorageBarrels.SALMON_BARREL.get());
             SectionedItems.addItem(barrelsSection, StorageBarrels.TROPICAL_FISH_BARREL.get());
 
-            // Buckets
+            /* Buckets */
             SectionedItems.addItem(bucketsSection, StorageBuckets.STORAGE_BUCKET.get());
             SectionedItems.addItem(bucketsSection, StorageBuckets.BRAIN_CORAL_BUCKET.get());
             SectionedItems.addItem(bucketsSection, StorageBuckets.BUBBLE_CORAL_BUCKET.get());
@@ -66,7 +66,7 @@ public class ClientEvents {
             SectionedItems.addItem(bucketsSection, StorageBuckets.HORN_CORAL_BUCKET.get());
             SectionedItems.addItem(bucketsSection, StorageBuckets.TUBE_CORAL_BUCKET.get());
 
-            // Bags
+            /* Bags */
             SectionedItems.addItem(bagsSection, StorageBags.SEED_BAG.get());
             SectionedItems.addItem(bagsSection, StorageBags.WHEAT_SEED_BAG.get());
             SectionedItems.addItem(bagsSection, StorageBags.PUMPKIN_SEED_BAG.get());

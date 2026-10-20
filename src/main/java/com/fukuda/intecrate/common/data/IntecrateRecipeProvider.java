@@ -1,8 +1,6 @@
 package com.fukuda.intecrate.common.data;
 
-import com.fukuda.intecrate.common.block.StorageBarrels;
-import com.fukuda.intecrate.common.block.StorageBaskets;
-import com.fukuda.intecrate.common.block.StorageCrates;
+import com.fukuda.intecrate.common.block.*;
 import com.fukuda.intecrate.common.data.recipes.IntecrateRecipeCategory;
 import com.fukuda.intecrate.common.data.recipes.IntecrateShapedRecipeBuilder;
 import com.fukuda.intecrate.common.data.recipes.IntecrateShapelessRecipeBuilder;
@@ -222,6 +220,107 @@ public class IntecrateRecipeProvider extends RecipeProvider implements IConditio
                 .pattern("###")
                 .define('#', Ingredient.of(Items.TROPICAL_FISH))
                 .unlockedBy("has_tropical_fish", has(Items.TROPICAL_FISH))
+                .save(recipeOutput);
+
+        /* Buckets */
+        IntecrateShapelessRecipeBuilder.shapeless(IntecrateRecipeCategory.BUCKETS, Items.BRAIN_CORAL, 9)
+                .requires(StorageBuckets.BRAIN_CORAL_BUCKET)
+                .unlockedBy("has_brain_coral_bucket", has(StorageBuckets.BRAIN_CORAL_BUCKET)).save(recipeOutput);
+        IntecrateShapedRecipeBuilder.shaped(IntecrateRecipeCategory.BUCKETS, StorageBuckets.BRAIN_CORAL_BUCKET.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', Ingredient.of(Items.BRAIN_CORAL))
+                .unlockedBy("has_brain_coral", has(Items.BRAIN_CORAL))
+                .save(recipeOutput);
+
+        IntecrateShapelessRecipeBuilder.shapeless(IntecrateRecipeCategory.BUCKETS, Items.BUBBLE_CORAL, 9)
+                .requires(StorageBuckets.BUBBLE_CORAL_BUCKET)
+                .unlockedBy("has_bubble_coral_bucket", has(StorageBuckets.BUBBLE_CORAL_BUCKET)).save(recipeOutput);
+        IntecrateShapedRecipeBuilder.shaped(IntecrateRecipeCategory.BUCKETS, StorageBuckets.BUBBLE_CORAL_BUCKET.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', Ingredient.of(Items.BUBBLE_CORAL))
+                .unlockedBy("has_bubble_coral", has(Items.BUBBLE_CORAL))
+                .save(recipeOutput);
+
+        IntecrateShapelessRecipeBuilder.shapeless(IntecrateRecipeCategory.BUCKETS, Items.FIRE_CORAL, 9)
+                .requires(StorageBuckets.FIRE_CORAL_BUCKET)
+                .unlockedBy("has_fire_coral_bucket", has(StorageBuckets.FIRE_CORAL_BUCKET)).save(recipeOutput);
+        IntecrateShapedRecipeBuilder.shaped(IntecrateRecipeCategory.BUCKETS, StorageBuckets.FIRE_CORAL_BUCKET.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', Ingredient.of(Items.FIRE_CORAL))
+                .unlockedBy("has_fire_coral", has(Items.FIRE_CORAL))
+                .save(recipeOutput);
+
+        IntecrateShapelessRecipeBuilder.shapeless(IntecrateRecipeCategory.BUCKETS, Items.HORN_CORAL, 9)
+                .requires(StorageBuckets.HORN_CORAL_BUCKET)
+                .unlockedBy("has_horn_coral_bucket", has(StorageBuckets.HORN_CORAL_BUCKET)).save(recipeOutput);
+        IntecrateShapedRecipeBuilder.shaped(IntecrateRecipeCategory.BUCKETS, StorageBuckets.HORN_CORAL_BUCKET.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', Ingredient.of(Items.HORN_CORAL))
+                .unlockedBy("has_horn_coral", has(Items.HORN_CORAL))
+                .save(recipeOutput);
+
+        IntecrateShapelessRecipeBuilder.shapeless(IntecrateRecipeCategory.BUCKETS, Items.TUBE_CORAL, 9)
+                .requires(StorageBuckets.TUBE_CORAL_BUCKET)
+                .unlockedBy("has_tube_coral_bucket", has(StorageBuckets.TUBE_CORAL_BUCKET)).save(recipeOutput);
+        IntecrateShapedRecipeBuilder.shaped(IntecrateRecipeCategory.BUCKETS, StorageBuckets.TUBE_CORAL_BUCKET.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', Ingredient.of(Items.TUBE_CORAL))
+                .unlockedBy("has_tube_coral", has(Items.TUBE_CORAL))
+                .save(recipeOutput);
+
+        /* Bags */
+        IntecrateShapelessRecipeBuilder.shapeless(IntecrateRecipeCategory.BAGS, Items.WHEAT_SEEDS, 9)
+                .requires(StorageBags.WHEAT_SEED_BAG)
+                .unlockedBy("has_wheat_seed_bag", has(StorageBags.WHEAT_SEED_BAG)).save(recipeOutput);
+        IntecrateShapedRecipeBuilder.shaped(IntecrateRecipeCategory.BAGS, StorageBags.WHEAT_SEED_BAG.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', Ingredient.of(Items.WHEAT_SEEDS))
+                .unlockedBy("has_wheat_seeds", has(Items.WHEAT_SEEDS))
+                .save(recipeOutput);
+
+        IntecrateShapelessRecipeBuilder.shapeless(IntecrateRecipeCategory.BAGS, Items.PUMPKIN_SEEDS, 9)
+                .requires(StorageBags.PUMPKIN_SEED_BAG)
+                .unlockedBy("has_pumpkin_seed_bag", has(StorageBags.PUMPKIN_SEED_BAG)).save(recipeOutput);
+        IntecrateShapedRecipeBuilder.shaped(IntecrateRecipeCategory.BAGS, StorageBags.PUMPKIN_SEED_BAG.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', Ingredient.of(Items.PUMPKIN_SEEDS))
+                .unlockedBy("has_pumpkin_seeds", has(Items.PUMPKIN_SEEDS))
+                .save(recipeOutput);
+
+        IntecrateShapelessRecipeBuilder.shapeless(IntecrateRecipeCategory.BAGS, Items.MELON_SEEDS, 9)
+                .requires(StorageBags.MELON_SEED_BAG)
+                .unlockedBy("has_melon_seed_bag", has(StorageBags.MELON_SEED_BAG)).save(recipeOutput);
+        IntecrateShapedRecipeBuilder.shaped(IntecrateRecipeCategory.BAGS, StorageBags.MELON_SEED_BAG.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', Ingredient.of(Items.MELON_SEEDS))
+                .unlockedBy("has_melon_seeds", has(Items.MELON_SEEDS))
+                .save(recipeOutput);
+
+        IntecrateShapelessRecipeBuilder.shapeless(IntecrateRecipeCategory.BAGS, Items.BEETROOT_SEEDS, 9)
+                .requires(StorageBags.BEETROOT_SEED_BAG)
+                .unlockedBy("has_beetroot_seed_bag", has(StorageBags.BEETROOT_SEED_BAG)).save(recipeOutput);
+        IntecrateShapedRecipeBuilder.shaped(IntecrateRecipeCategory.BAGS, StorageBags.BEETROOT_SEED_BAG.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', Ingredient.of(Items.BEETROOT_SEEDS))
+                .unlockedBy("has_beetroot_seeds", has(Items.BEETROOT_SEEDS))
                 .save(recipeOutput);
     }
 }
