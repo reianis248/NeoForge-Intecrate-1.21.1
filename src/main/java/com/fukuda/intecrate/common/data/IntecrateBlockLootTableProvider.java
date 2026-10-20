@@ -1,11 +1,23 @@
 package com.fukuda.intecrate.common.data;
 
 import com.fukuda.intecrate.common.block.*;
-import de.Roboter007.moderntabs.section.item.SectionedItems;
+import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
+import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 public class IntecrateBlockLootTableProvider extends BlockLootSubProvider {
@@ -15,6 +27,13 @@ public class IntecrateBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+//        dropSelf(CaveMineralBlocks.EXAMPLE_BLOCK);
+
+//        Drops a Minimum to Maximum Amount of Item(s).
+
+//        add(CaveMineralBlocks.TIDE_CRYSTAL_ORE.get(),
+//                block -> createMultipleOreDrops(CaveMineralBlocks.TIDE_CRYSTAL_ORE.get(), CaveMineralItems.TIDE_CRYSTAL.get(), 1, 3));
+
         /* Crates */
         dropSelf(StorageCrates.CRATE.get());
         dropSelf(StorageCrates.APPLE_CRATE.get());
@@ -56,5 +75,17 @@ public class IntecrateBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(StorageBags.PUMPKIN_SEED_BAG.get());
         dropSelf(StorageBags.MELON_SEED_BAG.get());
         dropSelf(StorageBags.BEETROOT_SEED_BAG.get());
+    }
+
+    @Override
+    protected Iterable<Block> getKnownBlocks() {
+        List<Block> blocks = new ArrayList<>();
+
+        StorageCrates.STORECRATE.getEntries().forEach(h -> blocks.add(h.value()));
+        StorageBaskets.STOREBASKET.getEntries().forEach(h -> blocks.add(h.value()));
+        StorageBarrels.STOREBARREL.getEntries().forEach(h -> blocks.add(h.value()));
+        StorageBuckets.STOREBUCKET.getEntries().forEach(h -> blocks.add(h.value()));
+        StorageBags.STOREBAG.getEntries().forEach(h -> blocks.add(h.value()));
+        return blocks;
     }
 }
