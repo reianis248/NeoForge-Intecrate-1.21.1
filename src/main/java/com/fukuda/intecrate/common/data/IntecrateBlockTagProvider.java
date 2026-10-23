@@ -53,5 +53,15 @@ public class IntecrateBlockTagProvider extends BlockTagsProvider {
                 .add(StorageBuckets.FIRE_CORAL_BUCKET.get())
                 .add(StorageBuckets.HORN_CORAL_BUCKET.get())
                 .add(StorageBuckets.TUBE_CORAL_BUCKET.get());
+
+        tag(IntecrateTags.Blocks.IS_CRATE)
+                .add(StorageCrates.CRATE.get())
+                .add(StorageCrates.APPLE_CRATE.get())
+                .add(StorageCrates.CARROT_CRATE.get())
+                .add(StorageCrates.BEETROOT_CRATE.get())
+                .add(StorageCrates.POTATO_CRATE.get())
+                .add(StorageCrates.POISONOUS_POTATO_CRATE.get())
+                .add(StorageCrates.RED_MUSHROOM_CRATE.get())
+                .add(StorageCrates.BROWN_MUSHROOM_CRATE.get())
     }
 }
