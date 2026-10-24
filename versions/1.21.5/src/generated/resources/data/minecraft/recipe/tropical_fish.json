@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "intecrate:tropical_fish_barrel"
+  ],
+  "result": {
+    "count": 9,
+    "id": "minecraft:tropical_fish"
+  }
+}

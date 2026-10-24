@@ -1,0 +1,12 @@
+{
+  "values": [
+    "intecrate:crate",
+    "intecrate:apple_crate",
+    "intecrate:carrot_crate",
+    "intecrate:beetroot_crate",
+    "intecrate:potato_crate",
+    "intecrate:poisonous_potato_crate",
+    "intecrate:red_mushroom_crate",
+    "intecrate:brown_mushroom_crate"
+  ]
+}

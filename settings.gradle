@@ -1,9 +1,20 @@
 pluginManagement {
     repositories {
+        maven {
+            url 'https://maven.kikugie.dev/releases'
+        }
         gradlePluginPortal()
     }
 }
 
 plugins {
     id 'org.gradle.toolchains.foojay-resolver-convention' version '1.0.0'
+    id 'dev.kikugie.stonecutter' version '0.9.8'
+}
+
+stonecutter {
+    // Defines your target versions under a 'versions/' subfolder
+    create(rootProject) {
+        versions '1.21.1', '1.21.5'
+    }
 }
