@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "intecrate:dandelion_basket"
+  ],
+  "result": {
+    "count": 9,
+    "id": "minecraft:dandelion"
+  }
+}

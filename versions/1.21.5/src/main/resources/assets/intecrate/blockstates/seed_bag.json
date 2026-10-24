@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "intecrate:block/seed_bag"
+    },
+    "facing=south": {
+      "model": "intecrate:block/seed_bag",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "intecrate:block/seed_bag",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "intecrate:block/seed_bag",
+      "y": 90
+    }
+  }
+}

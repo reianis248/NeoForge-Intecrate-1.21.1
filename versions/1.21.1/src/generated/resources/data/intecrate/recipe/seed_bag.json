@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "!": {
+      "item": "minecraft:string"
+    },
+    "#": {
+      "item": "minecraft:leather"
+    }
+  },
+  "pattern": [
+    "!!!",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "intecrate:seed_bag"
+  }
+}

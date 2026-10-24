@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:tropical_fish"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tropical_fish_barrel": {
+      "conditions": {
+        "items": [
+          {
+            "items": "intecrate:tropical_fish_barrel"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe"
+    ],
+    [
+      "has_tropical_fish_barrel"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:tropical_fish"
+    ]
+  }
+}
