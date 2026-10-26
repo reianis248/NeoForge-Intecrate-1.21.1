@@ -1,11 +1,14 @@
 package com.fukuda.intecrate.common.data;
 
 import com.fukuda.intecrate.Intecrate;
-import com.fukuda.intecrate.common.block.DecoCrates;
+import com.fukuda.intecrate.common.block.*;
+import com.fukuda.intecrate.common.util.IntecrateTags;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
 import net.minecraft.core.Holder;
+import net.minecraft.core.HolderSet;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -30,14 +33,26 @@ public class IntecrateModelProvider extends ModelProvider {
     @Override
     protected Stream<Holder<Item>> getKnownItems() {
         return Stream.of(
-                DecoCrates.CRATE.asItem().builtInRegistryHolder(),
-                DecoCrates.APPLE_CRATE.asItem().builtInRegistryHolder(),
-                DecoCrates.CARROT_CRATE.asItem().builtInRegistryHolder(),
-                DecoCrates.BEETROOT_CRATE.asItem().builtInRegistryHolder(),
-                DecoCrates.POTATO_CRATE.asItem().builtInRegistryHolder(),
-                DecoCrates.POISONOUS_POTATO_CRATE.asItem().builtInRegistryHolder(),
-                DecoCrates.RED_MUSHROOM_CRATE.asItem().builtInRegistryHolder(),
-                DecoCrates.BROWN_MUSHROOM_CRATE.asItem().builtInRegistryHolder()
-        );
+                DecoCrates.DECOCRATE.getEntries().stream(),
+                DecoBaskets.DECOBASKET.getEntries().stream(),
+                DecoBarrels.DECOBARREL.getEntries().stream(),
+                DecoBuckets.DECOBUCKET.getEntries().stream(),
+                DecoBags.DECOBAG.getEntries().stream())
+                .flatMap(stream -> stream)
+                .map(holder -> holder.get().asItem().builtInRegistryHolder());
     }
+
+//    @Override
+//    protected Stream<Holder<Item>> getKnownItems() {
+//        return Stream.of(
+//                DecoCrates.CRATE.asItem().builtInRegistryHolder(),
+//                DecoCrates.APPLE_CRATE.asItem().builtInRegistryHolder(),
+//                DecoCrates.CARROT_CRATE.asItem().builtInRegistryHolder(),
+//                DecoCrates.BEETROOT_CRATE.asItem().builtInRegistryHolder(),
+//                DecoCrates.POTATO_CRATE.asItem().builtInRegistryHolder(),
+//                DecoCrates.POISONOUS_POTATO_CRATE.asItem().builtInRegistryHolder(),
+//                DecoCrates.RED_MUSHROOM_CRATE.asItem().builtInRegistryHolder(),
+//                DecoCrates.BROWN_MUSHROOM_CRATE.asItem().builtInRegistryHolder()
+//        );
+//    }
 }

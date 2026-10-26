@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "north": "intecrate:block/bag/wheat_seed/wheat_seed_bag_front",
+    "south": "intecrate:block/bag/bag_back",
+    "east": "intecrate:block/bag/bag_side",
+    "west": "intecrate:block/bag/bag_side",
+    "up": "intecrate:block/bag/wheat_seed/wheat_seed_bag_top",
+    "down": "intecrate:block/bag/bag_bottom",
+    "particle": "intecrate:block/bag/bag_side"
+  }
+}

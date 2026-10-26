@@ -46,10 +46,6 @@ sourceSets.main.resources {
 
 repositories {
     mavenCentral()
-    maven {
-        name = "Jitpack"
-        url 'https://jitpack.io'
-    }
 }
 
 base {
@@ -115,11 +111,7 @@ configurations {
 }
 
 dependencies {
-    dependencies {
-        if (project.minecraft_version == "1.21.1") {
-            implementation "com.github.Roboter007.ModernTabs:ModernTabs-neoforge:${project.moderntabs_version}"
-        }
-    }
+
 }
 
 publishing {

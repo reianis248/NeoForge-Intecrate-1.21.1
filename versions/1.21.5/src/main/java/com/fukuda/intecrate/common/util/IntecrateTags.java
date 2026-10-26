@@ -15,10 +15,11 @@ public class IntecrateTags {
         }
 
         public static final TagKey<Block> WOODEN_SLABS = createTag("wooden_slabs");
-        public static final TagKey<Block> IS_CRATE = createTag("is_crate");
-        public static final TagKey<Block> IS_BASKET = createTag("is_basket");
-        public static final TagKey<Block> IS_BARREL = createTag("is_barrel");
-        public static final TagKey<Block> IS_BUCKET = createTag("is_bucket");
+        public static final TagKey<Block> IS_DECORATION_CRATE = createTag("is_decoration_crate");
+        public static final TagKey<Block> IS_DECORATION_BASKET = createTag("is_decoration_basket");
+        public static final TagKey<Block> IS_DECORATION_BARREL = createTag("is_decoration_barrel");
+        public static final TagKey<Block> IS_DECORATION_BUCKET = createTag("is_decoration_bucket");
+        public static final TagKey<Block> IS_DECORATION_BAG = createTag("is_decoration_bag");
     }
 
     public static class Items {
@@ -27,5 +28,10 @@ public class IntecrateTags {
         }
 
         public static final TagKey<Item> WOODEN_SLABS = createTag("wooden_slabs");
+        public static final TagKey<Item> IS_DECORATION_CRATE = createTag("is_decoration_crate");
+        public static final TagKey<Item> IS_DECORATION_BASKET = createTag("is_decoration_basket");
+        public static final TagKey<Item> IS_DECORATION_BARREL = createTag("is_decoration_barrel");
+        public static final TagKey<Item> IS_DECORATION_BUCKET = createTag("is_decoration_bucket");
+        public static final TagKey<Item> IS_DECORATION_BAG = createTag("is_decoration_bag");
     }
 }

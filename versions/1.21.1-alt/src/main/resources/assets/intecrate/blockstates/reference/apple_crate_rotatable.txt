@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "intecrate:block/apple_crate"
+    },
+    "axis=z": {
+      "model": "intecrate:block/apple_crate",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "intecrate:block/apple_crate",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

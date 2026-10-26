@@ -28,50 +28,53 @@ public class ClientEvents {
             ResourceLocation cratesSection = ResourceLocation.fromNamespaceAndPath(Intecrate.MOD_ID, "crates");
             ResourceLocation basketsSection = ResourceLocation.fromNamespaceAndPath(Intecrate.MOD_ID, "baskets");
             ResourceLocation barrelsSection = ResourceLocation.fromNamespaceAndPath(Intecrate.MOD_ID, "barrels");
+            ResourceLocation boxesSection = ResourceLocation.fromNamespaceAndPath(Intecrate.MOD_ID, "boxes");
             ResourceLocation bucketsSection = ResourceLocation.fromNamespaceAndPath(Intecrate.MOD_ID, "buckets");
             ResourceLocation bagsSection = ResourceLocation.fromNamespaceAndPath(Intecrate.MOD_ID, "bags");
 
             /* Crates */
-            SectionedItems.addItem(cratesSection, DecoCrates.CRATE.get());
-            SectionedItems.addItem(cratesSection, DecoCrates.APPLE_CRATE.get());
-            SectionedItems.addItem(cratesSection, DecoCrates.CARROT_CRATE.get());
-            SectionedItems.addItem(cratesSection, DecoCrates.BEETROOT_CRATE.get());
-            SectionedItems.addItem(cratesSection, DecoCrates.POTATO_CRATE.get());
-            SectionedItems.addItem(cratesSection, DecoCrates.POISONOUS_POTATO_CRATE.get());
-            SectionedItems.addItem(cratesSection, DecoCrates.RED_MUSHROOM_CRATE.get());
-            SectionedItems.addItem(cratesSection, DecoCrates.BROWN_MUSHROOM_CRATE.get());
+            SectionedItems.addItem(cratesSection, DecoCrates.CRATE);
+            SectionedItems.addItem(cratesSection, DecoCrates.APPLE_CRATE);
+            SectionedItems.addItem(cratesSection, DecoCrates.CARROT_CRATE);
+            SectionedItems.addItem(cratesSection, DecoCrates.BEETROOT_CRATE);
+            SectionedItems.addItem(cratesSection, DecoCrates.POTATO_CRATE);
+            SectionedItems.addItem(cratesSection, DecoCrates.POISONOUS_POTATO_CRATE);
+            SectionedItems.addItem(cratesSection, DecoCrates.RED_MUSHROOM_CRATE);
+            SectionedItems.addItem(cratesSection, DecoCrates.BROWN_MUSHROOM_CRATE);
 
             /* Baskets */
-            SectionedItems.addItem(basketsSection, DecoBaskets.BASKET.get());
-            SectionedItems.addItem(basketsSection, DecoBaskets.ALLIUM_BASKET.get());
-            SectionedItems.addItem(basketsSection, DecoBaskets.CORNFLOWER_BASKET.get());
-            SectionedItems.addItem(basketsSection, DecoBaskets.DANDELION_BASKET.get());
-            SectionedItems.addItem(basketsSection, DecoBaskets.POPPY_BASKET.get());
-            SectionedItems.addItem(basketsSection, DecoBaskets.SWEET_BERRY_BASKET.get());
-            SectionedItems.addItem(basketsSection, DecoBaskets.OXEYE_DAISY_BASKET.get());
-            SectionedItems.addItem(basketsSection, DecoBaskets.AZURE_BLUET_BASKET.get());
+            SectionedItems.addItem(basketsSection, DecoBaskets.BASKET);
+            SectionedItems.addItem(basketsSection, DecoBaskets.ALLIUM_BASKET);
+            SectionedItems.addItem(basketsSection, DecoBaskets.CORNFLOWER_BASKET);
+            SectionedItems.addItem(basketsSection, DecoBaskets.DANDELION_BASKET);
+            SectionedItems.addItem(basketsSection, DecoBaskets.POPPY_BASKET);
+            SectionedItems.addItem(basketsSection, DecoBaskets.SWEET_BERRY_BASKET);
+            SectionedItems.addItem(basketsSection, DecoBaskets.OXEYE_DAISY_BASKET);
+            SectionedItems.addItem(basketsSection, DecoBaskets.AZURE_BLUET_BASKET);
 
             /* Barrels */
-            SectionedItems.addItem(barrelsSection, DecoBarrels.FISH_BARREL.get());
-            SectionedItems.addItem(barrelsSection, DecoBarrels.COD_BARREL.get());
-            SectionedItems.addItem(barrelsSection, DecoBarrels.PUFFERFISH_BARREL.get());
-            SectionedItems.addItem(barrelsSection, DecoBarrels.SALMON_BARREL.get());
-            SectionedItems.addItem(barrelsSection, DecoBarrels.TROPICAL_FISH_BARREL.get());
+            SectionedItems.addItem(barrelsSection, DecoBarrels.FISH_BARREL);
+            SectionedItems.addItem(barrelsSection, DecoBarrels.COD_BARREL);
+            SectionedItems.addItem(barrelsSection, DecoBarrels.PUFFERFISH_BARREL);
+            SectionedItems.addItem(barrelsSection, DecoBarrels.SALMON_BARREL);
+            SectionedItems.addItem(barrelsSection, DecoBarrels.TROPICAL_FISH_BARREL);
+
+            /* Boxes */
 
             /* Buckets */
-            SectionedItems.addItem(bucketsSection, DecoBuckets.STORAGE_BUCKET.get());
-            SectionedItems.addItem(bucketsSection, DecoBuckets.BRAIN_CORAL_BUCKET.get());
-            SectionedItems.addItem(bucketsSection, DecoBuckets.BUBBLE_CORAL_BUCKET.get());
-            SectionedItems.addItem(bucketsSection, DecoBuckets.FIRE_CORAL_BUCKET.get());
-            SectionedItems.addItem(bucketsSection, DecoBuckets.HORN_CORAL_BUCKET.get());
-            SectionedItems.addItem(bucketsSection, DecoBuckets.TUBE_CORAL_BUCKET.get());
+            SectionedItems.addItem(bucketsSection, DecoBuckets.STORAGE_BUCKET);
+            SectionedItems.addItem(bucketsSection, DecoBuckets.BRAIN_CORAL_BUCKET);
+            SectionedItems.addItem(bucketsSection, DecoBuckets.BUBBLE_CORAL_BUCKET);
+            SectionedItems.addItem(bucketsSection, DecoBuckets.FIRE_CORAL_BUCKET);
+            SectionedItems.addItem(bucketsSection, DecoBuckets.HORN_CORAL_BUCKET);
+            SectionedItems.addItem(bucketsSection, DecoBuckets.TUBE_CORAL_BUCKET);
 
             /* Bags */
-            SectionedItems.addItem(bagsSection, DecoBags.SEED_BAG.get());
-            SectionedItems.addItem(bagsSection, DecoBags.WHEAT_SEED_BAG.get());
-            SectionedItems.addItem(bagsSection, DecoBags.PUMPKIN_SEED_BAG.get());
-            SectionedItems.addItem(bagsSection, DecoBags.MELON_SEED_BAG.get());
-            SectionedItems.addItem(bagsSection, DecoBags.BEETROOT_SEED_BAG.get());
+            SectionedItems.addItem(bagsSection, DecoBags.SEED_BAG);
+            SectionedItems.addItem(bagsSection, DecoBags.WHEAT_SEED_BAG);
+            SectionedItems.addItem(bagsSection, DecoBags.PUMPKIN_SEED_BAG);
+            SectionedItems.addItem(bagsSection, DecoBags.MELON_SEED_BAG);
+            SectionedItems.addItem(bagsSection, DecoBags.BEETROOT_SEED_BAG);
         });
     }
 }

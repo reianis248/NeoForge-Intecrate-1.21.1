@@ -2,8 +2,9 @@
   "itemGroup.intecrate": "Intecrate",
   "section.intecrate.crates": "Crates",
   "section.intecrate.baskets": "Baskets",
-  "section.intecrate.buckets": "Buckets",
   "section.intecrate.barrels": "Barrels",
+  "section.intecrate.boxes": "Boxes",
+  "section.intecrate.buckets": "Buckets",
   "section.intecrate.bags": "Bags",
 
   "block.intecrate.crate": "Crate",
@@ -12,7 +13,7 @@
   "block.intecrate.beetroot_crate": "Crate of Beetroots",
   "block.intecrate.potato_crate": "Crate of Potatoes",
   "block.intecrate.poisonous_potato_crate": "Crate of Poisonous Potatoes",
-  "block.intecrate.red_mushroom_crate": "Red Mushroom Crate",
+  "block.intecrate.red_mushroom_crate": "Crate of Red Mushrooms",
   "block.intecrate.brown_mushroom_crate": "Crate of Brown Mushrooms",
 
   "block.intecrate.basket": "Basket",
@@ -24,18 +25,18 @@
   "block.intecrate.oxeye_daisy_basket": "Oxeye Daisy Basket",
   "block.intecrate.azure_bluet_basket": "Azure Bluet Basket",
 
+  "block.intecrate.fish_barrel": "Fish Barrel",
+  "block.intecrate.cod_barrel": "Barrel of Cod",
+  "block.intecrate.pufferfish_barrel": "Barrel of Pufferfish",
+  "block.intecrate.salmon_barrel": "Barrel of Salmon",
+  "block.intecrate.tropical_fish_barrel": "Barrel of Tropical Fish",
+
   "block.intecrate.storage_bucket": "Storage Bucket",
   "block.intecrate.brain_coral_bucket": "Bucket of Brain Coral",
   "block.intecrate.bubble_coral_bucket": "Bucket of Bubble Coral",
   "block.intecrate.fire_coral_bucket": "Bucket of Fire Coral",
   "block.intecrate.horn_coral_bucket": "Bucket of Horn Coral",
   "block.intecrate.tube_coral_bucket": "Bucket of Tube Coral",
-
-  "block.intecrate.fish_barrel": "Fish Barrel",
-  "block.intecrate.cod_barrel": "Barrel of Cod",
-  "block.intecrate.pufferfish_barrel": "Barrel of Pufferfish",
-  "block.intecrate.salmon_barrel": "Barrel of Salmon",
-  "block.intecrate.tropical_fish_barrel": "Barrel of Tropical Fish",
 
   "block.intecrate.seed_bag": "Seed Bag",
   "block.intecrate.wheat_seed_bag": "Bag of Wheat Seeds",

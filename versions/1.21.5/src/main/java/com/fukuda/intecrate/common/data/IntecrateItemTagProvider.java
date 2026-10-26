@@ -20,5 +20,10 @@ public class IntecrateItemTagProvider extends ItemTagsProvider {
 //                .add(IntecrateItems.EXAMPLE_ITEM.get());
 
         copy(IntecrateTags.Blocks.WOODEN_SLABS, IntecrateTags.Items.WOODEN_SLABS);
+        copy(IntecrateTags.Blocks.IS_DECORATION_CRATE, IntecrateTags.Items.IS_DECORATION_CRATE);
+        copy(IntecrateTags.Blocks.IS_DECORATION_BASKET, IntecrateTags.Items.IS_DECORATION_BASKET);
+        copy(IntecrateTags.Blocks.IS_DECORATION_BARREL, IntecrateTags.Items.IS_DECORATION_BARREL);
+        copy(IntecrateTags.Blocks.IS_DECORATION_BUCKET, IntecrateTags.Items.IS_DECORATION_BUCKET);
+        copy(IntecrateTags.Blocks.IS_DECORATION_BAG, IntecrateTags.Items.IS_DECORATION_BAG);
     }
 }

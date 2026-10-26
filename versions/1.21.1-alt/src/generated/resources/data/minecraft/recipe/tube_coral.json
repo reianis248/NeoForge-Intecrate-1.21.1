@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "intecrate:tube_coral_bucket"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "minecraft:tube_coral"
+  }
+}

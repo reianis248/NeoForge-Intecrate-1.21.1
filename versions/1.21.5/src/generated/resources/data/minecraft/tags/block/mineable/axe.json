@@ -1,7 +1,7 @@
 {
   "values": [
-    "#intecrate:is_crate",
-    "#intecrate:is_basket",
-    "#intecrate:is_barrel"
+    "#intecrate:is_decoration_crate",
+    "#intecrate:is_decoration_basket",
+    "#intecrate:is_decoration_barrel"
   ]
 }

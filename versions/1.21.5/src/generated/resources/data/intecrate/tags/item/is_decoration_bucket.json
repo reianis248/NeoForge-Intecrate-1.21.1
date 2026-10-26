@@ -1,0 +1,10 @@
+{
+  "values": [
+    "intecrate:storage_bucket",
+    "intecrate:brain_coral_bucket",
+    "intecrate:bubble_coral_bucket",
+    "intecrate:fire_coral_bucket",
+    "intecrate:horn_coral_bucket",
+    "intecrate:tube_coral_bucket"
+  ]
+}
