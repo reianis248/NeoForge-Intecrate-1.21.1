@@ -38,9 +38,10 @@ public class DecoBarrels {
 
     private static BlockBehaviour.Properties barrelBlockProperties(MapColor mapColor) {
         return BlockBehaviour.Properties.of()
-            .sound(SoundType.WOOD)
             .strength(2.5f)
+            .sound(SoundType.WOOD)
             .instrument(NoteBlockInstrument.BASS)
+            .ignitedByLava()
             .mapColor(mapColor);
     }
     
