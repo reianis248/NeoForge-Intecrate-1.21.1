@@ -40,6 +40,7 @@ public class DecoBags {
             .strength(0.8f)
             .sound(SoundType.WOOL)
             .instrument(NoteBlockInstrument.BASS)
+            .ignitedByLava()
             .mapColor(mapColor);
     }
     
