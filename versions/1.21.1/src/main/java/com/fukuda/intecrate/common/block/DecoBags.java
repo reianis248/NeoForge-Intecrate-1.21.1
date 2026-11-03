@@ -39,6 +39,7 @@ public class DecoBags {
         return BlockBehaviour.Properties.of()
             .strength(0.8f)
             .sound(SoundType.WOOL)
+            .instrument(NoteBlockInstrument.BASS)
             .mapColor(mapColor);
     }
     
