@@ -19,28 +19,28 @@ import java.util.function.Supplier;
 public class DecoCrates {
     public static final DeferredRegister.Blocks DECOCRATE = DeferredRegister.createBlocks(Intecrate.MOD_ID);
 
-    public static final DeferredBlock<Block> CRATE = registerStorageBlock(
+    public static final DeferredBlock<Block> CRATE = registerDecoBlock(
             "crate",
             () -> new IntecrateSpecialFlammableMultiFaceBlock(crateBlockProperties(MapColor.WOOD)));
-    public static final DeferredBlock<Block> APPLE_CRATE = registerStorageBlock(
+    public static final DeferredBlock<Block> APPLE_CRATE = registerDecoBlock(
             "apple_crate",
             () -> new IntecrateSpecialFlammableMultiFaceBlock(crateBlockProperties(MapColor.WOOD)));
-    public static final DeferredBlock<Block> CARROT_CRATE = registerStorageBlock(
+    public static final DeferredBlock<Block> CARROT_CRATE = registerDecoBlock(
             "carrot_crate",
             () -> new IntecrateSpecialFlammableMultiFaceBlock(crateBlockProperties(MapColor.WOOD)));
-    public static final DeferredBlock<Block> BEETROOT_CRATE = registerStorageBlock(
+    public static final DeferredBlock<Block> BEETROOT_CRATE = registerDecoBlock(
             "beetroot_crate",
             () -> new IntecrateSpecialFlammableMultiFaceBlock(crateBlockProperties(MapColor.WOOD)));
-    public static final DeferredBlock<Block> POTATO_CRATE = registerStorageBlock(
+    public static final DeferredBlock<Block> POTATO_CRATE = registerDecoBlock(
             "potato_crate",
             () -> new IntecrateSpecialFlammableMultiFaceBlock(crateBlockProperties(MapColor.WOOD)));
-    public static final DeferredBlock<Block> POISONOUS_POTATO_CRATE = registerStorageBlock(
+    public static final DeferredBlock<Block> POISONOUS_POTATO_CRATE = registerDecoBlock(
             "poisonous_potato_crate",
             () -> new IntecrateSpecialFlammableMultiFaceBlock(crateBlockProperties(MapColor.WOOD)));
-    public static final DeferredBlock<Block> RED_MUSHROOM_CRATE = registerStorageBlock(
+    public static final DeferredBlock<Block> RED_MUSHROOM_CRATE = registerDecoBlock(
             "red_mushroom_crate",
             () -> new IntecrateSpecialFlammableMultiFaceBlock(crateBlockProperties(MapColor.WOOD)));
-    public static final DeferredBlock<Block> BROWN_MUSHROOM_CRATE = registerStorageBlock(
+    public static final DeferredBlock<Block> BROWN_MUSHROOM_CRATE = registerDecoBlock(
             "brown_mushroom_crate",
             () -> new IntecrateSpecialFlammableMultiFaceBlock(crateBlockProperties(MapColor.WOOD)));
 
@@ -54,7 +54,7 @@ public class DecoCrates {
             .mapColor(mapColor);
     }
     
-    private static <T extends Block> DeferredBlock<T> registerStorageBlock(String name, Supplier<T> block) {
+    private static <T extends Block> DeferredBlock<T> registerDecoBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = DECOCRATE.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;

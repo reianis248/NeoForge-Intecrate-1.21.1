@@ -8,6 +8,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -18,22 +19,22 @@ import java.util.function.Supplier;
 public class DecoBuckets {
     public static final DeferredRegister.Blocks DECOBUCKET = DeferredRegister.createBlocks(Intecrate.MOD_ID);
 
-    public static final DeferredBlock<Block> STORAGE_BUCKET = registerStorageBlock(
+    public static final DeferredBlock<Block> STORAGE_BUCKET = registerDecoBlock(
             "storage_bucket",
             () -> new INTFacingBlock(bucketBlockProperties(MapColor.METAL)));
-    public static final DeferredBlock<Block> BRAIN_CORAL_BUCKET = registerStorageBlock(
+    public static final DeferredBlock<Block> BRAIN_CORAL_BUCKET = registerDecoBlock(
             "brain_coral_bucket",
             () -> new INTFacingBlock(bucketBlockProperties(MapColor.METAL)));
-    public static final DeferredBlock<Block> BUBBLE_CORAL_BUCKET = registerStorageBlock(
+    public static final DeferredBlock<Block> BUBBLE_CORAL_BUCKET = registerDecoBlock(
             "bubble_coral_bucket",
             () -> new INTFacingBlock(bucketBlockProperties(MapColor.METAL)));
-    public static final DeferredBlock<Block> FIRE_CORAL_BUCKET = registerStorageBlock(
+    public static final DeferredBlock<Block> FIRE_CORAL_BUCKET = registerDecoBlock(
             "fire_coral_bucket",
             () -> new INTFacingBlock(bucketBlockProperties(MapColor.METAL)));
-    public static final DeferredBlock<Block> HORN_CORAL_BUCKET = registerStorageBlock(
+    public static final DeferredBlock<Block> HORN_CORAL_BUCKET = registerDecoBlock(
             "horn_coral_bucket",
             () -> new INTFacingBlock(bucketBlockProperties(MapColor.METAL)));
-    public static final DeferredBlock<Block> TUBE_CORAL_BUCKET = registerStorageBlock(
+    public static final DeferredBlock<Block> TUBE_CORAL_BUCKET = registerDecoBlock(
             "tube_coral_bucket",
             () -> new INTFacingBlock(bucketBlockProperties(MapColor.METAL)));
 
@@ -46,7 +47,7 @@ public class DecoBuckets {
             .mapColor(mapColor);
     }
     
-    private static <T extends Block> DeferredBlock<T> registerStorageBlock(String name, Supplier<T> block) {
+    private static <T extends Block> DeferredBlock<T> registerDecoBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = DECOBUCKET.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;

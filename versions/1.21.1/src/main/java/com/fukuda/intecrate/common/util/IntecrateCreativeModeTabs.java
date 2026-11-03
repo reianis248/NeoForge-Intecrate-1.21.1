@@ -56,6 +56,13 @@ public class IntecrateCreativeModeTabs {
                         output.accept(DecoBags.PUMPKIN_SEED_BAG.get());
                         output.accept(DecoBags.MELON_SEED_BAG.get());
                         output.accept(DecoBags.BEETROOT_SEED_BAG.get());
+
+                        output.accept(DecoBoxes.MEAT_BOX.get());
+                        output.accept(DecoBoxes.BEEF_BOX.get());
+                        output.accept(DecoBoxes.PORKCHOP_BOX.get());
+                        output.accept(DecoBoxes.MUTTON_BOX.get());
+                        output.accept(DecoBoxes.CHICKEN_BOX.get());
+                        output.accept(DecoBoxes.RABBIT_BOX.get());
                     })
                     .build());
 

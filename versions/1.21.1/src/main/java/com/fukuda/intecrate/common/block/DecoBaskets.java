@@ -19,28 +19,28 @@ import java.util.function.Supplier;
 public class DecoBaskets {
     public static final DeferredRegister.Blocks DECOBASKET = DeferredRegister.createBlocks(Intecrate.MOD_ID);
 
-    public static final DeferredBlock<Block> BASKET = registerStorageBlock(
+    public static final DeferredBlock<Block> BASKET = registerDecoBlock(
             "basket",
             () -> new IntecrateSpecialFlammableMultiFaceBlock(basketBlockProperties(MapColor.WOOD)));
-    public static final DeferredBlock<Block> ALLIUM_BASKET = registerStorageBlock(
+    public static final DeferredBlock<Block> ALLIUM_BASKET = registerDecoBlock(
             "allium_basket",
             () -> new IntecrateSpecialFlammableMultiFaceBlock(basketBlockProperties(MapColor.WOOD)));
-    public static final DeferredBlock<Block> CORNFLOWER_BASKET = registerStorageBlock(
+    public static final DeferredBlock<Block> CORNFLOWER_BASKET = registerDecoBlock(
             "cornflower_basket",
             () -> new IntecrateSpecialFlammableMultiFaceBlock(basketBlockProperties(MapColor.WOOD)));
-    public static final DeferredBlock<Block> DANDELION_BASKET = registerStorageBlock(
+    public static final DeferredBlock<Block> DANDELION_BASKET = registerDecoBlock(
             "dandelion_basket",
             () -> new IntecrateSpecialFlammableMultiFaceBlock(basketBlockProperties(MapColor.WOOD)));
-    public static final DeferredBlock<Block> POPPY_BASKET = registerStorageBlock(
+    public static final DeferredBlock<Block> POPPY_BASKET = registerDecoBlock(
             "poppy_basket",
             () -> new IntecrateSpecialFlammableMultiFaceBlock(basketBlockProperties(MapColor.WOOD)));
-    public static final DeferredBlock<Block> SWEET_BERRY_BASKET = registerStorageBlock(
+    public static final DeferredBlock<Block> SWEET_BERRY_BASKET = registerDecoBlock(
             "sweet_berry_basket",
             () -> new IntecrateSpecialFlammableMultiFaceBlock(basketBlockProperties(MapColor.WOOD)));
-    public static final DeferredBlock<Block> OXEYE_DAISY_BASKET = registerStorageBlock(
+    public static final DeferredBlock<Block> OXEYE_DAISY_BASKET = registerDecoBlock(
             "oxeye_daisy_basket",
             () -> new IntecrateSpecialFlammableMultiFaceBlock(basketBlockProperties(MapColor.WOOD)));
-    public static final DeferredBlock<Block> AZURE_BLUET_BASKET = registerStorageBlock(
+    public static final DeferredBlock<Block> AZURE_BLUET_BASKET = registerDecoBlock(
             "azure_bluet_basket",
             () -> new IntecrateSpecialFlammableMultiFaceBlock(basketBlockProperties(MapColor.WOOD)));
 
@@ -54,7 +54,7 @@ public class DecoBaskets {
             .mapColor(mapColor);
     }
     
-    private static <T extends Block> DeferredBlock<T> registerStorageBlock(String name, Supplier<T> block) {
+    private static <T extends Block> DeferredBlock<T> registerDecoBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = DECOBASKET.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;
