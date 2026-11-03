@@ -20,42 +20,28 @@ public class DecoBags {
 
     public static final DeferredBlock<Block> SEED_BAG = registerStorageBlock(
             "seed_bag",
-            () -> new IntecrateFlammableFacingBlock(BlockBehaviour.Properties.of()
-                    .strength(0.8f)
-                    .sound(SoundType.WOOL)
-                    .mapColor(MapColor.COLOR_BROWN)
-            ));
+        () -> new IntecrateFlammableFacingBlock(bagBlockProperties(MapColor.COLOR_BROWN)));
     public static final DeferredBlock<Block> WHEAT_SEED_BAG = registerStorageBlock(
             "wheat_seed_bag",
-            () -> new IntecrateFlammableFacingBlock(BlockBehaviour.Properties.of()
-                    .strength(0.8f)
-                    .sound(SoundType.WOOL)
-                    .mapColor(MapColor.COLOR_BROWN)
-            ));
+        () -> new IntecrateFlammableFacingBlock(bagBlockProperties(MapColor.COLOR_BROWN)));
     public static final DeferredBlock<Block> PUMPKIN_SEED_BAG = registerStorageBlock(
             "pumpkin_seed_bag",
-            () -> new IntecrateFlammableFacingBlock(BlockBehaviour.Properties.of()
-                    .strength(0.8f)
-                    .sound(SoundType.WOOL)
-                    .mapColor(MapColor.COLOR_BROWN)
-            ));
+            () -> new IntecrateFlammableFacingBlock(bagBlockProperties(MapColor.COLOR_BROWN)));
     public static final DeferredBlock<Block> MELON_SEED_BAG = registerStorageBlock(
             "melon_seed_bag",
-            () -> new IntecrateFlammableFacingBlock(BlockBehaviour.Properties.of()
-                    .strength(0.8f)
-                    .sound(SoundType.WOOL)
-                    .mapColor(MapColor.COLOR_BROWN)
-            ));
-
+            () -> new IntecrateFlammableFacingBlock(bagBlockProperties(MapColor.COLOR_BROWN)));
     public static final DeferredBlock<Block> BEETROOT_SEED_BAG = registerStorageBlock(
             "beetroot_seed_bag",
-            () -> new IntecrateFlammableFacingBlock(BlockBehaviour.Properties.of()
-                    .strength(0.8f)
-                    .sound(SoundType.WOOL)
-                    .mapColor(MapColor.COLOR_BROWN)
-            ));
+            () -> new IntecrateFlammableFacingBlock(bagBlockProperties(MapColor.COLOR_BROWN)));
 
 
+    private static BlockBehaviour.Properties bagBlockProperties(MapColor mapColor) {
+        return BlockBehaviour.Properties.of()
+            .strength(0.8f)
+            .sound(SoundType.WOOL)
+            .mapColor(mapColor);
+    }
+    
     private static <T extends Block> DeferredBlock<T> registerStorageBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = DECOBAG.register(name, block);
         registerBlockItem(name, toReturn);
