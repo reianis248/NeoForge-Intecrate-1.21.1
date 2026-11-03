@@ -21,6 +21,18 @@ public class DecoBoxes {
     public static final DeferredBlock<Block> BEEF_BOX = registerStorageBlock(
             "beef_box",
             () -> new IntecrateFlammableFacingBlock(boxBlockProperties(MapColor.WOOD)));
+    public static final DeferredBlock<Block> PORKCHOP_BOX = registerStorageBlock(
+            "porkchop_box",
+            () -> new IntecrateFlammableFacingBlock(boxBlockProperties(MapColor.WOOD)));
+    public static final DeferredBlock<Block> MUTTON_BOX = registerStorageBlock(
+            "mutton_box",
+            () -> new IntecrateFlammableFacingBlock(boxBlockProperties(MapColor.WOOD)));
+    public static final DeferredBlock<Block> CHICKEN_BOX = registerStorageBlock(
+            "chicken_box",
+            () -> new IntecrateFlammableFacingBlock(boxBlockProperties(MapColor.WOOD)));
+    public static final DeferredBlock<Block> RABBIT_BOX = registerStorageBlock(
+            "rabbit_box",
+        () -> new IntecrateFlammableFacingBlock(boxBlockProperties(MapColor.WOOD)));
 
 
     private static BlockBehaviour.Properties boxBlockProperties(MapColor mapColor) {
