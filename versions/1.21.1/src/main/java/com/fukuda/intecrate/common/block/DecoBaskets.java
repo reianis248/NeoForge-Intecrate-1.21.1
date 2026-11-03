@@ -1,4 +1,4 @@
-package com.fukuda.intecrate.common.block;
+        package com.fukuda.intecrate.common.block;
 
 import com.fukuda.intecrate.Intecrate;
 import com.fukuda.intecrate.common.block.noted.extended.IntecrateSpecialFlammableMultiFaceBlock;
@@ -21,78 +21,39 @@ public class DecoBaskets {
 
     public static final DeferredBlock<Block> BASKET = registerStorageBlock(
             "basket",
-            () -> new IntecrateSpecialFlammableMultiFaceBlock(BlockBehaviour.Properties.of()
-                    .sound(SoundType.SCAFFOLDING)
-                    .mapColor(MapColor.WOOD)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .strength(1.98f)
-                    .ignitedByLava()
-            ));
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(basketBlockProperties(MapColor.WOOD)));
     public static final DeferredBlock<Block> ALLIUM_BASKET = registerStorageBlock(
             "allium_basket",
-            () -> new IntecrateSpecialFlammableMultiFaceBlock(BlockBehaviour.Properties.of()
-                    .sound(SoundType.SCAFFOLDING)
-                    .mapColor(MapColor.WOOD)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .strength(1.98f)
-                    .ignitedByLava()
-            ));
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(basketBlockProperties(MapColor.WOOD)));
     public static final DeferredBlock<Block> CORNFLOWER_BASKET = registerStorageBlock(
             "cornflower_basket",
-            () -> new IntecrateSpecialFlammableMultiFaceBlock(BlockBehaviour.Properties.of()
-                    .sound(SoundType.SCAFFOLDING)
-                    .mapColor(MapColor.WOOD)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .strength(1.98f)
-                    .ignitedByLava()
-            ));
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(basketBlockProperties(MapColor.WOOD)));
     public static final DeferredBlock<Block> DANDELION_BASKET = registerStorageBlock(
             "dandelion_basket",
-            () -> new IntecrateSpecialFlammableMultiFaceBlock(BlockBehaviour.Properties.of()
-                    .sound(SoundType.SCAFFOLDING)
-                    .mapColor(MapColor.WOOD)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .strength(1.98f)
-                    .ignitedByLava()
-            ));
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(basketBlockProperties(MapColor.WOOD)));
     public static final DeferredBlock<Block> POPPY_BASKET = registerStorageBlock(
             "poppy_basket",
-            () -> new IntecrateSpecialFlammableMultiFaceBlock(BlockBehaviour.Properties.of()
-                    .sound(SoundType.SCAFFOLDING)
-                    .mapColor(MapColor.WOOD)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .strength(1.98f)
-                    .ignitedByLava()
-            ));
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(basketBlockProperties(MapColor.WOOD)));
     public static final DeferredBlock<Block> SWEET_BERRY_BASKET = registerStorageBlock(
             "sweet_berry_basket",
-            () -> new IntecrateSpecialFlammableMultiFaceBlock(BlockBehaviour.Properties.of()
-                    .sound(SoundType.SCAFFOLDING)
-                    .mapColor(MapColor.WOOD)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .strength(1.98f)
-                    .ignitedByLava()
-            ));
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(basketBlockProperties(MapColor.WOOD)));
     public static final DeferredBlock<Block> OXEYE_DAISY_BASKET = registerStorageBlock(
             "oxeye_daisy_basket",
-            () -> new IntecrateSpecialFlammableMultiFaceBlock(BlockBehaviour.Properties.of()
-                    .sound(SoundType.SCAFFOLDING)
-                    .mapColor(MapColor.WOOD)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .strength(1.98f)
-                    .ignitedByLava()
-            ));
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(basketBlockProperties(MapColor.WOOD)));
     public static final DeferredBlock<Block> AZURE_BLUET_BASKET = registerStorageBlock(
             "azure_bluet_basket",
-            () -> new IntecrateSpecialFlammableMultiFaceBlock(BlockBehaviour.Properties.of()
-                    .sound(SoundType.SCAFFOLDING)
-                    .mapColor(MapColor.WOOD)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .strength(1.98f)
-                    .ignitedByLava()
-            ));
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(basketBlockProperties(MapColor.WOOD)));
 
 
+    private static BlockBehaviour.Properties basketBlockProperties(MapColor mapColor) {
+        return BlockBehaviour.Properties.of()
+            .strength(1.98f)
+            .sound(SoundType.SCAFFOLDING)
+            .instrument(NoteBlockInstrument.BASS)
+            .ignitedByLava()
+            .mapColor(mapColor);
+    }
+    
     private static <T extends Block> DeferredBlock<T> registerStorageBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = DECOBASKET.register(name, block);
         registerBlockItem(name, toReturn);
