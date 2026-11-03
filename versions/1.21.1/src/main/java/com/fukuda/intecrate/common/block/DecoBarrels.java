@@ -21,47 +21,29 @@ public class DecoBarrels {
 
     public static final DeferredBlock<Block> FISH_BARREL = registerStorageBlock(
             "fish_barrel",
-            () -> new IntecrateSpecialFlammableMultiFaceBlock(BlockBehaviour.Properties.of()
-                    .sound(SoundType.WOOD)
-                    .strength(2.5f)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .mapColor(MapColor.WOOD)
-                    .noOcclusion()
-            ));
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(barrelBlockProperties(MapColor.WOOD)));
     public static final DeferredBlock<Block> COD_BARREL = registerStorageBlock(
             "cod_barrel",
-            () -> new IntecrateSpecialFlammableMultiFaceBlock(BlockBehaviour.Properties.of()
-                    .sound(SoundType.WOOD)
-                    .strength(2.5f)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .mapColor(MapColor.WOOD)
-            ));
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(barrelBlockProperties(MapColor.WOOD)));
     public static final DeferredBlock<Block> PUFFERFISH_BARREL = registerStorageBlock(
             "pufferfish_barrel",
-            () -> new IntecrateSpecialFlammableMultiFaceBlock(BlockBehaviour.Properties.of()
-                    .sound(SoundType.WOOD)
-                    .strength(2.5f)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .mapColor(MapColor.WOOD)
-            ));
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(barrelBlockProperties(MapColor.WOOD)));
     public static final DeferredBlock<Block> SALMON_BARREL = registerStorageBlock(
             "salmon_barrel",
-            () -> new IntecrateSpecialFlammableMultiFaceBlock(BlockBehaviour.Properties.of()
-                    .sound(SoundType.WOOD)
-                    .strength(2.5f)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .mapColor(MapColor.WOOD)
-            ));
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(barrelBlockProperties(MapColor.WOOD)));
     public static final DeferredBlock<Block> TROPICAL_FISH_BARREL = registerStorageBlock(
             "tropical_fish_barrel",
-            () -> new IntecrateSpecialFlammableMultiFaceBlock(BlockBehaviour.Properties.of()
-                    .sound(SoundType.WOOD)
-                    .strength(2.5f)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .mapColor(MapColor.WOOD)
-            ));
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(barrelBlockProperties(MapColor.WOOD)));
 
 
+    private static BlockBehaviour.Properties barrelBlockProperties(MapColor mapColor) {
+        return BlockBehaviour.Properties.of()
+            .sound(SoundType.WOOD)
+            .strength(2.5f)
+            .instrument(NoteBlockInstrument.BASS)
+            .mapColor(mapColor);
+    }
+    
     private static <T extends Block> DeferredBlock<T> registerStorageBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = DECOBARREL.register(name, block);
         registerBlockItem(name, toReturn);
