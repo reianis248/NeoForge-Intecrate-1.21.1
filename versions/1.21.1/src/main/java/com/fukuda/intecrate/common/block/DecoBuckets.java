@@ -20,48 +20,32 @@ public class DecoBuckets {
 
     public static final DeferredBlock<Block> STORAGE_BUCKET = registerStorageBlock(
             "storage_bucket",
-            () -> new INTFacingBlock(BlockBehaviour.Properties.of()
-                    .sound(SoundType.METAL)
-                    .mapColor(MapColor.METAL)
-                    .strength(3.48f, 1.48f
-                    )));
+            () -> new INTFacingBlock(bucketBlockProperties(MapColor.METAL)));
     public static final DeferredBlock<Block> BRAIN_CORAL_BUCKET = registerStorageBlock(
             "brain_coral_bucket",
-            () -> new INTFacingBlock(BlockBehaviour.Properties.of()
-                    .sound(SoundType.METAL)
-                    .mapColor(MapColor.METAL)
-                    .strength(3.48f, 1.48f
-                    )));
+            () -> new INTFacingBlock(bucketBlockProperties(MapColor.METAL)));
     public static final DeferredBlock<Block> BUBBLE_CORAL_BUCKET = registerStorageBlock(
             "bubble_coral_bucket",
-            () -> new INTFacingBlock(BlockBehaviour.Properties.of()
-                    .sound(SoundType.METAL)
-                    .mapColor(MapColor.METAL)
-                    .strength(3.48f, 1.48f
-                    )));
+            () -> new INTFacingBlock(bucketBlockProperties(MapColor.METAL)));
     public static final DeferredBlock<Block> FIRE_CORAL_BUCKET = registerStorageBlock(
             "fire_coral_bucket",
-            () -> new INTFacingBlock(BlockBehaviour.Properties.of()
-                    .sound(SoundType.METAL)
-                    .mapColor(MapColor.METAL)
-                    .strength(3.48f, 1.48f
-                    )));
+            () -> new INTFacingBlock(bucketBlockProperties(MapColor.METAL)));
     public static final DeferredBlock<Block> HORN_CORAL_BUCKET = registerStorageBlock(
             "horn_coral_bucket",
-            () -> new INTFacingBlock(BlockBehaviour.Properties.of()
-                    .sound(SoundType.METAL)
-                    .mapColor(MapColor.METAL)
-                    .strength(3.48f, 1.48f
-                    )));
+            () -> new INTFacingBlock(bucketBlockProperties(MapColor.METAL)));
     public static final DeferredBlock<Block> TUBE_CORAL_BUCKET = registerStorageBlock(
             "tube_coral_bucket",
-            () -> new INTFacingBlock(BlockBehaviour.Properties.of()
-                    .sound(SoundType.METAL)
-                    .mapColor(MapColor.METAL)
-                    .strength(3.48f, 1.48f
-                    )));
+            () -> new INTFacingBlock(bucketBlockProperties(MapColor.METAL)));
 
 
+    private static BlockBehaviour.Properties bucketBlockProperties(MapColor mapColor) {
+        return BlockBehaviour.Properties.of()
+            .strength(3.46f, 1.48f)
+            .sound(SoundType.METAL)
+            .instrument(NoteBlockInstrument.BASS)
+            .mapColor(mapColor);
+    }
+    
     private static <T extends Block> DeferredBlock<T> registerStorageBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = DECOBUCKET.register(name, block);
         registerBlockItem(name, toReturn);
