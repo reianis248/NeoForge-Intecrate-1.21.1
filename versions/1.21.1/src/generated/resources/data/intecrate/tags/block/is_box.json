@@ -1,0 +1,10 @@
+{
+  "values": [
+    "intecrate:meat_box",
+    "intecrate:beef_box",
+    "intecrate:porkchop_box",
+    "intecrate:mutton_box",
+    "intecrate:chicken_box",
+    "intecrate:rabbit_box"
+  ]
+}

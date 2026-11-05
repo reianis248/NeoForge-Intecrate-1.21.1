@@ -38,7 +38,6 @@ public class Intecrate {
         DecoBuckets.register(modEventBus);
         DecoBaskets.register(modEventBus);
         DecoBarrels.register(modEventBus);
-        DecoBoxes.register(modEventBus);
         DecoBags.register(modEventBus);
         DecoBoxes.register(modEventBus);
         IntecrateCreativeModeTabs.register(modEventBus);
