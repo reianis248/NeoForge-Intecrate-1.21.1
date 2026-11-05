@@ -65,6 +65,14 @@ public class IntecrateBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(DecoBags.PUMPKIN_SEED_BAG.get());
         dropSelf(DecoBags.MELON_SEED_BAG.get());
         dropSelf(DecoBags.BEETROOT_SEED_BAG.get());
+
+        /* Boxes */
+        dropSelf(DecoBoxes.MEAT_BOX.get());
+        dropSelf(DecoBoxes.BEEF_BOX.get());
+        dropSelf(DecoBoxes.PORKCHOP_BOX.get());
+        dropSelf(DecoBoxes.MUTTON_BOX.get());
+        dropSelf(DecoBoxes.CHICKEN_BOX.get());
+        dropSelf(DecoBoxes.RABBIT_BOX.get());
     }
 
     @Override
@@ -76,6 +84,7 @@ public class IntecrateBlockLootTableProvider extends BlockLootSubProvider {
         DecoBarrels.DECOBARREL.getEntries().forEach(h -> blocks.add(h.value()));
         DecoBuckets.DECOBUCKET.getEntries().forEach(h -> blocks.add(h.value()));
         DecoBags.DECOBAG.getEntries().forEach(h -> blocks.add(h.value()));
+        DecoBoxes.DECOBOX.getEntries().forEach(h -> blocks.add(h.value()));
         return blocks;
     }
 }

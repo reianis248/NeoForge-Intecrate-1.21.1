@@ -40,6 +40,7 @@ public class Intecrate {
         DecoBarrels.register(modEventBus);
         DecoBoxes.register(modEventBus);
         DecoBags.register(modEventBus);
+        DecoBoxes.register(modEventBus);
         IntecrateCreativeModeTabs.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
