@@ -4,7 +4,9 @@ import com.fukuda.intecrate.Intecrate;
 import com.fukuda.intecrate.common.block.*;
 import com.fukuda.intecrate.common.util.IntecrateCreativeModeTabs;
 
+//? if 1.21.1 {
 import de.Roboter007.moderntabs.ModernTabs;
+//?}
 import de.Roboter007.moderntabs.section.item.SectionedItems;
 
 import net.minecraft.resources.ResourceLocation;
@@ -60,6 +62,12 @@ public class ClientEvents {
             SectionedItems.addItem(barrelsSection, DecoBarrels.TROPICAL_FISH_BARREL);
 
             /* Boxes */
+            SectionedItems.addItem(boxesSection, DecoBoxes.MEAT_BOX);
+            SectionedItems.addItem(boxesSection, DecoBoxes.BEEF_BOX);
+            SectionedItems.addItem(boxesSection, DecoBoxes.PORKCHOP_BOX);
+            SectionedItems.addItem(boxesSection, DecoBoxes.MUTTON_BOX);
+            SectionedItems.addItem(boxesSection, DecoBoxes.CHICKEN_BOX);
+            SectionedItems.addItem(boxesSection, DecoBoxes.RABBIT_BOX);
 
             /* Buckets */
             SectionedItems.addItem(bucketsSection, DecoBuckets.STORAGE_BUCKET);

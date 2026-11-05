@@ -19,6 +19,7 @@ public class IntecrateTags {
         public static final TagKey<Block> IS_BASKET = createTag("is_basket");
         public static final TagKey<Block> IS_BARREL = createTag("is_barrel");
         public static final TagKey<Block> IS_BUCKET = createTag("is_bucket");
+        public static final TagKey<Block> IS_BOX = createTag("is_box");
     }
 
     public static class Items {
