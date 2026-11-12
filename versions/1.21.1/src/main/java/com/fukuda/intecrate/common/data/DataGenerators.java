@@ -29,8 +29,12 @@ public class DataGenerators {
                 List.of(new LootTableProvider.SubProviderEntry(IntecrateBlockLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
         generator.addProvider(event.includeServer(), new IntecrateRecipeProvider(packOutput, lookupProvider));
 
+        generator.addProvider(event.includeClient(), new IntecrateEnglishLanguageProvider(packOutput, "en_us"));
+
         BlockTagsProvider blockTagsProvider = new IntecrateBlockTagProvider(packOutput, lookupProvider, existingFileHelper);
         generator.addProvider(event.includeServer(), blockTagsProvider);
         generator.addProvider(event.includeServer(), new IntecrateItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
+
+        generator.addProvider(event.includeClient(), new IntecrateItemModelProvider(packOutput, existingFileHelper));
     }
 }

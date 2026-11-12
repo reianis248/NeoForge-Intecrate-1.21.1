@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "north": "intecrate:block/box/box_back",
+    "south": "intecrate:block/box/box_back",
+    "east": "intecrate:block/box/box_side",
+    "west": "intecrate:block/box/box_side",
+    "up": "intecrate:block/box/box_top_closed",
+    "down": "intecrate:block/box/box_bottom",
+    "particle": "intecrate:block/box/box_side"
+  }
+}

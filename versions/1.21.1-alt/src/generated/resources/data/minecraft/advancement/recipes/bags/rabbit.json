@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_rabbit_box": {
+      "conditions": {
+        "items": [
+          {
+            "items": "intecrate:rabbit_box"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:rabbit"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_rabbit_box"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:rabbit"
+    ]
+  }
+}

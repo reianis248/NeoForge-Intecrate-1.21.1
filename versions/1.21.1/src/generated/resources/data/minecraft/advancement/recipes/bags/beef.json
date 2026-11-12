@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_beef_box": {
+      "conditions": {
+        "items": [
+          {
+            "items": "intecrate:beef_box"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:beef"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_beef_box"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:beef"
+    ]
+  }
+}

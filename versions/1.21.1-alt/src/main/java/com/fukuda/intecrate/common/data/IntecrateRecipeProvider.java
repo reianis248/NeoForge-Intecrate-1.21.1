@@ -7,11 +7,10 @@ import com.fukuda.intecrate.common.data.recipes.IntecrateShapelessRecipeBuilder;
 import com.fukuda.intecrate.common.util.IntecrateTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.*;
+import net.minecraft.data.recipes.RecipeOutput;
+import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.level.block.Blocks;
-import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
 import java.util.concurrent.CompletableFuture;
@@ -378,6 +377,70 @@ public class IntecrateRecipeProvider extends RecipeProvider implements IConditio
                 .pattern("###")
                 .define('#', Ingredient.of(Items.BEETROOT_SEEDS))
                 .unlockedBy("has_beetroot_seeds", has(Items.BEETROOT_SEEDS))
+                .save(recipeOutput);
+
+        /* Boxes */
+        IntecrateShapedRecipeBuilder.shaped(IntecrateRecipeCategory.BOXES, DecoBoxes.MEAT_BOX.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', Ingredient.of(IntecrateTags.Items.WOODEN_SLABS))
+                .unlockedBy("has_wooden_slabs", has(IntecrateTags.Items.WOODEN_SLABS))
+                .save(recipeOutput);
+
+        IntecrateShapelessRecipeBuilder.shapeless(IntecrateRecipeCategory.BAGS, Items.BEEF, 9)
+                .requires(DecoBoxes.BEEF_BOX)
+                .unlockedBy("has_beef_box", has(DecoBoxes.BEEF_BOX)).save(recipeOutput);
+        IntecrateShapedRecipeBuilder.shaped(IntecrateRecipeCategory.BOXES, DecoBoxes.BEEF_BOX.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', Ingredient.of(Items.BEEF))
+                .unlockedBy("has_beef", has(Items.BEEF))
+                .save(recipeOutput);
+
+        IntecrateShapelessRecipeBuilder.shapeless(IntecrateRecipeCategory.BAGS, Items.PORKCHOP, 9)
+                .requires(DecoBoxes.PORKCHOP_BOX)
+                .unlockedBy("has_porkchop_box", has(DecoBoxes.PORKCHOP_BOX)).save(recipeOutput);
+        IntecrateShapedRecipeBuilder.shaped(IntecrateRecipeCategory.BOXES, DecoBoxes.PORKCHOP_BOX.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', Ingredient.of(Items.PORKCHOP))
+                .unlockedBy("has_porkchop", has(Items.PORKCHOP))
+                .save(recipeOutput);
+
+        IntecrateShapelessRecipeBuilder.shapeless(IntecrateRecipeCategory.BAGS, Items.MUTTON, 9)
+                .requires(DecoBoxes.MUTTON_BOX)
+                .unlockedBy("has_mutton_box", has(DecoBoxes.MUTTON_BOX)).save(recipeOutput);
+        IntecrateShapedRecipeBuilder.shaped(IntecrateRecipeCategory.BOXES, DecoBoxes.MUTTON_BOX.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', Ingredient.of(Items.MUTTON))
+                .unlockedBy("has_mutton", has(Items.MUTTON))
+                .save(recipeOutput);
+
+        IntecrateShapelessRecipeBuilder.shapeless(IntecrateRecipeCategory.BAGS, Items.CHICKEN, 9)
+                .requires(DecoBoxes.CHICKEN_BOX)
+                .unlockedBy("has_chicken_box", has(DecoBoxes.CHICKEN_BOX)).save(recipeOutput);
+        IntecrateShapedRecipeBuilder.shaped(IntecrateRecipeCategory.BOXES, DecoBoxes.CHICKEN_BOX.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', Ingredient.of(Items.CHICKEN))
+                .unlockedBy("has_chicken", has(Items.CHICKEN))
+                .save(recipeOutput);
+
+        IntecrateShapelessRecipeBuilder.shapeless(IntecrateRecipeCategory.BAGS, Items.RABBIT, 9)
+                .requires(DecoBoxes.RABBIT_BOX)
+                .unlockedBy("has_rabbit_box", has(DecoBoxes.RABBIT_BOX)).save(recipeOutput);
+        IntecrateShapedRecipeBuilder.shaped(IntecrateRecipeCategory.BOXES, DecoBoxes.RABBIT_BOX.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', Ingredient.of(Items.RABBIT))
+                .unlockedBy("has_rabbit", has(Items.RABBIT))
                 .save(recipeOutput);
 
     }

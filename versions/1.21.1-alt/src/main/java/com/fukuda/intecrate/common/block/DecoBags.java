@@ -1,13 +1,14 @@
 package com.fukuda.intecrate.common.block;
 
 import com.fukuda.intecrate.Intecrate;
-import com.fukuda.intecrate.common.block.noted.extended.IntecrateFlammableFacingBlock;
+import com.fukuda.intecrate.common.block.noted.extended.IntecrateSpecialFlammableMultiFaceBlock;
 import com.fukuda.intecrate.common.item.IntecrateItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -18,45 +19,33 @@ import java.util.function.Supplier;
 public class DecoBags {
     public static final DeferredRegister.Blocks DECOBAG = DeferredRegister.createBlocks(Intecrate.MOD_ID);
 
-    public static final DeferredBlock<Block> SEED_BAG = registerStorageBlock(
+    public static final DeferredBlock<Block> SEED_BAG = registerDecoBlock(
             "seed_bag",
-            () -> new IntecrateFlammableFacingBlock(BlockBehaviour.Properties.of()
-                    .strength(0.8f)
-                    .sound(SoundType.WOOL)
-                    .mapColor(MapColor.COLOR_BROWN)
-            ));
-    public static final DeferredBlock<Block> WHEAT_SEED_BAG = registerStorageBlock(
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(bagBlockProperties(MapColor.COLOR_BROWN)));
+    public static final DeferredBlock<Block> WHEAT_SEED_BAG = registerDecoBlock(
             "wheat_seed_bag",
-            () -> new IntecrateFlammableFacingBlock(BlockBehaviour.Properties.of()
-                    .strength(0.8f)
-                    .sound(SoundType.WOOL)
-                    .mapColor(MapColor.COLOR_BROWN)
-            ));
-    public static final DeferredBlock<Block> PUMPKIN_SEED_BAG = registerStorageBlock(
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(bagBlockProperties(MapColor.COLOR_BROWN)));
+    public static final DeferredBlock<Block> PUMPKIN_SEED_BAG = registerDecoBlock(
             "pumpkin_seed_bag",
-            () -> new IntecrateFlammableFacingBlock(BlockBehaviour.Properties.of()
-                    .strength(0.8f)
-                    .sound(SoundType.WOOL)
-                    .mapColor(MapColor.COLOR_BROWN)
-            ));
-    public static final DeferredBlock<Block> MELON_SEED_BAG = registerStorageBlock(
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(bagBlockProperties(MapColor.COLOR_BROWN)));
+    public static final DeferredBlock<Block> MELON_SEED_BAG = registerDecoBlock(
             "melon_seed_bag",
-            () -> new IntecrateFlammableFacingBlock(BlockBehaviour.Properties.of()
-                    .strength(0.8f)
-                    .sound(SoundType.WOOL)
-                    .mapColor(MapColor.COLOR_BROWN)
-            ));
-
-    public static final DeferredBlock<Block> BEETROOT_SEED_BAG = registerStorageBlock(
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(bagBlockProperties(MapColor.COLOR_BROWN)));
+    public static final DeferredBlock<Block> BEETROOT_SEED_BAG = registerDecoBlock(
             "beetroot_seed_bag",
-            () -> new IntecrateFlammableFacingBlock(BlockBehaviour.Properties.of()
-                    .strength(0.8f)
-                    .sound(SoundType.WOOL)
-                    .mapColor(MapColor.COLOR_BROWN)
-            ));
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(bagBlockProperties(MapColor.COLOR_BROWN)));
 
 
-    private static <T extends Block> DeferredBlock<T> registerStorageBlock(String name, Supplier<T> block) {
+    private static BlockBehaviour.Properties bagBlockProperties(MapColor mapColor) {
+        return BlockBehaviour.Properties.of()
+                .strength(0.8f)
+                .sound(SoundType.WOOL)
+                .instrument(NoteBlockInstrument.BASS)
+                .ignitedByLava()
+                .mapColor(mapColor);
+    }
+
+    private static <T extends Block> DeferredBlock<T> registerDecoBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = DECOBAG.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;

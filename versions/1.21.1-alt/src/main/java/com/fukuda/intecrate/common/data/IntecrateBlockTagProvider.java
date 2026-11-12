@@ -1,10 +1,7 @@
 package com.fukuda.intecrate.common.data;
 
 import com.fukuda.intecrate.Intecrate;
-import com.fukuda.intecrate.common.block.DecoBarrels;
-import com.fukuda.intecrate.common.block.DecoBaskets;
-import com.fukuda.intecrate.common.block.DecoBuckets;
-import com.fukuda.intecrate.common.block.DecoCrates;
+import com.fukuda.intecrate.common.block.*;
 import com.fukuda.intecrate.common.util.IntecrateTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -79,6 +76,14 @@ public class IntecrateBlockTagProvider extends BlockTagsProvider {
                 .add(DecoBuckets.FIRE_CORAL_BUCKET.get())
                 .add(DecoBuckets.HORN_CORAL_BUCKET.get())
                 .add(DecoBuckets.TUBE_CORAL_BUCKET.get());
+
+        tag(IntecrateTags.Blocks.IS_BOX)
+                .add(DecoBoxes.MEAT_BOX.get())
+                .add(DecoBoxes.BEEF_BOX.get())
+                .add(DecoBoxes.PORKCHOP_BOX.get())
+                .add(DecoBoxes.MUTTON_BOX.get())
+                .add(DecoBoxes.CHICKEN_BOX.get())
+                .add(DecoBoxes.RABBIT_BOX.get());
 
     }
 }

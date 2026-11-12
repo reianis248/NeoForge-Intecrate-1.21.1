@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "intecrate:block/porkchop_box"
+    },
+    "facing=south": {
+      "model": "intecrate:block/porkchop_box",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "intecrate:block/porkchop_box",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "intecrate:block/porkchop_box",
+      "y": 90
+    }
+  }
+}

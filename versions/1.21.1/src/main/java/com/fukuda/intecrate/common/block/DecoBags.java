@@ -2,6 +2,7 @@ package com.fukuda.intecrate.common.block;
 
 import com.fukuda.intecrate.Intecrate;
 import com.fukuda.intecrate.common.block.noted.extended.IntecrateFlammableFacingBlock;
+import com.fukuda.intecrate.common.block.noted.extended.IntecrateSpecialFlammableMultiFaceBlock;
 import com.fukuda.intecrate.common.item.IntecrateItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -21,19 +22,19 @@ public class DecoBags {
 
     public static final DeferredBlock<Block> SEED_BAG = registerDecoBlock(
             "seed_bag",
-            () -> new IntecrateFlammableFacingBlock(bagBlockProperties(MapColor.COLOR_BROWN)));
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(bagBlockProperties(MapColor.COLOR_BROWN)));
     public static final DeferredBlock<Block> WHEAT_SEED_BAG = registerDecoBlock(
             "wheat_seed_bag",
-            () -> new IntecrateFlammableFacingBlock(bagBlockProperties(MapColor.COLOR_BROWN)));
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(bagBlockProperties(MapColor.COLOR_BROWN)));
     public static final DeferredBlock<Block> PUMPKIN_SEED_BAG = registerDecoBlock(
             "pumpkin_seed_bag",
-            () -> new IntecrateFlammableFacingBlock(bagBlockProperties(MapColor.COLOR_BROWN)));
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(bagBlockProperties(MapColor.COLOR_BROWN)));
     public static final DeferredBlock<Block> MELON_SEED_BAG = registerDecoBlock(
             "melon_seed_bag",
-            () -> new IntecrateFlammableFacingBlock(bagBlockProperties(MapColor.COLOR_BROWN)));
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(bagBlockProperties(MapColor.COLOR_BROWN)));
     public static final DeferredBlock<Block> BEETROOT_SEED_BAG = registerDecoBlock(
             "beetroot_seed_bag",
-            () -> new IntecrateFlammableFacingBlock(bagBlockProperties(MapColor.COLOR_BROWN)));
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(bagBlockProperties(MapColor.COLOR_BROWN)));
 
 
     private static BlockBehaviour.Properties bagBlockProperties(MapColor mapColor) {

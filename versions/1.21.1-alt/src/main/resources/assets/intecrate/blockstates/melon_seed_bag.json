@@ -1,18 +1,56 @@
 {
   "variants": {
-    "facing=north": {
+    "face=floor,facing=north": {
       "model": "intecrate:block/melon_seed_bag"
     },
-    "facing=south": {
+    "face=floor,facing=east": {
+      "model": "intecrate:block/melon_seed_bag",
+      "y": 90
+    },
+    "face=floor,facing=south": {
       "model": "intecrate:block/melon_seed_bag",
       "y": 180
     },
-    "facing=west": {
+    "face=floor,facing=west": {
       "model": "intecrate:block/melon_seed_bag",
       "y": 270
     },
-    "facing=east": {
+    "face=wall,facing=north": {
       "model": "intecrate:block/melon_seed_bag",
+      "x": 90
+    },
+    "face=wall,facing=east": {
+      "model": "intecrate:block/melon_seed_bag",
+      "x": 90,
+      "y": 90
+    },
+    "face=wall,facing=south": {
+      "model": "intecrate:block/melon_seed_bag",
+      "x": 90,
+      "y": 180
+    },
+    "face=wall,facing=west": {
+      "model": "intecrate:block/melon_seed_bag",
+      "x": 90,
+      "y": 270
+    },
+    "face=ceiling,facing=north": {
+      "model": "intecrate:block/melon_seed_bag",
+      "x": 180,
+      "y": 180
+    },
+    "face=ceiling,facing=east": {
+      "model": "intecrate:block/melon_seed_bag",
+      "x": 180,
+      "y": 270
+    },
+    "face=ceiling,facing=south": {
+      "model": "intecrate:block/melon_seed_bag",
+      "x": 180
+    },
+    "face=ceiling,facing=west": {
+      "model": "intecrate:block/melon_seed_bag",
+      "x": 180,
       "y": 90
     }
   }

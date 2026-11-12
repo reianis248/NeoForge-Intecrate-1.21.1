@@ -21,7 +21,7 @@ public class DecoCrates {
 
     public static final DeferredBlock<Block> CRATE = registerDecoBlock(
             "crate",
-            () -> new IntecrateSpecialFlammableMultiFaceBlock(crateBlockProperties(MapColor.WOOD)));
+            () -> new IntecrateSpecialFlammableMultiFaceBlock(cutoutCrateBlockProperties(MapColor.WOOD)));
     public static final DeferredBlock<Block> APPLE_CRATE = registerDecoBlock(
             "apple_crate",
             () -> new IntecrateSpecialFlammableMultiFaceBlock(crateBlockProperties(MapColor.WOOD)));
@@ -51,6 +51,15 @@ public class DecoCrates {
                 .sound(SoundType.WOOD)
                 .instrument(NoteBlockInstrument.BASS)
                 .ignitedByLava()
+                .mapColor(mapColor);
+    }
+    private static BlockBehaviour.Properties cutoutCrateBlockProperties(MapColor mapColor) {
+        return BlockBehaviour.Properties.of()
+                .strength(2.5f)
+                .sound(SoundType.WOOD)
+                .instrument(NoteBlockInstrument.BASS)
+                .ignitedByLava()
+                .noOcclusion()
                 .mapColor(mapColor);
     }
 

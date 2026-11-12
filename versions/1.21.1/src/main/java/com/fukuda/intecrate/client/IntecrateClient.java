@@ -41,7 +41,6 @@ public class IntecrateClient {
             ModernTabs.configureTab(IntecrateCreativeModeTabs.INTECRATE.get(), tabDesign);
 
             ItemBlockRenderTypes.setRenderLayer(DecoCrates.CRATE.get(), RenderType.cutoutMipped());
-            ItemBlockRenderTypes.setRenderLayer(DecoBarrels.FISH_BARREL.get(), RenderType.cutoutMipped());
         });
     }
 }

@@ -34,7 +34,6 @@ public class IntecrateClient {
         Intecrate.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
         event.enqueueWork(() -> {
             ItemBlockRenderTypes.setRenderLayer(DecoCrates.CRATE.get(), RenderType.cutoutMipped());
-            ItemBlockRenderTypes.setRenderLayer(DecoBarrels.FISH_BARREL.get(), RenderType.cutoutMipped());
         });
     }
 }

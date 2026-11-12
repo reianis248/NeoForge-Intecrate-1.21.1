@@ -1,6 +1,7 @@
 package com.fukuda.intecrate.common.block;
 
 import com.fukuda.intecrate.Intecrate;
+import com.fukuda.intecrate.common.block.noted.extended.IntecrateFlammableFacingBlock;
 import com.fukuda.intecrate.common.item.IntecrateItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -18,16 +19,36 @@ import java.util.function.Supplier;
 public class DecoBoxes {
     public static final DeferredRegister.Blocks DECOBOX = DeferredRegister.createBlocks(Intecrate.MOD_ID);
 
-    public static final DeferredBlock<Block> MEAT_BOX = registerStorageBlock(
+    public static final DeferredBlock<Block> MEAT_BOX  = registerDecoBlock(
             "meat_box",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .sound(SoundType.WOOD)
-                    .strength(2.5f)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .mapColor(MapColor.WOOD)
-            ));
+            () -> new IntecrateFlammableFacingBlock(boxBlockProperties(MapColor.COLOR_BROWN)));
+    public static final DeferredBlock<Block> BEEF_BOX = registerDecoBlock(
+            "beef_box",
+            () -> new IntecrateFlammableFacingBlock(boxBlockProperties(MapColor.WOOD)));
+    public static final DeferredBlock<Block> PORKCHOP_BOX = registerDecoBlock(
+            "porkchop_box",
+            () -> new IntecrateFlammableFacingBlock(boxBlockProperties(MapColor.WOOD)));
+    public static final DeferredBlock<Block> MUTTON_BOX = registerDecoBlock(
+            "mutton_box",
+            () -> new IntecrateFlammableFacingBlock(boxBlockProperties(MapColor.WOOD)));
+    public static final DeferredBlock<Block> CHICKEN_BOX = registerDecoBlock(
+            "chicken_box",
+            () -> new IntecrateFlammableFacingBlock(boxBlockProperties(MapColor.WOOD)));
+    public static final DeferredBlock<Block> RABBIT_BOX = registerDecoBlock(
+            "rabbit_box",
+            () -> new IntecrateFlammableFacingBlock(boxBlockProperties(MapColor.WOOD)));
 
-    private static <T extends Block> DeferredBlock<T> registerStorageBlock(String name, Supplier<T> block) {
+
+    private static BlockBehaviour.Properties boxBlockProperties(MapColor mapColor) {
+        return BlockBehaviour.Properties.of()
+                .strength(2.5f)
+                .sound(SoundType.WOOD)
+                .instrument(NoteBlockInstrument.BASS)
+                .ignitedByLava()
+                .mapColor(mapColor);
+    }
+
+    private static <T extends Block> DeferredBlock<T> registerDecoBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = DECOBOX.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;
