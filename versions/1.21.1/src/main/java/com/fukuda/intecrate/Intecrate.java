@@ -1,7 +1,9 @@
 package com.fukuda.intecrate;
 
 import com.fukuda.intecrate.common.block.*;
-import com.fukuda.intecrate.common.item.IntecrateItems;
+import com.fukuda.intecrate.common.block.food.*;
+import com.fukuda.intecrate.common.item.*;
+import com.fukuda.intecrate.common.item.food.*;
 import com.fukuda.intecrate.common.util.IntecrateCreativeModeTabs;
 import org.slf4j.Logger;
 
@@ -34,12 +36,14 @@ public class Intecrate {
         // Register the Deferred Register to the mod event bus so blocks get registered
 
         IntecrateItems.register(modEventBus);
+        CakeItems.register(modEventBus);
         DecoCrates.register(modEventBus);
         DecoBuckets.register(modEventBus);
         DecoBaskets.register(modEventBus);
         DecoBarrels.register(modEventBus);
         DecoBags.register(modEventBus);
         DecoBoxes.register(modEventBus);
+        CakeBlocks.register(modEventBus);
         IntecrateCreativeModeTabs.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.

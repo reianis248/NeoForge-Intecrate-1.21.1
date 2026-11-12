@@ -36,5 +36,6 @@ public class DataGenerators {
         generator.addProvider(event.includeServer(), new IntecrateItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
 
         generator.addProvider(event.includeClient(), new IntecrateItemModelProvider(packOutput, existingFileHelper));
+        generator.addProvider(event.includeClient(), new IntecrateBlockStateProvider(packOutput, existingFileHelper));
     }
 }

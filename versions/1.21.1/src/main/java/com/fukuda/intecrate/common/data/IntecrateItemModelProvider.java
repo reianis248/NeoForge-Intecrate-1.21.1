@@ -2,6 +2,7 @@ package com.fukuda.intecrate.common.data;
 
 import com.fukuda.intecrate.Intecrate;
 import com.fukuda.intecrate.common.block.*;
+import com.fukuda.intecrate.common.block.food.CakeBlocks;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -49,5 +50,10 @@ public class IntecrateItemModelProvider extends ItemModelProvider {
         simpleBlockItem(DecoBoxes.MUTTON_BOX.get());
         simpleBlockItem(DecoBoxes.CHICKEN_BOX.get());
         simpleBlockItem(DecoBoxes.RABBIT_BOX.get());
+
+        basicItem(CakeBlocks.PLAIN_CAKE.get().asItem());
+        basicItem(CakeBlocks.SWEET_BERRY_CAKE.get().asItem());
+        basicItem(CakeBlocks.GLOW_BERRY_CAKE.get().asItem());
+        basicItem(CakeBlocks.CHORUS_FRUIT_CAKE.get().asItem());
     }
 }
