@@ -1,8 +1,7 @@
 package com.fukuda.intecrate.client;
 
 import com.fukuda.intecrate.Intecrate;
-import com.fukuda.intecrate.common.block.*;
-import com.fukuda.intecrate.common.util.IntecrateCreativeModeTabs;
+import com.fukuda.intecrate.common.block.registry.*;import com.fukuda.intecrate.common.block.registry.food.DecoCakeBlocks;import com.fukuda.intecrate.common.item.registry.SlicedCake;import com.fukuda.intecrate.common.util.IntecrateCreativeModeTabs;
 
 //? if 1.21.1 {
 import de.Roboter007.moderntabs.ModernTabs;
@@ -21,7 +20,6 @@ public class ClientEvents {
     @SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
-            // Enable sections on your creative mode tab
             ModernTabs.TabDesign tabDesign = new ModernTabs.TabDesign()
                     .sectionsEnabled(true);
 
@@ -33,6 +31,7 @@ public class ClientEvents {
             ResourceLocation boxesSection = ResourceLocation.fromNamespaceAndPath(Intecrate.MOD_ID, "boxes");
             ResourceLocation bucketsSection = ResourceLocation.fromNamespaceAndPath(Intecrate.MOD_ID, "buckets");
             ResourceLocation bagsSection = ResourceLocation.fromNamespaceAndPath(Intecrate.MOD_ID, "bags");
+            ResourceLocation cakesSection = ResourceLocation.fromNamespaceAndPath(Intecrate.MOD_ID, "cakes");
 
             /* Crates */
             SectionedItems.addItem(cratesSection, DecoCrates.CRATE);
@@ -83,6 +82,20 @@ public class ClientEvents {
             SectionedItems.addItem(bagsSection, DecoBags.PUMPKIN_SEED_BAG);
             SectionedItems.addItem(bagsSection, DecoBags.MELON_SEED_BAG);
             SectionedItems.addItem(bagsSection, DecoBags.BEETROOT_SEED_BAG);
+
+            /* Cakes */
+            SectionedItems.addItem(cakesSection, DecoCakeBlocks.PLAIN_CAKE);
+            SectionedItems.addItem(cakesSection, SlicedCake.SLICED_PLAIN_CAKE);
+            SectionedItems.addItem(cakesSection, DecoCakeBlocks.SWEET_BERRY_CAKE);
+            SectionedItems.addItem(cakesSection, SlicedCake.SLICED_SWEET_BERRY_CAKE);
+            SectionedItems.addItem(cakesSection, DecoCakeBlocks.GLOW_BERRY_CAKE);
+            SectionedItems.addItem(cakesSection, SlicedCake.SLICED_GLOW_BERRY_CAKE);
+            SectionedItems.addItem(cakesSection, DecoCakeBlocks.CHORUS_FRUIT_CAKE);
+            SectionedItems.addItem(cakesSection, SlicedCake.SLICED_CHORUS_FRUIT_CAKE);
+            SectionedItems.addItem(cakesSection, DecoCakeBlocks.CARROT_CAKE);
+            SectionedItems.addItem(cakesSection, SlicedCake.SLICED_CARROT_CAKE);
+            SectionedItems.addItem(cakesSection, DecoCakeBlocks.HONEY_CAKE);
+            SectionedItems.addItem(cakesSection, SlicedCake.SLICED_HONEY_CAKE);
         });
     }
 }

@@ -1,7 +1,9 @@
 package com.fukuda.intecrate.common.util;
 
 import com.fukuda.intecrate.Intecrate;
-import com.fukuda.intecrate.common.block.*;
+import com.fukuda.intecrate.common.block.registry.*;
+import com.fukuda.intecrate.common.block.registry.food.DecoCakeBlocks;
+import com.fukuda.intecrate.common.item.registry.SlicedCake;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -63,6 +65,19 @@ public class IntecrateCreativeModeTabs {
                         output.accept(DecoBoxes.MUTTON_BOX.get());
                         output.accept(DecoBoxes.CHICKEN_BOX.get());
                         output.accept(DecoBoxes.RABBIT_BOX.get());
+
+                        output.accept(DecoCakeBlocks.PLAIN_CAKE.get());
+                        output.accept(SlicedCake.SLICED_PLAIN_CAKE.get());
+                        output.accept(DecoCakeBlocks.SWEET_BERRY_CAKE.get());
+                        output.accept(SlicedCake.SLICED_SWEET_BERRY_CAKE.get());
+                        output.accept(DecoCakeBlocks.GLOW_BERRY_CAKE.get());
+                        output.accept(SlicedCake.SLICED_GLOW_BERRY_CAKE.get());
+                        output.accept(DecoCakeBlocks.CHORUS_FRUIT_CAKE.get());
+                        output.accept(SlicedCake.SLICED_CHORUS_FRUIT_CAKE.get());
+                        output.accept(DecoCakeBlocks.CARROT_CAKE.get());
+                        output.accept(SlicedCake.SLICED_CARROT_CAKE.get());
+                        output.accept(DecoCakeBlocks.HONEY_CAKE.get());
+                        output.accept(SlicedCake.SLICED_HONEY_CAKE.get());
                     })
                     .build());
 

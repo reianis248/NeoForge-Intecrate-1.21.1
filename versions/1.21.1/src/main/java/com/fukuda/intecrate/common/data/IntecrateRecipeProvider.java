@@ -1,6 +1,6 @@
 package com.fukuda.intecrate.common.data;
 
-import com.fukuda.intecrate.common.block.*;
+import com.fukuda.intecrate.common.block.registry.*;
 import com.fukuda.intecrate.common.data.recipes.IntecrateRecipeCategory;
 import com.fukuda.intecrate.common.data.recipes.IntecrateShapedRecipeBuilder;
 import com.fukuda.intecrate.common.data.recipes.IntecrateShapelessRecipeBuilder;
@@ -10,8 +10,6 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.level.block.Blocks;
-import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
 import java.util.concurrent.CompletableFuture;

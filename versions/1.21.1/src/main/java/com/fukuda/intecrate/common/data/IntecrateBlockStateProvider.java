@@ -1,7 +1,8 @@
 package com.fukuda.intecrate.common.data;
 
 import com.fukuda.intecrate.Intecrate;
-import com.fukuda.intecrate.common.block.food.CakeBlocks;
+import com.fukuda.intecrate.common.block.noted.food.FourSliceCakeBlock;
+import com.fukuda.intecrate.common.block.registry.food.DecoCakeBlocks;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
@@ -18,10 +19,12 @@ public class IntecrateBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        cakeBlock(CakeBlocks.PLAIN_CAKE.get());
-        cakeBlock(CakeBlocks.SWEET_BERRY_CAKE.get());
-        cakeBlock(CakeBlocks.GLOW_BERRY_CAKE.get());
-        cakeBlock(CakeBlocks.CHORUS_FRUIT_CAKE.get());
+        fourSliceCakeBlock(DecoCakeBlocks.PLAIN_CAKE.get());
+        fourSliceCakeBlock(DecoCakeBlocks.SWEET_BERRY_CAKE.get());
+        fourSliceCakeBlock(DecoCakeBlocks.GLOW_BERRY_CAKE.get());
+        fourSliceCakeBlock(DecoCakeBlocks.CHORUS_FRUIT_CAKE.get());
+        fourSliceCakeBlock(DecoCakeBlocks.CARROT_CAKE.get());
+        fourSliceCakeBlock(DecoCakeBlocks.HONEY_CAKE.get());
     }
 
     private void cakeBlock(Block block) {
@@ -38,6 +41,22 @@ public class IntecrateBlockStateProvider extends BlockStateProvider {
                     .texture("top", modLoc("block/cake/" + name + "_top"))
                     .texture("side", modLoc("block/cake/" + name + "_side"))
                     .texture("inside", modLoc("block/cake/" + name + "_inner"));
+
+            return ConfiguredModel.builder()
+                    .modelFile(model)
+                    .build();
+        });
+    }
+    private void fourSliceCakeBlock(Block block) {
+        String name = BuiltInRegistries.BLOCK.getKey(block).getPath();
+
+        getVariantBuilder(block).forAllStates(state -> {
+            int bites = state.getValue(FourSliceCakeBlock.BITES);
+
+            // If bites is 4 (the breaking state), fallback to slice3 for datagen so it doesn't crash
+            int modelBites = Math.min(bites, 3);
+            String modelName = modelBites == 0 ? name : name + "_slice" + modelBites;
+            ModelFile model = models().getExistingFile(modLoc("block/cake/" + modelName));
 
             return ConfiguredModel.builder()
                     .modelFile(model)

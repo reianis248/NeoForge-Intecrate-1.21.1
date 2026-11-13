@@ -1,8 +1,8 @@
 package com.fukuda.intecrate.client;
 
 import com.fukuda.intecrate.Intecrate;
-import com.fukuda.intecrate.common.block.DecoBarrels;
-import com.fukuda.intecrate.common.block.DecoCrates;
+import com.fukuda.intecrate.common.block.registry.DecoCrates;
+import com.fukuda.intecrate.common.block.registry.food.DecoCakeBlocks;
 import com.fukuda.intecrate.common.util.IntecrateCreativeModeTabs;
 import de.Roboter007.moderntabs.ModernTabs;
 import net.minecraft.client.Minecraft;
@@ -41,6 +41,13 @@ public class IntecrateClient {
             ModernTabs.configureTab(IntecrateCreativeModeTabs.INTECRATE.get(), tabDesign);
 
             ItemBlockRenderTypes.setRenderLayer(DecoCrates.CRATE.get(), RenderType.cutoutMipped());
+
+            ItemBlockRenderTypes.setRenderLayer(DecoCakeBlocks.PLAIN_CAKE.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(DecoCakeBlocks.SWEET_BERRY_CAKE.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(DecoCakeBlocks.GLOW_BERRY_CAKE.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(DecoCakeBlocks.CHORUS_FRUIT_CAKE.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(DecoCakeBlocks.CARROT_CAKE.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(DecoCakeBlocks.HONEY_CAKE.get(), RenderType.cutout());
         });
     }
 }
