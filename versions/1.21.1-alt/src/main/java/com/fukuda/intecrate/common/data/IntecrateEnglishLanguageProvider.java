@@ -1,7 +1,9 @@
 package com.fukuda.intecrate.common.data;
 
 import com.fukuda.intecrate.Intecrate;
-import com.fukuda.intecrate.common.block.*;
+import com.fukuda.intecrate.common.block.registry.*;
+import com.fukuda.intecrate.common.block.registry.food.DecoCakeBlocks;
+import com.fukuda.intecrate.common.item.registry.SlicedCake;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.LanguageProvider;
 
@@ -11,8 +13,6 @@ public class IntecrateEnglishLanguageProvider extends LanguageProvider {
     }
 
     @Override protected void addTranslations() {
-        add("itemGroup.intecrate", "Intecrate");
-
         add(DecoCrates.CRATE.get(), "Crates");
         add(DecoCrates.APPLE_CRATE.get(), "Crate of Apples");
         add(DecoCrates.CARROT_CRATE.get(), "Crate of Carrots");
@@ -56,5 +56,19 @@ public class IntecrateEnglishLanguageProvider extends LanguageProvider {
         add(DecoBoxes.MUTTON_BOX.get(), "Box of Mutton");
         add(DecoBoxes.CHICKEN_BOX.get(), "Box of Chicken");
         add(DecoBoxes.RABBIT_BOX.get(), "Box of Rabbit");
+
+        add(DecoCakeBlocks.PLAIN_CAKE.get(), "Plain Cake");
+        add(DecoCakeBlocks.SWEET_BERRY_CAKE.get(), "Sweet Berry Cake");
+        add(DecoCakeBlocks.GLOW_BERRY_CAKE.get(), "Glow Berry Cake");
+        add(DecoCakeBlocks.CHORUS_FRUIT_CAKE.get(), "Chorus Fruit Cake");
+        add(DecoCakeBlocks.CARROT_CAKE.get(), "Carrot Cake");
+        add(DecoCakeBlocks.HONEY_CAKE.get(), "Honey Cake");
+
+        add(SlicedCake.SLICED_PLAIN_CAKE.get(), "Sliced Plain Cake");
+        add(SlicedCake.SLICED_SWEET_BERRY_CAKE.get(), "Sliced Sweet Berry Cake");
+        add(SlicedCake.SLICED_GLOW_BERRY_CAKE.get(), "Sliced Glow Berry Cake");
+        add(SlicedCake.SLICED_CHORUS_FRUIT_CAKE.get(), "Sliced Chorus Fruit Cake");
+        add(SlicedCake.SLICED_CARROT_CAKE.get(), "Sliced Carrot Cake");
+        add(SlicedCake.SLICED_HONEY_CAKE.get(), "Sliced Honey Cake");
     }
 }

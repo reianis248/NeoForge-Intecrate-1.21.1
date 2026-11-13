@@ -15,11 +15,13 @@ public class IntecrateTags {
         }
 
         public static final TagKey<Block> WOODEN_SLABS = createTag("wooden_slabs");
-        public static final TagKey<Block> IS_CRATE = createTag("is_crate");
-        public static final TagKey<Block> IS_BASKET = createTag("is_basket");
-        public static final TagKey<Block> IS_BARREL = createTag("is_barrel");
-        public static final TagKey<Block> IS_BUCKET = createTag("is_bucket");
-        public static final TagKey<Block> IS_BOX = createTag("is_box");
+        public static final TagKey<Block> CRATE = createTag("rate");
+        public static final TagKey<Block> BASKET = createTag("basket");
+        public static final TagKey<Block> BARREL = createTag("barrel");
+        public static final TagKey<Block> BUCKET = createTag("bucket");
+        public static final TagKey<Block> BOX = createTag("box");
+
+        public static final TagKey<Block> CAKE = createTag("cake");
     }
 
     public static class Items {
@@ -28,5 +30,7 @@ public class IntecrateTags {
         }
 
         public static final TagKey<Item> WOODEN_SLABS = createTag("wooden_slabs");
+
+        public static final TagKey<Item> SLICED_CAKE = createTag("sliced_cake");
     }
 }

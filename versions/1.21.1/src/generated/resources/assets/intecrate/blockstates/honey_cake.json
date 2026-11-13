@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "bites=0": {
+      "model": "intecrate:block/cake/honey_cake"
+    },
+    "bites=1": {
+      "model": "intecrate:block/cake/honey_cake_slice1"
+    },
+    "bites=2": {
+      "model": "intecrate:block/cake/honey_cake_slice2"
+    },
+    "bites=3": {
+      "model": "intecrate:block/cake/honey_cake_slice3"
+    }
+  }
+}

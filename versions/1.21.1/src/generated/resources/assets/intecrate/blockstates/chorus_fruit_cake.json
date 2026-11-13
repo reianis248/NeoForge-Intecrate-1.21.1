@@ -1,25 +1,16 @@
 {
   "variants": {
     "bites=0": {
-      "model": "intecrate:block/chorus_fruit_cake"
+      "model": "intecrate:block/cake/chorus_fruit_cake"
     },
     "bites=1": {
-      "model": "intecrate:block/chorus_fruit_cake_slice1"
+      "model": "intecrate:block/cake/chorus_fruit_cake_slice1"
     },
     "bites=2": {
-      "model": "intecrate:block/chorus_fruit_cake_slice2"
+      "model": "intecrate:block/cake/chorus_fruit_cake_slice2"
     },
     "bites=3": {
-      "model": "intecrate:block/chorus_fruit_cake_slice3"
-    },
-    "bites=4": {
-      "model": "intecrate:block/chorus_fruit_cake_slice4"
-    },
-    "bites=5": {
-      "model": "intecrate:block/chorus_fruit_cake_slice5"
-    },
-    "bites=6": {
-      "model": "intecrate:block/chorus_fruit_cake_slice6"
+      "model": "intecrate:block/cake/chorus_fruit_cake_slice3"
     }
   }
 }

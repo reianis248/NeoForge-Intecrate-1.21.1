@@ -1,6 +1,6 @@
 package com.fukuda.intecrate.common.data;
 
-import com.fukuda.intecrate.common.block.*;
+import com.fukuda.intecrate.common.block.registry.*;
 import com.fukuda.intecrate.common.data.recipes.IntecrateRecipeCategory;
 import com.fukuda.intecrate.common.data.recipes.IntecrateShapedRecipeBuilder;
 import com.fukuda.intecrate.common.data.recipes.IntecrateShapelessRecipeBuilder;

@@ -1,6 +1,6 @@
 package com.fukuda.intecrate.common.data;
 
-import com.fukuda.intecrate.common.block.*;
+import com.fukuda.intecrate.common.block.registry.*;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;

@@ -1,7 +1,9 @@
 package com.fukuda.intecrate.common.data;
 
 import com.fukuda.intecrate.Intecrate;
-import com.fukuda.intecrate.common.block.*;
+import com.fukuda.intecrate.common.block.registry.*;
+import com.fukuda.intecrate.common.block.registry.food.DecoCakeBlocks;
+import com.fukuda.intecrate.common.item.registry.SlicedCake;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -49,5 +51,19 @@ public class IntecrateItemModelProvider extends ItemModelProvider {
         simpleBlockItem(DecoBoxes.MUTTON_BOX.get());
         simpleBlockItem(DecoBoxes.CHICKEN_BOX.get());
         simpleBlockItem(DecoBoxes.RABBIT_BOX.get());
+
+        basicItem(DecoCakeBlocks.PLAIN_CAKE.get().asItem());
+        basicItem(DecoCakeBlocks.SWEET_BERRY_CAKE.get().asItem());
+        basicItem(DecoCakeBlocks.GLOW_BERRY_CAKE.get().asItem());
+        basicItem(DecoCakeBlocks.CHORUS_FRUIT_CAKE.get().asItem());
+        basicItem(DecoCakeBlocks.CARROT_CAKE.get().asItem());
+        basicItem(DecoCakeBlocks.HONEY_CAKE.get().asItem());
+
+        basicItem(SlicedCake.SLICED_PLAIN_CAKE.get());
+        basicItem(SlicedCake.SLICED_SWEET_BERRY_CAKE.get());
+        basicItem(SlicedCake.SLICED_GLOW_BERRY_CAKE.get());
+        basicItem(SlicedCake.SLICED_CHORUS_FRUIT_CAKE.get());
+        basicItem(SlicedCake.SLICED_CARROT_CAKE.get());
+        basicItem(SlicedCake.SLICED_HONEY_CAKE.get());
     }
 }

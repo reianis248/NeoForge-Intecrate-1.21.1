@@ -1,7 +1,8 @@
 package com.fukuda.intecrate.common.data;
 
 import com.fukuda.intecrate.Intecrate;
-import com.fukuda.intecrate.common.block.*;
+import com.fukuda.intecrate.common.block.registry.*;
+import com.fukuda.intecrate.common.block.registry.food.DecoCakeBlocks;
 import com.fukuda.intecrate.common.util.IntecrateTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -21,12 +22,12 @@ public class IntecrateBlockTagProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_AXE)
-                .addTag(IntecrateTags.Blocks.IS_CRATE)
-                .addTag(IntecrateTags.Blocks.IS_BASKET)
-                .addTag(IntecrateTags.Blocks.IS_BARREL);
+                .addTag(IntecrateTags.Blocks.CRATE)
+                .addTag(IntecrateTags.Blocks.BASKET)
+                .addTag(IntecrateTags.Blocks.BARREL);
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .addTag(IntecrateTags.Blocks.IS_BUCKET);
+                .addTag(IntecrateTags.Blocks.BUCKET);
 
         tag(IntecrateTags.Blocks.WOODEN_SLABS)
                 .add(Blocks.OAK_SLAB)
@@ -42,7 +43,7 @@ public class IntecrateBlockTagProvider extends BlockTagsProvider {
                 .add(Blocks.BAMBOO_SLAB);
 
 
-        tag(IntecrateTags.Blocks.IS_CRATE)
+        tag(IntecrateTags.Blocks.CRATE)
                 .add(DecoCrates.CRATE.get())
                 .add(DecoCrates.APPLE_CRATE.get())
                 .add(DecoCrates.CARROT_CRATE.get())
@@ -52,7 +53,7 @@ public class IntecrateBlockTagProvider extends BlockTagsProvider {
                 .add(DecoCrates.RED_MUSHROOM_CRATE.get())
                 .add(DecoCrates.BROWN_MUSHROOM_CRATE.get());
 
-        tag(IntecrateTags.Blocks.IS_BASKET)
+        tag(IntecrateTags.Blocks.BASKET)
                 .add(DecoBaskets.BASKET.get())
                 .add(DecoBaskets.ALLIUM_BASKET.get())
                 .add(DecoBaskets.CORNFLOWER_BASKET.get())
@@ -62,14 +63,14 @@ public class IntecrateBlockTagProvider extends BlockTagsProvider {
                 .add(DecoBaskets.OXEYE_DAISY_BASKET.get())
                 .add(DecoBaskets.AZURE_BLUET_BASKET.get());
 
-        tag(IntecrateTags.Blocks.IS_BARREL)
+        tag(IntecrateTags.Blocks.BARREL)
                 .add(DecoBarrels.FISH_BARREL.get())
                 .add(DecoBarrels.COD_BARREL.get())
                 .add(DecoBarrels.PUFFERFISH_BARREL.get())
                 .add(DecoBarrels.SALMON_BARREL.get())
                 .add(DecoBarrels.TROPICAL_FISH_BARREL.get());
 
-        tag(IntecrateTags.Blocks.IS_BUCKET)
+        tag(IntecrateTags.Blocks.BUCKET)
                 .add(DecoBuckets.STORAGE_BUCKET.get())
                 .add(DecoBuckets.BRAIN_CORAL_BUCKET.get())
                 .add(DecoBuckets.BUBBLE_CORAL_BUCKET.get())
@@ -77,13 +78,21 @@ public class IntecrateBlockTagProvider extends BlockTagsProvider {
                 .add(DecoBuckets.HORN_CORAL_BUCKET.get())
                 .add(DecoBuckets.TUBE_CORAL_BUCKET.get());
 
-        tag(IntecrateTags.Blocks.IS_BOX)
+        tag(IntecrateTags.Blocks.BOX)
                 .add(DecoBoxes.MEAT_BOX.get())
                 .add(DecoBoxes.BEEF_BOX.get())
                 .add(DecoBoxes.PORKCHOP_BOX.get())
                 .add(DecoBoxes.MUTTON_BOX.get())
                 .add(DecoBoxes.CHICKEN_BOX.get())
                 .add(DecoBoxes.RABBIT_BOX.get());
+
+        tag(IntecrateTags.Blocks.CAKE)
+                .add(DecoCakeBlocks.PLAIN_CAKE.get())
+                .add(DecoCakeBlocks.SWEET_BERRY_CAKE.get())
+                .add(DecoCakeBlocks.GLOW_BERRY_CAKE.get())
+                .add(DecoCakeBlocks.CHORUS_FRUIT_CAKE.get())
+                .add(DecoCakeBlocks.CARROT_CAKE.get())
+                .add(DecoCakeBlocks.HONEY_CAKE.get());
 
     }
 }
