@@ -6,7 +6,8 @@ public enum IntecrateRecipeCategory {
     BARRELS("barrels"),
     BUCKETS("buckets"),
     BAGS("bags"),
-    BOXES("boxes");
+    BOXES("boxes"),
+    CAKES("cakes");
 
     public final String recipeFolderName;
 

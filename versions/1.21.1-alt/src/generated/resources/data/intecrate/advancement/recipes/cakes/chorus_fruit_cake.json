@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sliced_chorus_fruit_cake": {
+      "conditions": {
+        "items": [
+          {
+            "items": "intecrate:sliced_chorus_fruit_cake"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "intecrate:chorus_fruit_cake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_sliced_chorus_fruit_cake"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "intecrate:chorus_fruit_cake"
+    ]
+  }
+}

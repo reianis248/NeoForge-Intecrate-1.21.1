@@ -24,7 +24,7 @@ public class DecoCakeBlocks {
             () -> new FourSliceCakeBlock(cakeBlockProperties()));
     public static final DeferredBlock<FourSliceCakeBlock> GLOW_BERRY_CAKE = registerCakeBlock(
             "glow_berry_cake",
-            () -> new FourSliceCakeBlock(cakeBlockProperties()));
+            () -> new FourSliceCakeBlock(glowCakeBlockProperties()));
     public static final DeferredBlock<FourSliceCakeBlock> CHORUS_FRUIT_CAKE = registerCakeBlock(
             "chorus_fruit_cake",
             () -> new FourSliceCakeBlock(cakeBlockProperties()));
@@ -42,6 +42,15 @@ public class DecoCakeBlocks {
                 .noOcclusion()
                 .strength(0.5f)
                 .sound(SoundType.WOOL)
+                .pushReaction(PushReaction.DESTROY);
+    }
+    private static BlockBehaviour.Properties glowCakeBlockProperties() {
+        return BlockBehaviour.Properties.of()
+                .forceSolidOn()
+                .noOcclusion()
+                .strength(0.5f)
+                .sound(SoundType.WOOL)
+                .lightLevel(state -> 11)
                 .pushReaction(PushReaction.DESTROY);
     }
 

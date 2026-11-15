@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_carrot_cake": {
+      "conditions": {
+        "items": [
+          {
+            "items": "intecrate:carrot_cake"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "intecrate:sliced_carrot_cake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_carrot_cake"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "intecrate:sliced_carrot_cake"
+    ]
+  }
+}

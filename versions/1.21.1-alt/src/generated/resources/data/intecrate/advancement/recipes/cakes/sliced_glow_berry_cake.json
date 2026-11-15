@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_glow_berry_cake": {
+      "conditions": {
+        "items": [
+          {
+            "items": "intecrate:glow_berry_cake"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "intecrate:sliced_glow_berry_cake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_glow_berry_cake"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "intecrate:sliced_glow_berry_cake"
+    ]
+  }
+}

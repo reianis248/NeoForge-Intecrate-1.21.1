@@ -1,7 +1,6 @@
 package com.fukuda.intecrate.client;
 
 import com.fukuda.intecrate.Intecrate;
-import com.fukuda.intecrate.common.block.DecoBarrels;
 import com.fukuda.intecrate.common.block.registry.DecoCrates;
 import com.fukuda.intecrate.common.block.registry.food.DecoCakeBlocks;
 import net.minecraft.client.Minecraft;

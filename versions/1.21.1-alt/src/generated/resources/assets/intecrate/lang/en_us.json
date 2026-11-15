@@ -48,5 +48,6 @@
   "item.intecrate.sliced_glow_berry_cake": "Sliced Glow Berry Cake",
   "item.intecrate.sliced_honey_cake": "Sliced Honey Cake",
   "item.intecrate.sliced_plain_cake": "Sliced Plain Cake",
-  "item.intecrate.sliced_sweet_berry_cake": "Sliced Sweet Berry Cake"
+  "item.intecrate.sliced_sweet_berry_cake": "Sliced Sweet Berry Cake",
+  "itemGroup.intecrate": "Intecrate"
 }

@@ -12,17 +12,17 @@ public class SlicedCake {
     public static final DeferredRegister.Items SLICEDCAKE = DeferredRegister.createItems(Intecrate.MOD_ID);
 
     public static final DeferredItem<Item> SLICED_PLAIN_CAKE = SLICEDCAKE.register("sliced_plain_cake",
-            () -> new Item(slicedCake(CakeFoodProperties.CAKE)));
+            () -> new Item(slicedCake(CakeFoodProperties.SLICED_CAKE)));
     public static final DeferredItem<Item> SLICED_SWEET_BERRY_CAKE = SLICEDCAKE.register("sliced_sweet_berry_cake",
-            () -> new Item(slicedCake(CakeFoodProperties.CAKE)));
+            () -> new Item(slicedCake(CakeFoodProperties.SLICED_CAKE)));
     public static final DeferredItem<Item> SLICED_GLOW_BERRY_CAKE = SLICEDCAKE.register("sliced_glow_berry_cake",
-            () -> new Item(slicedCake(CakeFoodProperties.CAKE)));
+            () -> new Item(slicedCake(CakeFoodProperties.SLICED_CAKE)));
     public static final DeferredItem<Item> SLICED_CHORUS_FRUIT_CAKE = SLICEDCAKE.register("sliced_chorus_fruit_cake",
-            () -> new Item(slicedCake(CakeFoodProperties.CAKE)));
+            () -> new Item(slicedCake(CakeFoodProperties.SLICED_CAKE)));
     public static final DeferredItem<Item> SLICED_CARROT_CAKE = SLICEDCAKE.register("sliced_carrot_cake",
-            () -> new Item(slicedCake(CakeFoodProperties.CAKE)));
+            () -> new Item(slicedCake(CakeFoodProperties.SLICED_CAKE)));
     public static final DeferredItem<Item> SLICED_HONEY_CAKE = SLICEDCAKE.register("sliced_honey_cake",
-            () -> new Item(slicedCake(CakeFoodProperties.CAKE)));
+            () -> new Item(slicedCake(CakeFoodProperties.SLICED_CAKE)));
 
 
     private static Item.Properties slicedCake(FoodProperties foodProperties) {

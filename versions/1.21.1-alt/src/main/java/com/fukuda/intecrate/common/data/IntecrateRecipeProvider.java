@@ -1,9 +1,11 @@
 package com.fukuda.intecrate.common.data;
 
 import com.fukuda.intecrate.common.block.registry.*;
+import com.fukuda.intecrate.common.block.registry.food.DecoCakeBlocks;
 import com.fukuda.intecrate.common.data.recipes.IntecrateRecipeCategory;
 import com.fukuda.intecrate.common.data.recipes.IntecrateShapedRecipeBuilder;
 import com.fukuda.intecrate.common.data.recipes.IntecrateShapelessRecipeBuilder;
+import com.fukuda.intecrate.common.item.registry.SlicedCake;
 import com.fukuda.intecrate.common.util.IntecrateTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -111,6 +113,7 @@ public class IntecrateRecipeProvider extends RecipeProvider implements IConditio
                 .unlockedBy("has_brown_mushroom", has(Items.BROWN_MUSHROOM))
                 .save(recipeOutput);
 
+
         /* Baskets */
         IntecrateShapedRecipeBuilder.shaped(IntecrateRecipeCategory.BASKETS, DecoBaskets.BASKET.get())
                 .pattern("!!!")
@@ -199,6 +202,7 @@ public class IntecrateRecipeProvider extends RecipeProvider implements IConditio
                 .unlockedBy("has_azure_bluet", has(Items.AZURE_BLUET))
                 .save(recipeOutput);
 
+
         /* Barrels */
         IntecrateShapedRecipeBuilder.shaped(IntecrateRecipeCategory.BARRELS, DecoBarrels.FISH_BARREL.get())
                 .pattern("###")
@@ -255,6 +259,7 @@ public class IntecrateRecipeProvider extends RecipeProvider implements IConditio
                 .define('#', Ingredient.of(Items.TROPICAL_FISH))
                 .unlockedBy("has_tropical_fish", has(Items.TROPICAL_FISH))
                 .save(recipeOutput);
+
 
         /* Buckets */
         IntecrateShapedRecipeBuilder.shaped(IntecrateRecipeCategory.BUCKETS, DecoBuckets.STORAGE_BUCKET.get())
@@ -324,6 +329,7 @@ public class IntecrateRecipeProvider extends RecipeProvider implements IConditio
                 .unlockedBy("has_tube_coral", has(Items.TUBE_CORAL))
                 .save(recipeOutput);
 
+
         /* Bags */
         IntecrateShapedRecipeBuilder.shaped(IntecrateRecipeCategory.BAGS, DecoBags.SEED_BAG.get())
                 .pattern("!!!")
@@ -378,6 +384,7 @@ public class IntecrateRecipeProvider extends RecipeProvider implements IConditio
                 .define('#', Ingredient.of(Items.BEETROOT_SEEDS))
                 .unlockedBy("has_beetroot_seeds", has(Items.BEETROOT_SEEDS))
                 .save(recipeOutput);
+
 
         /* Boxes */
         IntecrateShapedRecipeBuilder.shaped(IntecrateRecipeCategory.BOXES, DecoBoxes.MEAT_BOX.get())
@@ -441,6 +448,74 @@ public class IntecrateRecipeProvider extends RecipeProvider implements IConditio
                 .pattern("###")
                 .define('#', Ingredient.of(Items.RABBIT))
                 .unlockedBy("has_rabbit", has(Items.RABBIT))
+                .save(recipeOutput);
+
+
+        /* Cakes */
+        IntecrateShapelessRecipeBuilder.shapeless(IntecrateRecipeCategory.CAKES, SlicedCake.SLICED_PLAIN_CAKE, 4)
+                .requires(DecoCakeBlocks.PLAIN_CAKE)
+                .unlockedBy("has_plain_cake", has(DecoCakeBlocks.PLAIN_CAKE)).save(recipeOutput);
+        IntecrateShapedRecipeBuilder.shaped(IntecrateRecipeCategory.CAKES, DecoCakeBlocks.PLAIN_CAKE.get())
+                .pattern("## ")
+                .pattern("## ")
+                .pattern("   ")
+                .define('#', Ingredient.of(SlicedCake.SLICED_PLAIN_CAKE))
+                .unlockedBy("has_sliced_plain_cake", has(SlicedCake.SLICED_PLAIN_CAKE))
+                .save(recipeOutput);
+
+        IntecrateShapelessRecipeBuilder.shapeless(IntecrateRecipeCategory.CAKES, SlicedCake.SLICED_SWEET_BERRY_CAKE, 4)
+                .requires(DecoCakeBlocks.SWEET_BERRY_CAKE)
+                .unlockedBy("has_sweet_berry_cake", has(DecoCakeBlocks.SWEET_BERRY_CAKE)).save(recipeOutput);
+        IntecrateShapedRecipeBuilder.shaped(IntecrateRecipeCategory.CAKES, DecoCakeBlocks.SWEET_BERRY_CAKE.get())
+                .pattern("## ")
+                .pattern("## ")
+                .pattern("   ")
+                .define('#', Ingredient.of(SlicedCake.SLICED_SWEET_BERRY_CAKE))
+                .unlockedBy("has_sliced_sweet_berry_cake", has(SlicedCake.SLICED_SWEET_BERRY_CAKE))
+                .save(recipeOutput);
+
+        IntecrateShapelessRecipeBuilder.shapeless(IntecrateRecipeCategory.CAKES, SlicedCake.SLICED_GLOW_BERRY_CAKE, 4)
+                .requires(DecoCakeBlocks.GLOW_BERRY_CAKE)
+                .unlockedBy("has_glow_berry_cake", has(DecoCakeBlocks.GLOW_BERRY_CAKE)).save(recipeOutput);
+        IntecrateShapedRecipeBuilder.shaped(IntecrateRecipeCategory.CAKES, DecoCakeBlocks.GLOW_BERRY_CAKE.get())
+                .pattern("## ")
+                .pattern("## ")
+                .pattern("   ")
+                .define('#', Ingredient.of(SlicedCake.SLICED_GLOW_BERRY_CAKE))
+                .unlockedBy("has_sliced_glow_berry_cake", has(SlicedCake.SLICED_GLOW_BERRY_CAKE))
+                .save(recipeOutput);
+
+        IntecrateShapelessRecipeBuilder.shapeless(IntecrateRecipeCategory.CAKES, SlicedCake.SLICED_CHORUS_FRUIT_CAKE, 4)
+                .requires(DecoCakeBlocks.CHORUS_FRUIT_CAKE)
+                .unlockedBy("has_chorus_fruit_cake", has(DecoCakeBlocks.CHORUS_FRUIT_CAKE)).save(recipeOutput);
+        IntecrateShapedRecipeBuilder.shaped(IntecrateRecipeCategory.CAKES, DecoCakeBlocks.CHORUS_FRUIT_CAKE.get())
+                .pattern("## ")
+                .pattern("## ")
+                .pattern("   ")
+                .define('#', Ingredient.of(SlicedCake.SLICED_CHORUS_FRUIT_CAKE))
+                .unlockedBy("has_sliced_chorus_fruit_cake", has(SlicedCake.SLICED_CHORUS_FRUIT_CAKE))
+                .save(recipeOutput);
+
+        IntecrateShapelessRecipeBuilder.shapeless(IntecrateRecipeCategory.CAKES, SlicedCake.SLICED_CARROT_CAKE, 4)
+                .requires(DecoCakeBlocks.CARROT_CAKE)
+                .unlockedBy("has_carrot_cake", has(DecoCakeBlocks.CARROT_CAKE)).save(recipeOutput);
+        IntecrateShapedRecipeBuilder.shaped(IntecrateRecipeCategory.CAKES, DecoCakeBlocks.CARROT_CAKE.get())
+                .pattern("## ")
+                .pattern("## ")
+                .pattern("   ")
+                .define('#', Ingredient.of(SlicedCake.SLICED_CARROT_CAKE))
+                .unlockedBy("has_sliced_carrot_cake", has(SlicedCake.SLICED_CARROT_CAKE))
+                .save(recipeOutput);
+
+        IntecrateShapelessRecipeBuilder.shapeless(IntecrateRecipeCategory.CAKES, SlicedCake.SLICED_HONEY_CAKE, 4)
+                .requires(DecoCakeBlocks.HONEY_CAKE)
+                .unlockedBy("has_honey_cake", has(DecoCakeBlocks.HONEY_CAKE)).save(recipeOutput);
+        IntecrateShapedRecipeBuilder.shaped(IntecrateRecipeCategory.CAKES, DecoCakeBlocks.HONEY_CAKE.get())
+                .pattern("## ")
+                .pattern("## ")
+                .pattern("   ")
+                .define('#', Ingredient.of(SlicedCake.SLICED_HONEY_CAKE))
+                .unlockedBy("has_sliced_honey_cake", has(SlicedCake.SLICED_HONEY_CAKE))
                 .save(recipeOutput);
 
     }

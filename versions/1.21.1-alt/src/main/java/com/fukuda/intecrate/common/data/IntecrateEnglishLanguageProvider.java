@@ -13,6 +13,8 @@ public class IntecrateEnglishLanguageProvider extends LanguageProvider {
     }
 
     @Override protected void addTranslations() {
+        add("itemGroup.intecrate", "Intecrate");
+
         add(DecoCrates.CRATE.get(), "Crates");
         add(DecoCrates.APPLE_CRATE.get(), "Crate of Apples");
         add(DecoCrates.CARROT_CRATE.get(), "Crate of Carrots");
