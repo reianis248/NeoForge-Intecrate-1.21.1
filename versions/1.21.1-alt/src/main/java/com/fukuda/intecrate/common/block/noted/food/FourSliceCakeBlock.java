@@ -30,37 +30,37 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class FourSliceCakeBlock extends Block {
-    public static final int MAX_BITES = 3;
-    public static final IntegerProperty BITES = IntegerProperty.create("bites", 0, 3);
+    public static final int MAX_SLICES = 3;
+    public static final IntegerProperty SLICES = IntegerProperty.create("slices", 0, 3);
 
-    protected static final VoxelShape[] SHAPE_BY_BITE = new VoxelShape[]{
-            // bites = 0 (4 slices: 15x9x15 centered)
+    protected static final VoxelShape[] SHAPE_BY_SLICE = new VoxelShape[]{
+            // SLICES = 0 (4 slices: 15x9x15 centered)
             Block.box(0.5D, 0.0D, 0.5D, 15.5D, 9.0D, 15.5D),
-            // bites = 1 (3 slices: L-shape missing front-right slice)
+            // SLICES = 1 (3 slices: L-shape missing front-right slice)
             Shapes.or(
                     Block.box(0.5D, 0.0D, 0.5D, 15.5D, 9.0D, 8.0D),
                     Block.box(0.5D, 0.0D, 8.0D, 8.0D, 9.0D, 15.5D)
             ),
-            // bites = 2 (2 slices: back half)
+            // SLICES = 2 (2 slices: back half)
             Block.box(0.5D, 0.0D, 0.5D, 15.5D, 9.0D, 8.0D),
-            // bites = 3 (1 slice: back-left quarter)
+            // SLICES = 3 (1 slice: back-left quarter)
             Block.box(0.5D, 0.0D, 0.5D, 8.0D, 9.0D, 8.0D)
     };
 
     public FourSliceCakeBlock(Properties properties) {
         super(properties);
-        this.registerDefaultState(this.stateDefinition.any().setValue(BITES, 0));
+        this.registerDefaultState(this.stateDefinition.any().setValue(SLICES, 0));
     }
 
     @Override
     protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        return SHAPE_BY_BITE[state.getValue(BITES)];
+        return SHAPE_BY_SLICE[state.getValue(SLICES)];
     }
 
     @Override
     protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
         Item item = stack.getItem();
-        if (stack.is(ItemTags.CANDLES) && state.getValue(BITES) == 0) {
+        if (stack.is(ItemTags.CANDLES) && state.getValue(SLICES) == 0) {
             Block block = Block.byItem(item);
             if (block instanceof CandleBlock) {
                 stack.consume(1, player);
@@ -92,11 +92,11 @@ public class FourSliceCakeBlock extends Block {
         } else {
             player.awardStat(Stats.EAT_CAKE_SLICE);
             player.getFoodData().eat(3, 0.42f);
-            int bites = state.getValue(BITES);
+            int SLICES = state.getValue(SLICES);
             level.gameEvent(player, GameEvent.EAT, pos);
 
-            if (bites < MAX_BITES) {
-                level.setBlock(pos, state.setValue(BITES, bites + 1), Block.UPDATE_ALL);
+            if (SLICES < MAX_SLICES) {
+                level.setBlock(pos, state.setValue(SLICES, SLICES + 1), Block.UPDATE_ALL);
             } else {
                 level.removeBlock(pos, false);
                 level.gameEvent(player, GameEvent.BLOCK_DESTROY, pos);
@@ -119,7 +119,7 @@ public class FourSliceCakeBlock extends Block {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(BITES);
+        builder.add(SLICES);
     }
 
     @Override
@@ -129,8 +129,8 @@ public class FourSliceCakeBlock extends Block {
 
     @Override
     protected int getAnalogOutputSignal(BlockState blockState, Level level, BlockPos pos) {
-        int bites = blockState.getValue(BITES);
-        return (4 - bites) * 2;
+        int SLICES = blockState.getValue(SLICES);
+        return (4 - SLICES) * 2;
     }
 
     @Override
