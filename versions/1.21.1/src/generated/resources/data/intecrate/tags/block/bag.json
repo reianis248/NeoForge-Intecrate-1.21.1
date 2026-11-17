@@ -1,0 +1,9 @@
+{
+  "values": [
+    "intecrate:seed_bag",
+    "intecrate:wheat_seed_bag",
+    "intecrate:pumpkin_seed_bag",
+    "intecrate:melon_seed_bag",
+    "intecrate:beetroot_seed_bag"
+  ]
+}

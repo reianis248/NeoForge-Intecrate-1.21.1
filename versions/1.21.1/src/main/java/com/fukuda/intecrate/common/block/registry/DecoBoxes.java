@@ -6,15 +6,14 @@ import com.fukuda.intecrate.common.item.registry.IntecrateItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
+
+import static com.fukuda.intecrate.common.block.properties.DecoBlockProperties.boxBlockProperties;
 
 public class DecoBoxes {
     public static final DeferredRegister.Blocks DECOBOX = DeferredRegister.createBlocks(Intecrate.MOD_ID);
@@ -38,15 +37,6 @@ public class DecoBoxes {
             "rabbit_box",
             () -> new IntecrateFlammableFacingBlock(boxBlockProperties(MapColor.WOOD)));
 
-
-    private static BlockBehaviour.Properties boxBlockProperties(MapColor mapColor) {
-        return BlockBehaviour.Properties.of()
-                .strength(2.5f)
-                .sound(SoundType.WOOD)
-                .instrument(NoteBlockInstrument.BASS)
-                .ignitedByLava()
-                .mapColor(mapColor);
-    }
 
     private static <T extends Block> DeferredBlock<T> registerDecoBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = DECOBOX.register(name, block);

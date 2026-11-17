@@ -16,6 +16,8 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
+import static com.fukuda.intecrate.common.block.properties.DecoBlockProperties.bagBlockProperties;
+
 public class DecoBags {
     public static final DeferredRegister.Blocks DECOBAG = DeferredRegister.createBlocks(Intecrate.MOD_ID);
 
@@ -35,15 +37,6 @@ public class DecoBags {
             "beetroot_seed_bag",
             () -> new IntecrateSpecialFlammableMultiFaceBlock(bagBlockProperties(MapColor.COLOR_BROWN)));
 
-
-    private static BlockBehaviour.Properties bagBlockProperties(MapColor mapColor) {
-        return BlockBehaviour.Properties.of()
-                .strength(0.8f)
-                .sound(SoundType.WOOL)
-                .instrument(NoteBlockInstrument.BASS)
-                .ignitedByLava()
-                .mapColor(mapColor);
-    }
 
     private static <T extends Block> DeferredBlock<T> registerDecoBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = DECOBAG.register(name, block);

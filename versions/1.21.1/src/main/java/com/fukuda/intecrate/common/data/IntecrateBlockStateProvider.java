@@ -51,7 +51,7 @@ public class IntecrateBlockStateProvider extends BlockStateProvider {
         String name = BuiltInRegistries.BLOCK.getKey(block).getPath();
 
         getVariantBuilder(block).forAllStates(state -> {
-            int bites = state.getValue(FourSliceCakeBlock.BITES);
+            int bites = state.getValue(FourSliceCakeBlock.SLICES);
 
             // If bites is 4 (the breaking state), fallback to slice3 for datagen so it doesn't crash
             int modelBites = Math.min(bites, 3);

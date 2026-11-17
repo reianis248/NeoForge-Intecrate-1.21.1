@@ -1,7 +1,7 @@
 package com.fukuda.intecrate.client;
 
 import com.fukuda.intecrate.Intecrate;
-import com.fukuda.intecrate.common.block.*;
+//import com.fukuda.intecrate.common.block.*;
 
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;

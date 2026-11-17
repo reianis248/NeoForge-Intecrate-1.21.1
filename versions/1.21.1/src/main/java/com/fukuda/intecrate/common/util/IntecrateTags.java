@@ -20,6 +20,7 @@ public class IntecrateTags {
         public static final TagKey<Block> BARREL = createTag("barrel");
         public static final TagKey<Block> BUCKET = createTag("bucket");
         public static final TagKey<Block> BOX = createTag("box");
+        public static final TagKey<Block> BAG = createTag("bag");
         public static final TagKey<Block> CAKE = createTag("cake");
     }
 
