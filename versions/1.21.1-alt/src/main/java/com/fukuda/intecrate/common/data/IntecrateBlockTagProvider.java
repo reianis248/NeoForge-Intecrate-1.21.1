@@ -94,5 +94,19 @@ public class IntecrateBlockTagProvider extends BlockTagsProvider {
                 .add(DecoCakeBlocks.CARROT_CAKE.get())
                 .add(DecoCakeBlocks.HONEY_CAKE.get());
 
+        tag(IntecrateTags.Blocks.BAG)
+                .add(DecoBags.SEED_BAG.get())
+                .add(DecoBags.WHEAT_SEED_BAG.get())
+                .add(DecoBags.PUMPKIN_SEED_BAG.get())
+                .add(DecoBags.MELON_SEED_BAG.get())
+                .add(DecoBags.BEETROOT_SEED_BAG.get());
+
+        tag(IntecrateTags.Blocks.CAKE)
+                .add(DecoCakeBlocks.PLAIN_CAKE.get())
+                .add(DecoCakeBlocks.SWEET_BERRY_CAKE.get())
+                .add(DecoCakeBlocks.GLOW_BERRY_CAKE.get())
+                .add(DecoCakeBlocks.CHORUS_FRUIT_CAKE.get())
+                .add(DecoCakeBlocks.CARROT_CAKE.get())
+                .add(DecoCakeBlocks.HONEY_CAKE.get());
     }
 }

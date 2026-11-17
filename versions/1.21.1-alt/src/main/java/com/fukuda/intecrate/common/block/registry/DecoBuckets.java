@@ -16,6 +16,8 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
+import static com.fukuda.intecrate.common.block.properties.DecoBlockProperties.bucketBlockProperties;
+
 public class DecoBuckets {
     public static final DeferredRegister.Blocks DECOBUCKET = DeferredRegister.createBlocks(Intecrate.MOD_ID);
 
@@ -38,14 +40,6 @@ public class DecoBuckets {
             "tube_coral_bucket",
             () -> new INTFacingBlock(bucketBlockProperties(MapColor.METAL)));
 
-
-    private static BlockBehaviour.Properties bucketBlockProperties(MapColor mapColor) {
-        return BlockBehaviour.Properties.of()
-                .strength(3.46f, 1.48f)
-                .sound(SoundType.METAL)
-                .instrument(NoteBlockInstrument.BASS)
-                .mapColor(mapColor);
-    }
 
     private static <T extends Block> DeferredBlock<T> registerDecoBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = DECOBUCKET.register(name, block);

@@ -29,26 +29,26 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
+import java.util.function.Supplier;
+
 public class FourSliceCakeBlock extends Block {
     public static final int MAX_SLICES = 3;
     public static final IntegerProperty SLICES = IntegerProperty.create("slices", 0, 3);
+    private final Supplier<Item> sliceItem;
 
     protected static final VoxelShape[] SHAPE_BY_SLICE = new VoxelShape[]{
-            // SLICES = 0 (4 slices: 15x9x15 centered)
             Block.box(0.5D, 0.0D, 0.5D, 15.5D, 9.0D, 15.5D),
-            // SLICES = 1 (3 slices: L-shape missing front-right slice)
             Shapes.or(
                     Block.box(0.5D, 0.0D, 0.5D, 15.5D, 9.0D, 8.0D),
                     Block.box(0.5D, 0.0D, 8.0D, 8.0D, 9.0D, 15.5D)
             ),
-            // SLICES = 2 (2 slices: back half)
             Block.box(0.5D, 0.0D, 0.5D, 15.5D, 9.0D, 8.0D),
-            // SLICES = 3 (1 slice: back-left quarter)
             Block.box(0.5D, 0.0D, 0.5D, 8.0D, 9.0D, 8.0D)
     };
 
-    public FourSliceCakeBlock(Properties properties) {
+    public FourSliceCakeBlock(Properties properties, Supplier<Item> sliceItem) {
         super(properties);
+        this.sliceItem = sliceItem;
         this.registerDefaultState(this.stateDefinition.any().setValue(SLICES, 0));
     }
 
@@ -76,33 +76,35 @@ public class FourSliceCakeBlock extends Block {
     @Override
     protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
         if (level.isClientSide) {
-            if (eat(level, pos, state, player).consumesAction()) {
+            if (takeSlice(level, pos, state, player, sliceItem.get()).consumesAction()) {
                 return InteractionResult.SUCCESS;
             }
             if (player.getItemInHand(InteractionHand.MAIN_HAND).isEmpty()) {
                 return InteractionResult.CONSUME;
             }
         }
-        return eat(level, pos, state, player);
+        return takeSlice(level, pos, state, player, sliceItem.get());
     }
 
-    protected static InteractionResult eat(LevelAccessor level, BlockPos pos, BlockState state, Player player) {
-        if (!player.canEat(false)) {
-            return InteractionResult.PASS;
-        } else {
-            player.awardStat(Stats.EAT_CAKE_SLICE);
-            player.getFoodData().eat(3, 0.42f);
-            int SLICES = state.getValue(SLICES);
-            level.gameEvent(player, GameEvent.EAT, pos);
+    protected static InteractionResult takeSlice(LevelAccessor level, BlockPos pos, BlockState state, Player player, Item slice) {
+        int slices = state.getValue(SLICES);
 
-            if (SLICES < MAX_SLICES) {
-                level.setBlock(pos, state.setValue(SLICES, SLICES + 1), Block.UPDATE_ALL);
-            } else {
-                level.removeBlock(pos, false);
-                level.gameEvent(player, GameEvent.BLOCK_DESTROY, pos);
-            }
-            return InteractionResult.SUCCESS;
+        // Give the slice item to the player
+        ItemStack sliceStack = new ItemStack(slice);
+        if (!player.addItem(sliceStack)) {
+            player.drop(sliceStack, false);
         }
+
+        level.playSound(null, pos, SoundEvents.CAKE_ADD_CANDLE, SoundSource.BLOCKS, 1.0f, 1.0f); // Or a slice/wool sound of your choice
+        level.gameEvent(player, GameEvent.BLOCK_CHANGE, pos);
+
+        if (slices < MAX_SLICES) {
+            level.setBlock(pos, state.setValue(SLICES, slices + 1), Block.UPDATE_ALL);
+        } else {
+            level.removeBlock(pos, false);
+            level.gameEvent(player, GameEvent.BLOCK_DESTROY, pos);
+        }
+        return InteractionResult.SUCCESS;
     }
 
     @Override
@@ -129,8 +131,8 @@ public class FourSliceCakeBlock extends Block {
 
     @Override
     protected int getAnalogOutputSignal(BlockState blockState, Level level, BlockPos pos) {
-        int SLICES = blockState.getValue(SLICES);
-        return (4 - SLICES) * 2;
+        int slices = blockState.getValue(SLICES);
+        return (4 - slices) * 2;
     }
 
     @Override
