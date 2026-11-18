@@ -23,22 +23,22 @@ public class DecoBuckets {
 
     public static final DeferredBlock<Block> STORAGE_BUCKET = registerDecoBlock(
             "storage_bucket",
-            () -> new INTFacingBlock(bucketBlockProperties(MapColor.METAL)));
+            () -> new INTFacingBlock(bucketBlockProperties()));
     public static final DeferredBlock<Block> BRAIN_CORAL_BUCKET = registerDecoBlock(
             "brain_coral_bucket",
-            () -> new INTFacingBlock(bucketBlockProperties(MapColor.METAL)));
+            () -> new INTFacingBlock(bucketBlockProperties()));
     public static final DeferredBlock<Block> BUBBLE_CORAL_BUCKET = registerDecoBlock(
             "bubble_coral_bucket",
-            () -> new INTFacingBlock(bucketBlockProperties(MapColor.METAL)));
+            () -> new INTFacingBlock(bucketBlockProperties()));
     public static final DeferredBlock<Block> FIRE_CORAL_BUCKET = registerDecoBlock(
             "fire_coral_bucket",
-            () -> new INTFacingBlock(bucketBlockProperties(MapColor.METAL)));
+            () -> new INTFacingBlock(bucketBlockProperties()));
     public static final DeferredBlock<Block> HORN_CORAL_BUCKET = registerDecoBlock(
             "horn_coral_bucket",
-            () -> new INTFacingBlock(bucketBlockProperties(MapColor.METAL)));
+            () -> new INTFacingBlock(bucketBlockProperties()));
     public static final DeferredBlock<Block> TUBE_CORAL_BUCKET = registerDecoBlock(
             "tube_coral_bucket",
-            () -> new INTFacingBlock(bucketBlockProperties(MapColor.METAL)));
+            () -> new INTFacingBlock(bucketBlockProperties()));
 
 
     private static <T extends Block> DeferredBlock<T> registerDecoBlock(String name, Supplier<T> block) {

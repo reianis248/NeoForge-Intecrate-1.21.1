@@ -40,12 +40,12 @@ public class DecoBlockProperties {
                 .ignitedByLava()
                 .mapColor(mapColor);
     }
-    public static BlockBehaviour.Properties bucketBlockProperties(MapColor mapColor) {
+    public static BlockBehaviour.Properties bucketBlockProperties() {
         return BlockBehaviour.Properties.of()
                 .strength(3.46f, 1.48f)
                 .sound(SoundType.METAL)
                 .instrument(NoteBlockInstrument.BASS)
-                .mapColor(mapColor);
+                .mapColor(MapColor.METAL);
     }
     public static BlockBehaviour.Properties boxBlockProperties(MapColor mapColor) {
         return BlockBehaviour.Properties.of()
